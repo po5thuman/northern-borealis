@@ -23,10 +23,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
-  <style>
-    .card-coming-soon{position:relative;pointer-events:none;opacity:.65}
-    .coming-soon-badge{position:absolute;top:14px;right:14px;background:rgba(13,27,26,.85);color:var(--muted);font-weight:700;font-size:.75rem;padding:5px 12px;border-radius:50px;border:1px solid var(--border);z-index:3;letter-spacing:.5px;text-transform:uppercase}
-  </style>
+
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
     {"@type":"ListItem","position":1,"name":"Home","item":"https://po5thuman.github.io/northern-borealis/"},
@@ -86,7 +83,7 @@
   <section id="destinations" class="section">
     <div class="container">
       <h2 class="section-title">Choose Your Destination</h2>
-      <p class="section-sub">Iceland and Norway are live now — Finland and Sweden are coming soon.</p>
+      <p class="section-sub">Pick your country to see our full, ranked comparison of tours, prices and what's actually included.</p>
       <div class="grid grid-4">
 
         <!-- ICELAND -->
@@ -115,9 +112,8 @@
           </div>
         </a>
 
-        <!-- SWEDEN — coming soon -->
-        <div class="card card-coming-soon">
-          <span class="coming-soon-badge">Coming Soon</span>
+        <!-- SWEDEN -->
+        <a href="destinations/sweden/" class="card">
           <div class="card-img">
             <span class="card-flag">🇸🇪</span>
             <img src="assets/images/sweden-card.webp" alt="Northern Lights tours in Sweden" width="1200" height="570" loading="lazy">
@@ -125,13 +121,12 @@
           <div class="card-body">
             <h3>Sweden</h3>
             <p>Aurora tours from Abisko and Kiruna, in the heart of Swedish Lapland.</p>
-            <span class="card-link">Coming soon</span>
+            <span class="card-link">View tours</span>
           </div>
-        </div>
+        </a>
 
-        <!-- FINLAND — coming soon -->
-        <div class="card card-coming-soon">
-          <span class="coming-soon-badge">Coming Soon</span>
+        <!-- FINLAND -->
+        <a href="destinations/finland/" class="card">
           <div class="card-img">
             <span class="card-flag">🇫🇮</span>
             <img src="assets/images/finland-card.webp" alt="Northern Lights tours in Finland" width="1200" height="570" loading="lazy">
@@ -139,9 +134,9 @@
           <div class="card-body">
             <h3>Finland</h3>
             <p>Northern Lights tours from Rovaniemi and Levi, deep in Finnish Lapland.</p>
-            <span class="card-link">Coming soon</span>
+            <span class="card-link">View tours</span>
           </div>
-        </div>
+        </a>
 
       </div>
     </div>
