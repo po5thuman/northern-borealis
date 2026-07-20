@@ -133,7 +133,7 @@ footer{background:#0a1615;border-top:1px solid var(--border);padding:64px 0 30px
 .city-card-body p{margin:0 0 .9rem;opacity:.85;line-height:1.5}
 .city-card-price{font-weight:600;color:#7ddcbe;letter-spacing:.2px}
 @media (max-width:640px){.city-card{flex-direction:column}.city-card-img{flex:none;max-width:none;height:190px;width:100%}.city-card-body{padding:1.2rem 1.3rem 1.4rem}}
-.article .city-card,.article .city-card *{text-decoration:none}
+.article .city-card, .article .city-card *, .article a.card, .article a.card * {text-decoration:none}
 .city-card:hover .city-card-body h3{text-decoration:underline}
 .btn,.btn-block{text-decoration:none!important}
 .city-card-img .rating-badge{position:absolute;top:10px;left:10px;background:rgba(13,27,26,.85);color:#7ddcbe;font-weight:600;font-size:.85rem;padding:.25rem .6rem;border-radius:8px;backdrop-filter:blur(4px)}  
