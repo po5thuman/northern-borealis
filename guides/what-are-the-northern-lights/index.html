@@ -45,9 +45,9 @@
     .name-table tr:hover td{background:rgba(95,214,165,.04)}
     .img-placeholder{background:var(--card);border:2px dashed var(--border);border-radius:var(--radius);height:260px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.9rem;margin:32px 0;text-align:center;padding:20px;line-height:1.6}
     .dest-link-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:24px 0}
-    .dest-link-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px 20px;display:flex;align-items:center;gap:14px;transition:border-color .2s,background .2s}
-    .dest-link-card:hover{border-color:rgba(95,214,165,.4);background:var(--card-hover)}
-    .dest-link-card *{text-decoration:none}
+    .dest-link-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px 20px;display:flex;align-items:center;gap:14px;transition:border-color .2s,background .2s;text-decoration:none !important;box-shadow:none !important;border-bottom:none !important}
+    .dest-link-card:hover{border-color:rgba(95,214,165,.4);background:var(--card-hover);text-decoration:none !important}
+    .dest-link-card *{text-decoration:none !important;box-shadow:none !important;border-bottom:none !important;background-image:none !important}
     .dest-link-card .flag{font-size:1.6rem;flex-shrink:0}
     .dest-link-card .dest-info h4{font-family:'Sora',sans-serif;font-size:.95rem;margin-bottom:3px;color:var(--text)}
     .dest-link-card .dest-info p{font-size:.85rem;color:var(--muted);margin:0}
