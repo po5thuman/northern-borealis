@@ -44,8 +44,9 @@
     .compare-table tr:hover td{background:rgba(95,214,165,.04)}
     .compare-table a{color:var(--green);font-weight:700;white-space:nowrap}
     .score{font-weight:700;color:var(--green)}
-    .img-placeholder{background:var(--card);border:2px dashed var(--border);border-radius:var(--radius);height:280px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.9rem;margin:32px 0;text-align:center;padding:20px}
     .flag-icon{width:18px;height:auto;display:inline-block;vertical-align:text-top;margin-right:6px;border-radius:2px;}
+    .article-image {margin: 36px 0;}
+    .article-image img {width: 100%; height: auto; border-radius: var(--radius); display: block; background: var(--card);}
     @media(max-width:768px){.dest-card{grid-template-columns:1fr}.dest-card-img{min-height:220px;position:relative}}
   </style>
   <script type="application/ld+json">
@@ -65,7 +66,6 @@
     {"@type":"Question","name":"When is the best time to go to see the northern lights?","acceptedAnswer":{"@type":"Answer","text":"Across all major northern lights destinations, the season runs from late August to late March or mid-April. The best overall window is late September through February, when nights are longest and darkest. December and January have the most viewing hours per night, though March and October are also strong and come with milder weather. The aurora itself is active year-round, but summer daylight prevents it from being visible in most destinations between April and August."}}
   ]}
   </script>
- 
   <!-- Stay22 Script -->
   <script>
     (function (s, t, a, y, twenty, two) {
@@ -93,7 +93,6 @@
       <button class="menu-btn" id="menuBtn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     </div>
   </header>
-  
   <!-- HERO -->
   <section class="page-hero" style="background:url('assets/images/best-places-hero.webp') center/cover no-repeat;">
     <div class="hero-overlay"></div>
@@ -107,7 +106,6 @@
   </section>
   <main class="article">
     <div class="container-narrow">
-     
       <!-- INTRO -->
       <p class="lead">The northern lights appear across a surprisingly large part of the northern hemisphere every winter — but "appearing" and "being seen" are two very different things. The difference between a life-changing night under the aurora and a disappointing one spent staring at a cloudy sky almost always comes down to one thing: where you're standing.</p>
       <p>The aurora borealis is most reliably visible within the <strong>auroral oval</strong> — a band of maximum aurora activity that encircles the polar region at roughly 65–72° North latitude. (If you want to understand exactly <a href="guides/what-are-the-northern-lights/">what the northern lights are</a>, they are the result of charged solar particles hitting Earth's magnetic field). Within that oval, certain locations have dramatically better clear-night records, better infrastructure and better guides than others. Choosing between them isn't obvious, and most travel sites give you a vague list without telling you why each place is different or who it's actually right for.</p>
@@ -124,11 +122,10 @@
       <p><strong>Light pollution.</strong> City glow washes out faint aurora displays. The best viewing spots are always away from town centres, which is why guided tours almost always drive you 20–60 minutes into the countryside before stopping. The remoter your base, the less driving you need to do to find proper darkness.</p>
       <p><strong>Infrastructure and tour quality.</strong> A great location is wasted without knowledgeable guides, reliable transport and a backup plan for cloudy nights. The best aurora destinations have all three — guides who watch live forecasts and drive to wherever the sky is clearest, and operators who include a free second attempt if the lights don't appear.</p>
       
-      <!-- IMAGE PLACEHOLDER 1 -->
-      <div class="img-placeholder">
-        📸 IMAGE: Aurora oval map showing the band of maximum aurora activity across Scandinavia and Iceland<br>
-        <small>Suggested filename: assets/images/aurora-oval-map.webp</small>
-      </div>
+      <!-- IMAGE 1: Aurora Oval Map -->
+      <figure class="article-image">
+        <img src="assets/images/aurora-oval-map.webp" alt="Aurora oval map showing the band of maximum aurora activity across Scandinavia and Iceland" width="800" height="450" loading="lazy">
+      </figure>
     </div>
   </main>
   
@@ -204,6 +201,11 @@
           </ul>
         </div>
       </div>
+
+      <!-- IMAGE 2: Destination Comparison -->
+      <figure class="article-image">
+        <img src="assets/images/best-place-to-see-the-northern-lights-1.webp" alt="Split comparison showing the northern lights over different Nordic landscapes — Iceland coastline, Norway fjord, and Swedish forest" width="800" height="450" loading="lazy">
+      </figure>
       
       <!-- DESTINATION 4: ALTA -->
       <div class="dest-card">
@@ -310,7 +312,12 @@
           </ul>
         </div>
       </div>
-      
+
+      <!-- IMAGE 3: Glass Igloo -->
+      <figure class="article-image">
+        <img src="assets/images/glass-igloo-aurora.webp" alt="Glass igloo interior with northern lights visible through the roof in Finnish Lapland" width="800" height="450" loading="lazy">
+      </figure>
+
       <!-- COMPARISON TABLE -->
       <h2 class="h2-mt">Quick Comparison: Best Places to See the Northern Lights</h2>
       <p>Every destination ranked side by side across the four factors that actually matter for aurora viewing.</p>
@@ -350,6 +357,11 @@
       <p><strong>If the photograph matters as much as the sighting:</strong> <a href="tours/svolvaer-northern-lights-tour/">Svolvær and the Lofoten Islands</a> frame the aurora against the most dramatic scenery of any destination on this list.</p>
       <p><strong>If you want to watch the aurora from your bed:</strong> <a href="destinations/finland/">Finnish Lapland</a> and its glass igloos are the only place on this list where that's genuinely possible.</p>
       
+      <!-- IMAGE 4: 2x2 Collage -->
+      <figure class="article-image">
+        <img src="assets/images/arctic-collage-1200x630.webp" alt="Arctic destinations collage: Tromsø boat, Svalbard snowmobile, Iceland landscape, and Finnish igloo" width="1200" height="630" loading="lazy">
+      </figure>
+
       <!-- WHERE ARE THE NORTHERN LIGHTS LOCATED -->
       <h2 class="h2-mt">Where Are the Northern Lights Located?</h2>
       <p>The northern lights are located wherever charged particles from the sun — travelling along Earth's magnetic field lines — collide with gas molecules in the upper atmosphere at an altitude of roughly 100–300km above the surface. That interaction releases energy as light, producing the aurora.</p>
@@ -361,7 +373,7 @@
       <p>The best overall window is <strong>late September to February</strong>, with the core months of <strong>November, December and January</strong> giving the most viewing hours per night. December and January are peak season for most operators, with the longest nights and the most hours of darkness for the aurora to perform in.</p>
       <p>The equinox periods — <strong>late September and late March</strong> — are also worth noting. Geomagnetic activity tends to increase around the equinoxes, meaning stronger and more frequent aurora displays on nights that happen to be clear.</p>
       <p>One near-universal rule: <strong>the northern lights cannot be seen in summer</strong> from most of these destinations. Midnight sun in Scandinavia and Iceland means the sky never gets dark enough, regardless of solar activity. Tours and meaningful sightings don't resume until late August at the earliest. For a full month-by-month breakdown by destination, see our <a href="guides/best-time-to-see-northern-lights/">Best Time to Go guide</a>.</p>
-
+      
       <!-- FAQ -->
       <h2 class="h2-mt">Frequently Asked Questions</h2>
       <div class="faq">
@@ -414,6 +426,7 @@
   
   <!-- STICKY MOBILE CTA -->
   <a href="guides/best-places-to-see-northern-lights/#destinations" class="sticky-cta">See All Destinations</a>
+  
   <footer>
     <div class="container">
       <div class="disclosure">⚡ <strong>Affiliate Disclosure:</strong> Northern Borealis is not a tour operator. We independently review and recommend Northern Lights tours from trusted booking platforms. If you book through our links, we may earn a commission at no extra cost to you.</div>
