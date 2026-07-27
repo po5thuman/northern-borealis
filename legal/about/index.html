@@ -19,16 +19,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  
+  <!-- FIX: Absolute URLs in Breadcrumb Schema -->
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
-    {"@type":"ListItem","position":1,"name":"Home","item":"/"},
-    {"@type":"ListItem","position":2,"name":"About Us","item":"legal/about/"}
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://www.northern-borealis.com/"},
+    {"@type":"ListItem","position":2,"name":"About Us","item":"https://www.northern-borealis.com/legal/about/"}
   ]}
   </script>
+  
+  <!-- FIX: Absolute URLs in AboutPage Schema -->
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"AboutPage","name":"About Northern Borealis","url":"https://www.northern-borealis.com/legal/about/","publisher":{"@type":"Organization","name":"Northern Borealis","url":"/"}}
+  {"@context":"https://schema.org","@type":"AboutPage","name":"About Northern Borealis","url":"https://www.northern-borealis.com/legal/about/","publisher":{"@type":"Organization","name":"Northern Borealis","url":"https://www.northern-borealis.com/"}}
   </script>
-
+  
     <!-- Stay22 Script -->
    <script>
     (function (s, t, a, y, twenty, two) {
@@ -41,7 +45,6 @@
       two.parentNode.insertBefore(twenty, two);
     })(window, document, 'script', 'https://scripts.stay22.com/letmeallez.js');
   </script>
-  
 </head>
 <body>
   <header id="header">
@@ -68,15 +71,12 @@
   </section>
   <main class="article">
     <div class="container-narrow">
-
       <!-- INTRO -->
       <p class="lead">Welcome to Northern Borealis — your trusted companion for chasing the Northern Lights across Europe. We're a small team of aurora obsessives who've spent countless freezing, wonderful nights beneath the dancing green skies of Norway, Sweden and Finland, and we built this site to help fellow travellers experience that same magic.</p>
-
       <!-- OUR STORY -->
       <h2 class="h2-mt">Our Story</h2>
       <p>Northern Borealis was born out of frustration — the good kind. On our first aurora trip years ago, we spent hours trawling through confusing tour listings, contradictory advice and glossy marketing that promised the moon (and the lights). We booked partly on luck, and got lucky. But we walked away thinking: <em>surely there's a better way to help people plan this.</em></p>
       <p>Since then we've returned to the Arctic again and again — to Tromsø, Svalbard, the Lofoten Islands, Abisko, Kiruna and Lapland — learning what actually makes a great Northern Lights tour and what to avoid. Northern Borealis is where we share everything we've learned, so your first aurora hunt (or your fifth) goes as smoothly as possible.</p>
-
       <!-- WHAT WE DO -->
       <h2 class="h2-mt">What We Do</h2>
       <p>We research, compare and rank the best Northern Lights tours from Europe's top aurora destinations. For every location, we highlight the tours we genuinely rate most highly, explain who each one suits — photographers, families, adventurers, budget travellers — and give you the practical details you need to book with confidence.</p>
@@ -87,7 +87,6 @@
         <li>✅ <strong>Finland</strong> — Lapland, including Rovaniemi and Levi</li>
         <li>✅ And more destinations on the way</li>
       </ul>
-
       <!-- HOW WE CHOOSE -->
       <h2 class="h2-mt">How We Choose the Tours</h2>
       <p>We don't just list every tour we can find. We assess each one against the things that genuinely matter for a great aurora experience:</p>
@@ -99,24 +98,20 @@
         <li>💶 <strong>Overall value</strong> — not just the cheapest, but the best experience for the price.</li>
       </ul>
       <p>Then we pick the tours we'd happily send our own friends and family on. If we wouldn't book it ourselves, we won't recommend it to you.</p>
-
       <!-- OUR PROMISE -->
       <h2 class="h2-mt">Our Promise to You</h2>
       <p><strong>Honesty first.</strong> Our recommendations are independent and never influenced by commissions. We recommend tours on merit alone. (For full transparency on how we're funded, see our <a href="legal/affiliate-disclosure/">Affiliate Disclosure</a>.)</p>
       <p><strong>Clear, no-hype information.</strong> The aurora is magical enough — it doesn't need exaggeration. We give you straight, practical advice so you know exactly what to expect.</p>
       <p><strong>We're not a tour operator.</strong> Northern Borealis is an independent guide. We don't run or sell tours ourselves; we point you toward trusted booking platforms and operators, so you can book safely and directly.</p>
-
       <!-- GET IN TOUCH -->
       <h2 class="h2-mt">Get in Touch</h2>
       <p>Got a question, a correction, or a tour you think we should feature? We'd genuinely love to hear from you. Reach out any time via our <a href="contact/">contact page</a> — and if you spot the lights on a tour we recommended, we'd love to see your photos!</p>
-
       <!-- CTA -->
       <div class="cta-banner cta-mt">
         <h2>Ready to Chase the Aurora?</h2>
         <p>Explore our destination guides and compare the best Northern Lights tours in Europe.</p>
         <a href="destinations/" class="btn">Explore Destinations</a>
       </div>
-
       <!-- RELATED -->
       <h2 class="h2-mt">Learn More</h2>
       <div class="grid grid-3">
@@ -124,7 +119,6 @@
         <a href="legal/privacy-policy/" class="card card-text"><div class="card-body"><h3>Privacy Policy</h3><p>How we handle your data when you visit our site.</p><span class="card-link">Read more</span></div></a>
         <a href="contact/" class="card card-text"><div class="card-body"><h3>Contact Us</h3><p>Questions, corrections or suggestions — we'd love to hear from you.</p><span class="card-link">Get in touch</span></div></a>
       </div>
-
     </div>
   </main>
   <footer>
