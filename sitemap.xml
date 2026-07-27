@@ -1,248 +1,156 @@
-<?xml version="1.0" encoding="UTF-8"?> 
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
-<url>
-  <loc>http://www.northern-borealis.com/.</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/destinations/</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/tours/</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/guides/best-time-to-see-northern-lights/</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/guides/</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/destinations/norway/</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/destinations/iceland/</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/destinations/finland/</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/destinations/sweden/</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/guides/best-places-to-see-northern-lights/</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/guides/how-to-see-the-northern-lights/</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/guides/what-are-the-northern-lights/</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/legal/about/</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/contact/</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/legal/affiliate-disclosure/</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/legal/privacy-policy/</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/destinations/#destinations</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/tours/#norway</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/tours/tromso-northern-lights-tour/</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/tours/svalbard-northern-lights-tour/</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/tours/svolvaer-northern-lights-tour/</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/tours/alta-northern-lights-tour/</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/tours/abisko-northern-lights-tour/</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/tours/kiruna-northern-lights-tour/</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/tours/lapland-northern-lights-tour/</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/tours/reykjavik-northern-lights-tour/</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/tours/akureyri-northern-lights-tour/</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/guides/best-time-to-see-northern-lights/#months</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/destinations/norway/#cities</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/destinations/iceland/#cities</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/destinations/sweden/#cities</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/guides/best-places-to-see-northern-lights/#destinations</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/guides/how-to-see-the-northern-lights/#steps</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/guides/what-are-the-northern-lights/#science</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/tours/tromso-northern-lights-tour/#tours</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/tours/svalbard-northern-lights-tour/#tours</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/tours/svolvaer-northern-lights-tour/#tours</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/tours/alta-northern-lights-tour/#toppick</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/northern-borealis/tours/alta-northern-lights-tour/#tours</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/northern-borealis/tours/alta-northern-lights-tour/#toppick</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/tours/abisko-northern-lights-tour/#tours</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/tours/kiruna-northern-lights-tour/#tours</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/tours/lapland-northern-lights-tour/#tours</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/tours/reykjavik-northern-lights-tour/#toppick</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/tours/reykjavik-northern-lights-tour/#tours</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/guides/is-a-northern-lights-tour-worth-it/</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/tours/akureyri-northern-lights-tour/#toppick</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/tours/akureyri-northern-lights-tour/#tours</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.northern-borealis.com/</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
-</url>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="https://www.xml-sitemaps.com/css/sitemap.css"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+       <loc>https://www.northern-borealis.com/</loc>
+       <lastmod>2026-07-27T06:06:04+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>1.0000</priority>
+  </url>
+  <url>
+       <loc>https://www.northern-borealis.com/destinations/</loc>
+       <lastmod>2026-07-27T06:06:04+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://www.northern-borealis.com/tours/</loc>
+       <lastmod>2026-07-27T06:06:04+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://www.northern-borealis.com/guides/best-time-to-see-northern-lights/</loc>
+       <lastmod>2026-07-27T06:06:04+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://www.northern-borealis.com/guides/</loc>
+       <lastmod>2026-07-27T06:06:04+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://www.northern-borealis.com/destinations/norway/</loc>
+       <lastmod>2026-07-27T06:06:04+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://www.northern-borealis.com/destinations/iceland/</loc>
+       <lastmod>2026-07-27T06:06:04+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://www.northern-borealis.com/destinations/finland/</loc>
+       <lastmod>2026-07-27T06:06:04+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://www.northern-borealis.com/destinations/sweden/</loc>
+       <lastmod>2026-07-27T06:06:04+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://www.northern-borealis.com/guides/best-places-to-see-northern-lights/</loc>
+       <lastmod>2026-07-27T06:06:04+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://www.northern-borealis.com/guides/how-to-see-the-northern-lights/</loc>
+       <lastmod>2026-07-27T06:06:04+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://www.northern-borealis.com/guides/what-are-the-northern-lights/</loc>
+       <lastmod>2026-07-27T06:06:04+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://www.northern-borealis.com/legal/about/</loc>
+       <lastmod>2026-07-27T06:06:04+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://www.northern-borealis.com/contact/</loc>
+       <lastmod>2026-07-27T06:06:04+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://www.northern-borealis.com/legal/affiliate-disclosure/</loc>
+       <lastmod>2026-07-27T06:06:04+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://www.northern-borealis.com/legal/privacy-policy/</loc>
+       <lastmod>2026-07-27T06:06:04+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://www.northern-borealis.com/tours/tromso-northern-lights-tour/</loc>
+       <lastmod>2026-07-27T06:06:04+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://www.northern-borealis.com/tours/svalbard-northern-lights-tour/</loc>
+       <lastmod>2026-07-27T06:06:04+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://www.northern-borealis.com/tours/svolvaer-northern-lights-tour/</loc>
+       <lastmod>2026-07-27T06:06:04+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://www.northern-borealis.com/tours/alta-northern-lights-tour/</loc>
+       <lastmod>2026-07-27T06:06:04+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://www.northern-borealis.com/tours/abisko-northern-lights-tour/</loc>
+       <lastmod>2026-07-27T06:06:04+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://www.northern-borealis.com/tours/kiruna-northern-lights-tour/</loc>
+       <lastmod>2026-07-27T06:06:04+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://www.northern-borealis.com/tours/lapland-northern-lights-tour/</loc>
+       <lastmod>2026-07-27T06:06:04+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://www.northern-borealis.com/tours/reykjavik-northern-lights-tour/</loc>
+       <lastmod>2026-07-27T06:06:04+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://www.northern-borealis.com/tours/akureyri-northern-lights-tour/</loc>
+       <lastmod>2026-07-27T06:06:04+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
 </urlset>
