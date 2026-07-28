@@ -8,22 +8,25 @@ document.addEventListener('DOMContentLoaded',function(){
   if(header){window.addEventListener('scroll',function(){header.classList.toggle('scrolled',window.scrollY>40);});}
 });
 
-// ===== Live Kp Index Header Pill =====
+// ===== Live Kp Index (Header Pill + Footer Widget) =====
 (async function() {
-  const valueEl = document.getElementById('kpPillValue');
-  const dotEl = document.getElementById('kpPillDot');
-  if (!valueEl || !dotEl) return; // Exit if pill isn't on the page
+  // Grab all possible target elements
+  const headerVal = document.getElementById('kpPillValue');
+  const headerDot = document.getElementById('kpPillDot');
+  const footerVal = document.getElementById('footerKpValue');
+  const footerDot = document.getElementById('footerKpDot');
+
+  // Exit if none of the widgets exist on this page
+  if (!headerVal && !footerVal) return;
 
   try {
     const response = await fetch('https://services.swpc.noaa.gov/products/noaa-planetary-k-index-forecast.json');
     if (!response.ok) throw new Error("Network error");
     const rawData = await response.json();
 
-    // Normalize data (skip header row)
     const rows = Array.isArray(rawData[0]) ? rawData.slice(1) : rawData;
     const nowStr = new Date().toISOString().split('T')[0];
 
-    // Find the max Kp for today
     let todayMax = 0;
     let found = false;
     rows.forEach(row => {
@@ -35,7 +38,6 @@ document.addEventListener('DOMContentLoaded',function(){
       }
     });
 
-    // Fallback: if no "today" entries, grab the first valid future value
     if (!found) {
       for (const row of rows) {
         const kp = parseFloat(Array.isArray(row) ? row[1] : row.kp);
@@ -44,9 +46,8 @@ document.addEventListener('DOMContentLoaded',function(){
     }
 
     const kpVal = Math.round(todayMax);
-    valueEl.textContent = kpVal;
 
-    // Match the NOAA colour scale from your forecast page
+    // Determine NOAA colour
     let color = "#A4D65E"; // Green (Quiet)
     if (kpVal === 5) color = "#FCE300";      // Yellow (G1)
     else if (kpVal === 6) color = "#FFB300"; // Amber (G2)
@@ -54,13 +55,25 @@ document.addEventListener('DOMContentLoaded',function(){
     else if (kpVal === 8) color = "#E52418"; // Red (G4)
     else if (kpVal >= 9) color = "#B71212";  // Dark Red (G5)
 
-    dotEl.style.background = color;
-    dotEl.style.boxShadow = `0 0 8px ${color}`;
-    valueEl.style.color = color;
+    // Update Header Pill (if it exists)
+    if (headerVal && headerDot) {
+      headerVal.textContent = kpVal;
+      headerVal.style.color = color;
+      headerDot.style.background = color;
+      headerDot.style.boxShadow = `0 0 8px ${color}`;
+    }
+
+    // Update Footer Widget (if it exists)
+    if (footerVal && footerDot) {
+      footerVal.textContent = kpVal;
+      footerVal.style.color = color;
+      footerDot.style.background = color;
+      footerDot.style.boxShadow = `0 0 8px ${color}`;
+    }
 
   } catch (error) {
-    console.error("Kp pill fetch failed:", error);
-    valueEl.textContent = "–"; // Show a dash if the API fails
+    console.error("Kp fetch failed:", error);
+    if (headerVal) headerVal.textContent = "–";
+    if (footerVal) footerVal.textContent = "–";
   }
-  
 })();
