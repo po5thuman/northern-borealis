@@ -1,19 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base href="/">
+  <title>Best Northern Lights Tours in Europe (2026 / 2027) | Northern Borealis</title>
+  <meta name="theme-color" content="#0d1b1a">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <!-- HEADER -->
+  <header id="header">
+    <div class="container nav">
+      <a href="." class="logo">Northern<span>Borealis</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="destinations/">Destinations</a></li>
+        <li><a href="tours/">Tours</a></li>
+        <li><a href="guides/best-time-to-see-northern-lights/">When to Go</a></li>
+        <li><a href="guides/">Guides</a></li>
+      </ul>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
 <!-- LIVE 3-DAY AURORA FORECAST BANNER -->
   <section class="section" id="aurora-forecast">
     <div class="container">
       <h2 class="section-title">3-Day Aurora Forecast</h2>
-      <p class="section-sub">Live daily maximum Kp index sourced directly from NOAA, alongside viewline probability maps.</p>
+      <p class="section-sub">Live daily maximum Kp index sourced directly from NOAA.</p>
+
       <style>
         .forecast-banner {
           background: var(--card);
           border: 1px solid var(--border);
-          border-radius: 40px;
+          border-radius: 50px;
           padding: 24px 40px;
           display: flex;
           align-items: center;
           justify-content: center;
           gap: 24px;
-          margin: 40px auto 24px;
+          margin: 40px auto 0;
           max-width: 800px;
           box-shadow: 0 8px 24px rgba(0,0,0,0.15);
         }
@@ -32,6 +60,7 @@
         }
         .forecast-item .kp {
           font-weight: 800;
+          /* Adding a subtle text shadow so darker reds still pop on the dark background */
           text-shadow: 0 2px 10px rgba(0,0,0,0.4);
         }
         .forecast-divider {
@@ -40,94 +69,6 @@
           font-weight: 300;
           user-select: none;
         }
-        
-        /* KP Legend Styles */
-        .kp-legend {
-          background: var(--card);
-          border: 1px solid var(--border);
-          border-radius: 24px;
-          padding: 16px 24px;
-          max-width: 800px;
-          margin: 0 auto 40px;
-          display: flex;
-          flex-wrap: wrap;
-          align-items: center;
-          justify-content: center;
-          gap: 16px;
-          box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-        }
-        .legend-title {
-          font-family: 'Sora', sans-serif;
-          font-size: 0.85rem;
-          color: var(--muted);
-          text-transform: uppercase;
-          letter-spacing: 0.05em;
-          width: 100%;
-          text-align: center;
-          margin-bottom: -4px;
-        }
-        .legend-items {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          gap: 12px;
-        }
-        .legend-badge {
-          display: flex;
-          align-items: center;
-          gap: 6px;
-          font-size: 0.85rem;
-          font-family: 'Inter', sans-serif;
-          color: var(--text);
-        }
-        .legend-dot {
-          width: 12px;
-          height: 12px;
-          border-radius: 50%;
-          display: inline-block;
-          box-shadow: 0 1px 4px rgba(0,0,0,0.3);
-        }
-
-        /* NOAA Maps Grid Styles */
-        .aurora-maps-grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-          gap: 24px;
-          max-width: 900px;
-          margin: 0 auto;
-        }
-        .aurora-map-card {
-          background: var(--card);
-          border: 1px solid var(--border);
-          border-radius: 24px;
-          overflow: hidden;
-          display: flex;
-          flex-direction: column;
-          box-shadow: 0 8px 24px rgba(0,0,0,0.15);
-        }
-        .aurora-map-header {
-          padding: 16px 20px 12px;
-          font-family: 'Sora', sans-serif;
-          font-size: 1.1rem;
-          font-weight: 600;
-          color: var(--text);
-          border-bottom: 1px solid var(--border);
-          background: rgba(255, 255, 255, 0.02);
-        }
-        .aurora-map-body {
-          padding: 16px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background: #000;
-        }
-        .aurora-map-body img {
-          width: 100%;
-          height: auto;
-          border-radius: 12px;
-          display: block;
-        }
-
         /* Stack vertically on mobile */
         @media (max-width: 640px) {
           .forecast-banner {
@@ -139,52 +80,16 @@
           .forecast-divider {
             display: none;
           }
-          .kp-legend {
-            padding: 16px;
-          }
-          .legend-items {
-            gap: 8px 12px;
-          }
         }
       </style>
 
-      <!-- Forecast Banner Container -->
       <div id="forecast-container">
         <div class="forecast-banner">
           <span style="color: var(--muted);">Fetching live space weather data...</span>
         </div>
       </div>
-
-      <!-- KP Legend Component -->
-      <div class="kp-legend">
-        <span class="legend-title">Kp Index Scale Legend</span>
-        <div class="legend-items">
-          <div class="legend-badge"><span class="legend-dot" style="background: #A4D65E;"></span> 0–4 (Quiet / Low)</div>
-          <div class="legend-badge"><span class="legend-dot" style="background: #FCE300;"></span> 5 (G1 Minor)</div>
-          <div class="legend-badge"><span class="legend-dot" style="background: #FFB300;"></span> 6 (G2 Moderate)</div>
-          <div class="legend-badge"><span class="legend-dot" style="background: #F68D2E;"></span> 7 (G3 Strong)</div>
-          <div class="legend-badge"><span class="legend-dot" style="background: #E52418;"></span> 8 (G4 Severe)</div>
-          <div class="legend-badge"><span class="legend-dot" style="background: #B71212;"></span> 9 (G5 Extreme)</div>
-        </div>
-      </div>
-
-      <!-- NOAA Viewline Forecast Images Grid -->
-      <div class="aurora-maps-grid">
-        <div class="aurora-map-card">
-          <div class="aurora-map-header">Tonight's Viewline Forecast</div>
-          <div class="aurora-map-body">
-            <img src="https://services.swpc.noaa.gov/experimental/images/aurora_dashboard/tonights_static_viewline_forecast.png" alt="Tonight's Northern Lights Viewline Forecast Map" loading="lazy">
-          </div>
-        </div>
-        <div class="aurora-map-card">
-          <div class="aurora-map-header">Tomorrow Night's Viewline Forecast</div>
-          <div class="aurora-map-body">
-            <img src="https://services.swpc.noaa.gov/experimental/images/aurora_dashboard/tomorrow_nights_static_viewline_forecast.jpg" alt="Tomorrow Night's Northern Lights Viewline Forecast Map" loading="lazy">
-          </div>
-        </div>
-      </div>
-
     </div>
+
     <script>
       document.addEventListener("DOMContentLoaded", async function() {
         const container = document.getElementById('forecast-container');
@@ -222,6 +127,7 @@
             .slice(0, 3);
           
           if (next3Days.length === 0) throw new Error("No future dates found");
+
           let html = '<div class="forecast-banner">';
           
           next3Days.forEach((dateStr, index) => {
@@ -237,7 +143,7 @@
               dayName = dateObj.toLocaleDateString('en-GB', { weekday: 'long' });
             }
             
-            // Exact NOAA colours matching the legend
+            // Exact NOAA colours from the image
             let kpColor = "#A4D65E"; // Green (Kp < 5)
             if (kpVal === 5) kpColor = "#FCE300"; // Yellow (G1)
             else if (kpVal === 6) kpColor = "#FFB300"; // Amber (G2)
@@ -261,6 +167,7 @@
           
           html += '</div>';
           container.innerHTML = html;
+
         } catch (error) {
           console.error("Error fetching forecast:", error);
           container.innerHTML = `
@@ -273,3 +180,41 @@
     </script>
   </section>
   <!-- END FORECAST SECTION -->
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="disclosure">⚡ <strong>Affiliate Disclosure:</strong> Northern Borealis is not a tour operator. We independently review and recommend Northern Lights tours from trusted booking platforms. If you book through our links, we may earn a commission at no extra cost to you.</div>
+      <div class="footer-grid">
+        <div class="footer-col"><a href="." class="logo">Northern<span>Borealis</span></a><p class="footer-about">Helping travellers find and book the best Northern Lights tours across Europe.</p></div>
+        <div class="footer-col"><h4>Destinations</h4>
+          <ul>
+            <li><a href="destinations/norway/">Norway</a></li>
+            <li><a href="destinations/iceland/">Iceland</a></li>
+            <li><a href="destinations/finland/">Finland</a></li>
+            <li><a href="destinations/sweden/">Sweden</a></li>
+          </ul>
+        </div>
+        <div class="footer-col"><h4>Plan</h4>
+          <ul>
+            <li><a href="guides/best-places-to-see-northern-lights/">Best Places</a></li>
+            <li><a href="guides/best-time-to-see-northern-lights/">When to Go</a></li>
+            <li><a href="guides/what-are-the-northern-lights/">What Are They?</a></li>
+            <li><a href="guides/how-to-see-the-northern-lights/">How to See Them</a></li>
+          </ul>
+        </div>
+        <div class="footer-col"><h4>About</h4>
+          <ul>
+            <li><a href="legal/about/">About Us</a></li>
+            <li><a href="contact/">Contact</a></li>
+            <li><a href="legal/affiliate-disclosure/">Affiliate Disclosure</a></li>
+            <li><a href="legal/privacy-policy/">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 Northern Borealis. All rights reserved.</div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
