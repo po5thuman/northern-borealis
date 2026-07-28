@@ -62,4 +62,5 @@ document.addEventListener('DOMContentLoaded',function(){
     console.error("Kp pill fetch failed:", error);
     valueEl.textContent = "–"; // Show a dash if the API fails
   }
+  
 })();
