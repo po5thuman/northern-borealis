@@ -74,7 +74,14 @@
 <body>
   <header id="header">
     <div class="container nav">
-      <a href="." class="logo">Northern<span>Borealis</span></a>
+      <div class="nav-left">
+        <a href="." class="logo">Northern<span>Borealis</span></a>
+        <a href="forecast/" class="kp-pill" id="kpPill" title="Current live Kp index — click for the full forecast">
+          <span class="kp-pill-dot" id="kpPillDot"></span>
+          <span class="kp-pill-label">Kp</span>
+          <span class="kp-pill-value" id="kpPillValue">–</span>
+        </a>
+      </div>
       <ul class="nav-links" id="navLinks">
         <li><a href="destinations/">Destinations</a></li>
         <li><a href="tours/">Tours</a></li>
