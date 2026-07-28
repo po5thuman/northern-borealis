@@ -69,3 +69,5 @@
 
 [Contact Us | Northern Borealis](http://www.northern-borealis.com/contact/): Get in touch with Northern Borealis. Questions, corrections or a Northern Lights tour you think we should feature — we'd love to hear from you.
 
+## Live Tools
+- [Live Northern Lights Forecast](https://www.northern-borealis.com/forecast/): A real-time 3-day aurora borealis forecast and Kp index, sourced directly from NOAA space weather data.
