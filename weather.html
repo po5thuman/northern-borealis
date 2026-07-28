@@ -29,9 +29,17 @@
   <section class="section" id="aurora-forecast">
     <div class="container">
       <h2 class="section-title">3-Day Aurora Forecast</h2>
-      <p class="section-sub">Live daily maximum Kp index sourced directly from NOAA.</p>
+      <p class="section-sub">Live daily maximum Kp index sourced directly from <a href="https://www.spaceweather.gov/communities/aurora-dashboard-experimental" target="_blank" rel="noopener noreferrer">NOAA</a>.</p>
 
       <style>
+        .forecast-container {
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+          margin: 40px auto 0;
+          max-width: 900px;
+        }
+
         .forecast-banner {
           background: var(--card);
           border: 1px solid var(--border);
@@ -41,36 +49,129 @@
           align-items: center;
           justify-content: center;
           gap: 24px;
-          margin: 40px auto 0;
-          max-width: 800px;
           box-shadow: 0 8px 24px rgba(0,0,0,0.15);
         }
+        
         .forecast-item {
           font-size: 1.3rem;
           color: var(--text);
           font-family: 'Sora', sans-serif;
           font-weight: 600;
           display: flex;
+          flex-direction: column;
           align-items: center;
-          gap: 10px;
+          gap: 8px;
         }
+        
+        .forecast-item .date {
+          color: var(--muted);
+          font-weight: 600;
+          font-size: 0.95rem;
+          letter-spacing: 0.5px;
+        }
+        
         .forecast-item .day {
           color: var(--muted);
           font-weight: 500;
+          font-size: 1rem;
         }
+        
         .forecast-item .kp {
           font-weight: 800;
-          /* Adding a subtle text shadow so darker reds still pop on the dark background */
+          font-size: 2rem;
           text-shadow: 0 2px 10px rgba(0,0,0,0.4);
         }
+        
         .forecast-divider {
           color: var(--border);
           font-size: 1.5rem;
           font-weight: 300;
           user-select: none;
         }
+
+        /* Kp Legend */
+        .kp-legend {
+          background: var(--card);
+          border: 1px solid var(--border);
+          border-radius: 24px;
+          padding: 24px 32px;
+          display: flex;
+          align-items: center;
+          gap: 28px;
+          flex-wrap: wrap;
+          justify-content: center;
+          box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+        }
+
+        .kp-legend-title {
+          font-weight: 600;
+          color: var(--text);
+          font-size: 0.95rem;
+          letter-spacing: 0.5px;
+          min-width: 100%;
+          text-align: center;
+          margin-bottom: 8px;
+          color: var(--muted);
+        }
+
+        .kp-legend-item {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 0.9rem;
+          color: var(--muted);
+        }
+
+        .kp-legend-dot {
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          flex-shrink: 0;
+          border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Forecast Images Section */
+        .forecast-images {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 24px;
+          margin-top: 8px;
+        }
+
+        .forecast-image-card {
+          background: var(--card);
+          border: 1px solid var(--border);
+          border-radius: 20px;
+          overflow: hidden;
+          box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+        }
+
+        .forecast-image-card h4 {
+          padding: 18px 24px;
+          margin: 0;
+          font-size: 1rem;
+          font-weight: 600;
+          color: var(--text);
+          background: var(--bg2);
+          border-bottom: 1px solid var(--border);
+        }
+
+        .forecast-image-card img {
+          width: 100%;
+          height: auto;
+          display: block;
+          background: var(--bg);
+        }
+
+        .forecast-image-loading {
+          padding: 40px 24px;
+          text-align: center;
+          color: var(--muted);
+          font-size: 0.95rem;
+        }
+
         /* Stack vertically on mobile */
-        @media (max-width: 640px) {
+        @media (max-width: 768px) {
           .forecast-banner {
             flex-direction: column;
             border-radius: 24px;
@@ -80,10 +181,58 @@
           .forecast-divider {
             display: none;
           }
+          
+          .kp-legend {
+            flex-direction: column;
+            padding: 20px 24px;
+            gap: 16px;
+          }
+
+          .forecast-images {
+            grid-template-columns: 1fr;
+          }
+
+          .forecast-item {
+            font-size: 1.2rem;
+          }
+
+          .forecast-item .kp {
+            font-size: 1.8rem;
+          }
+        }
+
+        @media (max-width: 640px) {
+          .forecast-banner {
+            padding: 18px;
+          }
+
+          .kp-legend {
+            padding: 16px;
+          }
+
+          .kp-legend-item {
+            font-size: 0.85rem;
+          }
+
+          .forecast-item {
+            font-size: 1.1rem;
+          }
+
+          .forecast-item .date {
+            font-size: 0.85rem;
+          }
+
+          .forecast-item .day {
+            font-size: 0.9rem;
+          }
+
+          .forecast-item .kp {
+            font-size: 1.6rem;
+          }
         }
       </style>
 
-      <div id="forecast-container">
+      <div id="forecast-container" class="forecast-container">
         <div class="forecast-banner">
           <span style="color: var(--muted);">Fetching live space weather data...</span>
         </div>
@@ -128,10 +277,10 @@
           
           if (next3Days.length === 0) throw new Error("No future dates found");
 
-          let html = '<div class="forecast-banner">';
+          // Build the forecast banner with dates and day names
+          let bannerHtml = '<div class="forecast-banner">';
           
           next3Days.forEach((dateStr, index) => {
-            // Round to nearest whole number first so the colour perfectly matches what is displayed
             const kpVal = Math.round(dailyKp[dateStr]);
             
             // Set dynamic day name
@@ -143,6 +292,12 @@
               dayName = dateObj.toLocaleDateString('en-GB', { weekday: 'long' });
             }
             
+            // Format date (e.g., "28th", "29th", "30th")
+            const dateObj = new Date(dateStr + 'T00:00:00Z');
+            const dateNum = dateObj.getUTCDate();
+            const daySuffix = getDaySuffix(dateNum);
+            const dateDisplay = dateNum + daySuffix;
+            
             // Exact NOAA colours from the image
             let kpColor = "#A4D65E"; // Green (Kp < 5)
             if (kpVal === 5) kpColor = "#FCE300"; // Yellow (G1)
@@ -151,22 +306,70 @@
             else if (kpVal === 8) kpColor = "#E52418"; // Red (G4)
             else if (kpVal >= 9) kpColor = "#B71212"; // Dark Red (G5)
 
-            // Build the snippet for this day
-            html += `
+            bannerHtml += `
               <div class="forecast-item">
-                <span class="day">${dayName}:</span> 
+                <span class="date">${dateDisplay}</span>
+                <span class="day">${dayName}</span> 
                 <span class="kp" style="color: ${kpColor};">${kpVal}</span>
               </div>
             `;
             
-            // Add the divider if it's not the last item
             if (index < 2) {
-              html += `<div class="forecast-divider">|</div>`;
+              bannerHtml += `<div class="forecast-divider">|</div>`;
             }
           });
           
-          html += '</div>';
-          container.innerHTML = html;
+          bannerHtml += '</div>';
+
+          // Build the Kp legend
+          const legendHtml = `
+            <div class="kp-legend">
+              <div class="kp-legend-title">Kp Index Scale</div>
+              <div class="kp-legend-item">
+                <div class="kp-legend-dot" style="background-color: #A4D65E;"></div>
+                <span><strong>0-4</strong> - Quiet</span>
+              </div>
+              <div class="kp-legend-item">
+                <div class="kp-legend-dot" style="background-color: #FCE300;"></div>
+                <span><strong>5 (G1)</strong> - Minor</span>
+              </div>
+              <div class="kp-legend-item">
+                <div class="kp-legend-dot" style="background-color: #FFB300;"></div>
+                <span><strong>6 (G2)</strong> - Moderate</span>
+              </div>
+              <div class="kp-legend-item">
+                <div class="kp-legend-dot" style="background-color: #F68D2E;"></div>
+                <span><strong>7 (G3)</strong> - Strong</span>
+              </div>
+              <div class="kp-legend-item">
+                <div class="kp-legend-dot" style="background-color: #E52418;"></div>
+                <span><strong>8 (G4)</strong> - Severe</span>
+              </div>
+              <div class="kp-legend-item">
+                <div class="kp-legend-dot" style="background-color: #B71212;"></div>
+                <span><strong>9+ (G5)</strong> - Extreme</span>
+              </div>
+            </div>
+          `;
+
+          // Build forecast images section
+          const imagesHtml = `
+            <div class="forecast-images">
+              <div class="forecast-image-card">
+                <h4>Tonight's Forecast</h4>
+                <div id="tonight-forecast" class="forecast-image-loading">Loading image...</div>
+              </div>
+              <div class="forecast-image-card">
+                <h4>Tomorrow Night's Forecast</h4>
+                <div id="tomorrow-forecast" class="forecast-image-loading">Loading image...</div>
+              </div>
+            </div>
+          `;
+
+          container.innerHTML = bannerHtml + legendHtml + imagesHtml;
+
+          // Load the forecast images
+          loadForecastImages();
 
         } catch (error) {
           console.error("Error fetching forecast:", error);
@@ -177,6 +380,46 @@
           `;
         }
       });
+
+      function getDaySuffix(date) {
+        if (date > 3 && date < 21) return 'th';
+        switch (date % 10) {
+          case 1: return 'st';
+          case 2: return 'nd';
+          case 3: return 'rd';
+          default: return 'th';
+        }
+      }
+
+      function loadForecastImages() {
+        const tonightUrl = 'https://services.swpc.noaa.gov/experimental/images/aurora_dashboard/tonights_static_viewline_forecast.png';
+        const tomorrowUrl = 'https://services.swpc.noaa.gov/experimental/images/aurora_dashboard/tomorrow_nights_static_viewline_forecast.png';
+
+        loadImage('tonight-forecast', tonightUrl, "Tonight's Aurora Forecast");
+        loadImage('tomorrow-forecast', tomorrowUrl, "Tomorrow Night's Aurora Forecast");
+      }
+
+      function loadImage(containerId, imageUrl, altText) {
+        const container = document.getElementById(containerId);
+        if (!container) return;
+
+        const img = new Image();
+        img.src = imageUrl;
+        img.alt = altText;
+        img.style.width = '100%';
+        img.style.height = 'auto';
+        img.style.display = 'block';
+        img.style.background = 'var(--bg)';
+
+        img.onload = function() {
+          container.innerHTML = '';
+          container.appendChild(img);
+        };
+
+        img.onerror = function() {
+          container.innerHTML = '<div class="forecast-image-loading">Unable to load forecast image</div>';
+        };
+      }
     </script>
   </section>
   <!-- END FORECAST SECTION -->
