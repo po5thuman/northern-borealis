@@ -10,7 +10,10 @@
     gtag('js', new Date());
     gtag('config', 'G-KVY33WVMDP');
   </script>
-  
+
+  <!-- AdSense loader: load once here, reuse for every <ins class="adsbygoogle"> block on the page -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4536547386750955" crossorigin="anonymous"></script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <base href="/">
@@ -280,6 +283,15 @@
           <span style="color: var(--muted);">Fetching live space weather data...</span>
         </div>
       </div>
+
+      <!-- In-article ad slot #1: sits below the live forecast banner/legend -->
+      <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-4536547386750955"
+          data-ad-slot="4270568400"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
     <script>
       document.addEventListener("DOMContentLoaded", async function() {
@@ -378,19 +390,6 @@
               </div>
             </div>
           `;
-          
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4536547386750955"
-              crossorigin="anonymous"></script>
-          <ins class="adsbygoogle"
-              style="display:block; text-align:center;"
-              data-ad-layout="in-article"
-              data-ad-format="fluid"
-              data-ad-client="ca-pub-4536547386750955"
-              data-ad-slot="4270568400"></ins>
-          <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
-          
           // Build forecast images section
           const imagesHtml = `
             <div class="forecast-images">
@@ -464,17 +463,13 @@
       <p>The forecast at the top of this page displays the <strong>maximum predicted Kp index</strong> for each of the next three days. The Kp index is a global scale, running from 0 to 9, that measures geomagnetic activity in Earth's atmosphere. In simple terms: the higher the number, the stronger the aurora, and the further south from the North Pole it becomes visible.</p>
       <p>The two map images show NOAA's "view line" — the further south that red band pushes on the map, the more people across the globe will be able to see the lights. If you are standing north of that line on a clear night, your chances are excellent.</p>
 
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4536547386750955"
-          crossorigin="anonymous"></script>
       <ins class="adsbygoogle"
           style="display:block; text-align:center;"
           data-ad-layout="in-article"
           data-ad-format="fluid"
           data-ad-client="ca-pub-4536547386750955"
           data-ad-slot="4270568400"></ins>
-      <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
       <!-- KP INDEX EXPLAINED -->
       <h2 class="h2-mt">What Is a Good Kp Index for the Aurora?</h2>
@@ -484,7 +479,7 @@
 
       <!-- CLOUD COVER CALLOUT -->
       <div class="callout">
-        <strong>⚡ The Golden Rule of Aurora Hunting:</strong> A clear sky always beats a high Kp index. You could have an incredible Kp 7 storm, but if it's cloudy, you'll see nothing. Always check your local weather forecast for clear skies alongside this aurora forecast — the two must line up. This is the single biggest tip in our guide on <a href="guides/how-to-see-the-northern-lights/">how to see the northern lights</a>.</p>
+        <strong>⚡ The Golden Rule of Aurora Hunting:</strong> A clear sky always beats a high Kp index. You could have an incredible Kp 7 storm, but if it's cloudy, you'll see nothing. Always check your local weather forecast for clear skies alongside this aurora forecast — the two must line up. This is the single biggest tip in our guide on <a href="guides/how-to-see-the-northern-lights/">how to see the northern lights</a>.
       </div>
 
       <!-- SCIENCE -->
@@ -497,17 +492,13 @@
       <p>While this forecast tells you about activity over the next 72 hours, seeing the aurora also depends on the season. The lights are only visible when the sky is dark enough, which rules out the summer months in the Arctic due to the midnight sun.</p>
       <p>The season generally runs from late August to early April. For a complete month-by-month breakdown of when the skies are darkest and the activity is highest, see our full guide on the <a href="guides/best-time-to-see-northern-lights/">best time to see the northern lights</a>.</p>
 
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4536547386750955"
-          crossorigin="anonymous"></script>
       <ins class="adsbygoogle"
           style="display:block; text-align:center;"
           data-ad-layout="in-article"
           data-ad-format="fluid"
           data-ad-client="ca-pub-4536547386750955"
           data-ad-slot="4270568400"></ins>
-      <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
       <!-- FAQ -->
       <h2 class="h2-mt">Northern Lights Forecast FAQ</h2>
@@ -556,7 +547,7 @@
         <a href="." class="logo">Northern<span>Borealis</span></a>
         <p class="footer-about">Helping travellers find and book the best Northern Lights tours across Europe.</p>
         <div class="kp-social-wrapper">
-          <div class="kp-index">🟡 Live Kp Index: 5</div>
+          <div class="kp-index" id="footerKpIndex">🟡 Live Kp Index: –</div>
           <div class="social-icons">
             <a href="https://www.instagram.com/northernborealisofficial/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
