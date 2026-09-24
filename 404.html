@@ -1,17 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KVY33WVMDP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KVY33WVMDP');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>404 — Lost Under the Northern Lights | Northern Borealis</title>
+  <!-- Important for 404 URLs -->
+  <base href="/">
+
+  <title>Page Not Found (404) | Northern Borealis</title>
+  <meta name="description" content="The page you're looking for could not be found. Explore Northern Lights destinations, tours and travel guides from Northern Borealis.">
   <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#0d1b1a">
+
+  <link rel="icon" href="favicon.ico" sizes="any">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CORRECT CSS LOCATION -->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body class="error-page">
@@ -21,25 +39,28 @@
     <div class="container nav">
 
       <div class="nav-left">
-        <a href="/" class="logo">
+
+        <a href="." class="logo">
           Northern<span>Borealis</span>
         </a>
 
-        <div class="kp-pill" title="Today's forecast maximum Kp index">
+        <a href="forecast/" class="kp-pill" id="kpPill" title="Current live Kp index — click for the full forecast">
           <span class="kp-pill-dot" id="kpPillDot"></span>
-          <span class="kp-pill-label">Kp Index</span>
+          <span class="kp-pill-label">Current Kp Index</span>
           <span class="kp-pill-value" id="kpPillValue">–</span>
-        </div>
+        </a>
+
       </div>
 
       <ul class="nav-links" id="navLinks">
-        <li><a href="/">Home</a></li>
-        <li><a href="/tours/">Tours</a></li>
-        <li><a href="/guides/">Guides</a></li>
-        <li><a href="/about/">About</a></li>
+        <li><a href="destinations/">Destinations</a></li>
+        <li><a href="tours/">Tours</a></li>
+        <li><a href="guides/best-time-to-see-northern-lights/">When to Go</a></li>
+        <li><a href="guides/">Guides</a></li>
+        <li><a href="forecast/">Forecast</a></li>
       </ul>
 
-      <button class="menu-btn" id="menuBtn" aria-label="Open navigation menu">
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
         <span></span>
         <span></span>
         <span></span>
@@ -49,37 +70,43 @@
   </header>
 
 
-  <!-- 404 -->
+  <!-- 404 PAGE -->
   <main class="error-404">
 
-    <!-- Stars -->
-    <div class="error-stars error-stars-1"></div>
-    <div class="error-stars error-stars-2"></div>
+    <!-- Animated stars -->
+    <div class="error-stars error-stars-1" aria-hidden="true"></div>
+    <div class="error-stars error-stars-2" aria-hidden="true"></div>
 
-    <!-- Animated aurora -->
+    <!-- Animated Aurora -->
     <div class="error-aurora" aria-hidden="true">
       <div class="aurora-band aurora-band-1"></div>
       <div class="aurora-band aurora-band-2"></div>
       <div class="aurora-band aurora-band-3"></div>
     </div>
 
-    <!-- Horizon -->
+    <!-- Arctic horizon -->
     <div class="error-horizon" aria-hidden="true"></div>
+
 
     <div class="error-content">
 
+      <!-- Compass -->
       <div class="error-compass" aria-hidden="true">
         <span class="compass-n">N</span>
         <div class="compass-arrow"></div>
       </div>
 
-      <p class="error-eyebrow">YOU'VE WANDERED OFF THE MAP</p>
+      <p class="error-eyebrow">
+        YOU'VE WANDERED OFF THE MAP
+      </p>
 
       <div class="error-number" aria-label="Error 404">
         404
       </div>
 
-      <h1>Lost under the <span>Northern Lights?</span></h1>
+      <h1>
+        Lost under the <span>Northern Lights?</span>
+      </h1>
 
       <p class="error-description">
         This page seems to have disappeared somewhere beyond the Arctic Circle.
@@ -87,19 +114,22 @@
       </p>
 
       <div class="error-actions">
-        <a href="/" class="btn">
+
+        <a href="." class="btn">
           Take Me Home
         </a>
 
-        <a href="/tours/" class="btn btn-ghost">
+        <a href="tours/" class="btn btn-ghost">
           Explore Aurora Tours
         </a>
+
       </div>
 
       <div class="error-tip">
         <span class="error-tip-dot"></span>
+
         <span>
-          Tip: The best adventures sometimes start by getting a little lost.
+          The best adventures sometimes start by getting a little lost.
         </span>
       </div>
 
@@ -108,7 +138,8 @@
   </main>
 
 
-  <script src="js/main.js"></script>
+  <!-- CORRECT JS LOCATION -->
+  <script src="assets/js/main.js"></script>
 
 </body>
 </html>
