@@ -8,47 +8,133 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-KVY33WVMDP');
   </script>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <base href="/">
+
   <title>Northern Lights Guides & Trip Planning (2026 / 2027) | Northern Borealis</title>
   <meta name="description" content="Plan your Northern Lights trip with practical guides to the best time to go, the best places to visit, how to see the aurora and how the Northern Lights work.">
+
   <link rel="canonical" href="https://www.northern-borealis.com/guides/">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#0d1b1a">
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.northern-borealis.com/guides/">
   <meta property="og:title" content="Northern Lights Guides & Trip Planning (2026 / 2027)">
   <meta property="og:description" content="Practical Northern Lights guides covering when to go, where to go, how to see the aurora and what causes it.">
   <meta property="og:site_name" content="Northern Borealis">
-  <meta property="og:url" content="https://www.northern-borealis.com/guides/">
   <meta property="og:image" content="https://www.northern-borealis.com/assets/images/guides-hero.webp">
+  <meta property="og:image:alt" content="Northern Lights over an Arctic landscape">
+
+  <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Northern Lights Guides & Trip Planning (2026 / 2027)">
   <meta name="twitter:description" content="Plan your aurora trip with practical guides to when to go, where to go, how to see the Northern Lights and how the aurora works.">
   <meta name="twitter:image" content="https://www.northern-borealis.com/assets/images/guides-hero.webp">
+  <meta name="twitter:image:alt" content="Northern Lights over an Arctic landscape">
+
   <link rel="icon" href="favicon.ico" sizes="any">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="assets/css/style.css">
 
   <style>
-    .guide-path{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:28px 0 38px}
-    .guide-path-item{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:18px}
-    .guide-path-item strong{display:block;font-family:'Sora',sans-serif;font-size:.95rem;margin-bottom:6px;color:var(--text)}
-    .guide-path-item span{color:var(--muted);font-size:.9rem;line-height:1.55}
-    .guide-label{display:inline-block;color:var(--green);font-size:.78rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;margin-bottom:8px}
-    .country-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
-    .country-links a{display:inline-flex;align-items:center;padding:7px 11px;border:1px solid var(--border);border-radius:50px;color:var(--green);font-size:.88rem;font-weight:700;text-decoration:none}
-    .country-links a:hover{border-color:rgba(95,214,165,.5);background:rgba(95,214,165,.06)}
-    .hub-note{margin:30px 0;padding:22px 24px;background:var(--card);border:1px solid var(--border);border-left:3px solid var(--green);border-radius:var(--radius);color:var(--muted);line-height:1.7}
-    .hub-note strong{color:var(--text)}
-    @media(max-width:900px){.guide-path{grid-template-columns:1fr 1fr}}
-    @media(max-width:560px){.guide-path{grid-template-columns:1fr}}
+    .guide-path{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:14px;
+      margin:28px 0 38px
+    }
+
+    .guide-path-item{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      padding:18px
+    }
+
+    .guide-path-item strong{
+      display:block;
+      font-family:'Sora',sans-serif;
+      font-size:.95rem;
+      margin-bottom:6px;
+      color:var(--text)
+    }
+
+    .guide-path-item span{
+      color:var(--muted);
+      font-size:.9rem;
+      line-height:1.55
+    }
+
+    .guide-label{
+      display:inline-block;
+      color:var(--green);
+      font-size:.78rem;
+      font-weight:800;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+      margin-bottom:8px
+    }
+
+    .country-links{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top:16px
+    }
+
+    .country-links a{
+      display:inline-flex;
+      align-items:center;
+      padding:7px 11px;
+      border:1px solid var(--border);
+      border-radius:50px;
+      color:var(--green);
+      font-size:.88rem;
+      font-weight:700;
+      text-decoration:none
+    }
+
+    .country-links a:hover{
+      border-color:rgba(95,214,165,.5);
+      background:rgba(95,214,165,.06)
+    }
+
+    .hub-note{
+      margin:30px 0;
+      padding:22px 24px;
+      background:var(--card);
+      border:1px solid var(--border);
+      border-left:3px solid var(--green);
+      border-radius:var(--radius);
+      color:var(--muted);
+      line-height:1.7
+    }
+
+    .hub-note strong{
+      color:var(--text)
+    }
+
+    @media(max-width:900px){
+      .guide-path{
+        grid-template-columns:1fr 1fr
+      }
+    }
+
+    @media(max-width:560px){
+      .guide-path{
+        grid-template-columns:1fr
+      }
+    }
   </style>
 
   <!-- Breadcrumb Schema -->
@@ -57,8 +143,55 @@
     "@context":"https://schema.org",
     "@type":"BreadcrumbList",
     "itemListElement":[
-      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.northern-borealis.com/"},
-      {"@type":"ListItem","position":2,"name":"Guides","item":"https://www.northern-borealis.com/guides/"}
+      {
+        "@type":"ListItem",
+        "position":1,
+        "name":"Home",
+        "item":"https://www.northern-borealis.com/"
+      },
+      {
+        "@type":"ListItem",
+        "position":2,
+        "name":"Guides",
+        "item":"https://www.northern-borealis.com/guides/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Guide ItemList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ItemList",
+    "name":"Northern Lights Trip Planning Guides",
+    "itemListOrder":"https://schema.org/ItemListOrderAscending",
+    "numberOfItems":4,
+    "itemListElement":[
+      {
+        "@type":"ListItem",
+        "position":1,
+        "name":"The Best Time to See the Northern Lights",
+        "url":"https://www.northern-borealis.com/guides/best-time-to-see-northern-lights/"
+      },
+      {
+        "@type":"ListItem",
+        "position":2,
+        "name":"Best Places to See the Northern Lights",
+        "url":"https://www.northern-borealis.com/guides/best-places-to-see-northern-lights/"
+      },
+      {
+        "@type":"ListItem",
+        "position":3,
+        "name":"How to See the Northern Lights",
+        "url":"https://www.northern-borealis.com/guides/how-to-see-the-northern-lights/"
+      },
+      {
+        "@type":"ListItem",
+        "position":4,
+        "name":"What Are the Northern Lights?",
+        "url":"https://www.northern-borealis.com/guides/what-are-the-northern-lights/"
+      }
     ]
   }
   </script>
@@ -98,7 +231,7 @@
         "name":"Which Northern Lights destination should I choose?",
         "acceptedAnswer":{
           "@type":"Answer",
-          "text":"The right destination depends on the trip you want. Tromso offers a very large range of tours, Abisko is known for its local clear-sky microclimate, Iceland combines aurora viewing with a broad sightseeing itinerary, the Lofoten Islands offer dramatic photography locations, and Finnish Lapland is popular for winter activities and glass-roof accommodation."
+          "text":"The right destination depends on the trip you want. Tromso has a large selection of aurora tours, Abisko is known for its local clear-sky microclimate, Iceland combines aurora viewing with a broad sightseeing itinerary, the Lofoten Islands offer dramatic photography locations, and Finnish Lapland is popular for winter activities and glass-roof accommodation."
         }
       }
     ]
@@ -119,17 +252,22 @@
   </script>
 
 </head>
+
 <body>
+
   <header id="header">
     <div class="container nav">
+
       <div class="nav-left">
         <a href="." class="logo">Northern<span>Borealis</span></a>
+
         <a href="forecast/" class="kp-pill" id="kpPill" title="Current live Kp index — click for the full forecast">
           <span class="kp-pill-dot" id="kpPillDot"></span>
           <span class="kp-pill-label">Current Kp Index</span>
           <span class="kp-pill-value" id="kpPillValue">–</span>
         </a>
       </div>
+
       <ul class="nav-links" id="navLinks">
         <li><a href="destinations/">Destinations</a></li>
         <li><a href="tours/">Tours</a></li>
@@ -137,321 +275,661 @@
         <li><a href="guides/">Guides</a></li>
         <li><a href="forecast/">Forecast</a></li>
       </ul>
-      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
     </div>
   </header>
 
+
   <!-- HERO -->
   <section class="page-hero" style="background:url('assets/images/guides-hero.webp') center/cover no-repeat;">
+
     <div class="hero-overlay"></div>
+
     <div class="hero-content">
-      <nav class="breadcrumb"><a href=".">Home</a> › <span>Guides</span></nav>
+
+      <nav class="breadcrumb">
+        <a href=".">Home</a> › <span>Guides</span>
+      </nav>
+
       <span class="eyebrow">Northern Lights Trip Planning · 2026 / 2027</span>
+
       <h1>Northern Lights <span>Guides</span></h1>
-      <p>Plan your aurora trip from start to finish — when to go, where to go, how to find the lights and what is actually happening in the sky above you.</p>
+
+      <p>
+        Plan your aurora trip from start to finish — when to go, where to go,
+        how to find the lights and what is actually happening in the sky above you.
+      </p>
+
     </div>
   </section>
+
 
   <main class="article">
     <div class="container-narrow">
 
       <!-- INTRO -->
-      <p class="lead">Seeing the Northern Lights is one of those travel experiences that rewards good planning. The aurora itself cannot be scheduled, but you can dramatically improve the trip by choosing the right season, staying in a strong aurora destination and giving yourself several opportunities to get beneath a clear, dark sky.</p>
+      <p class="lead">
+        Seeing the Northern Lights is one of those travel experiences that rewards good planning.
+        The aurora itself cannot be scheduled, but choosing the right season, staying in a strong
+        aurora destination and allowing several possible viewing nights can give you more
+        opportunities to get beneath a clear, dark sky.
+      </p>
 
-      <p>This guide hub brings together the four questions that matter most when planning an aurora trip: <strong>when should you go, where should you go, how do you actually find the lights, and what causes them?</strong> Start with the planning guides below, then use our destination and tour pages to compare the places and experiences that fit your trip.</p>
+      <p>
+        This guide hub answers the four questions that matter most when planning an aurora trip:
+        <strong>when should you go, where should you go, how do you actually find the lights,
+        and what causes them?</strong> Start with the planning guides below. Once you know where
+        you want to travel, use our <a href="destinations/">Northern Lights destination guides</a>
+        for country-level planning or go directly to our
+        <a href="tours/">Northern Lights tours directory</a> to compare tours from individual
+        Arctic cities and regions.
+      </p>
 
-      <p>If you're completely new to aurora travel, don't worry about trying to understand everything at once. The simplest route is to choose your dates first, narrow down the destination second, and then work out how you want to hunt the lights once you're there.</p>
+      <p>
+        If you're completely new to aurora travel, don't worry about trying to understand
+        everything at once. The simplest route is to choose your dates first, narrow down the
+        destination second, and then work out how you want to hunt the lights once you're there.
+      </p>
+
 
       <!-- PLANNING PATH -->
       <div class="guide-path" aria-label="Northern Lights trip planning steps">
+
         <div class="guide-path-item">
           <strong>1. Choose When</strong>
-          <span>Understand the aurora season, darkness, weather and the differences between winter months.</span>
+          <span>
+            Understand the aurora season, darkness, weather and the differences between winter months.
+          </span>
         </div>
+
         <div class="guide-path-item">
           <strong>2. Choose Where</strong>
-          <span>Compare the main aurora destinations and decide which experience suits your trip.</span>
+          <span>
+            Compare the main aurora destinations and decide which experience suits your trip.
+          </span>
         </div>
+
         <div class="guide-path-item">
           <strong>3. Plan the Hunt</strong>
-          <span>Learn how forecasts, cloud cover, darkness and local conditions affect your chances.</span>
+          <span>
+            Learn how forecasts, cloud cover, darkness and local conditions affect your viewing opportunities.
+          </span>
         </div>
+
         <div class="guide-path-item">
           <strong>4. Understand It</strong>
-          <span>Discover what creates the aurora, why it changes colour and what the Kp index means.</span>
+          <span>
+            Discover what creates the aurora, why it changes colour and what the Kp index means.
+          </span>
         </div>
+
       </div>
+
 
       <!-- Google AdSense -->
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4536547386750955"
           crossorigin="anonymous"></script>
+
       <ins class="adsbygoogle"
           style="display:block; text-align:center;"
           data-ad-layout="in-article"
           data-ad-format="fluid"
           data-ad-client="ca-pub-4536547386750955"
           data-ad-slot="4270568400"></ins>
+
       <script>
           (adsbygoogle = window.adsbygoogle || []).push({});
       </script>
 
+
       <!-- ESSENTIAL GUIDES -->
       <h2 class="h2-mt">Start Planning Your Northern Lights Trip</h2>
-      <p>These four guides cover the essentials. If you're starting from scratch, read them in this order: when to go, where to go, how to see the lights, and then the science behind the aurora.</p>
+
+      <p>
+        These four guides cover the essentials. If you're starting from scratch,
+        read them in this order: when to go, where to go, how to see the lights,
+        and then the science behind the aurora.
+      </p>
+
 
       <div class="tour-list">
 
         <!-- GUIDE 1: BEST TIME -->
         <article class="tour">
+
           <div class="tour-img">
-            <img src="assets/images/guide-best-time.webp" alt="Northern Lights beneath a dark Arctic winter sky" width="600" height="400" loading="lazy">
+            <img
+              src="assets/images/guide-best-time.webp"
+              alt="Northern Lights beneath a dark Arctic winter sky"
+              width="600"
+              height="400"
+              loading="lazy">
           </div>
+
           <div class="tour-content">
+
             <span class="guide-label">Step 1 · Choose Your Dates</span>
+
             <h3>The Best Time to See the Northern Lights</h3>
-            <p>Start here if your travel dates are still flexible. Compare the aurora season month by month, including darkness, weather, winter conditions and the advantages of travelling around the equinoxes. The guide also explains why there is no single "best month" for every destination.</p>
-            <a href="guides/best-time-to-see-northern-lights/" class="btn btn-ghost" style="margin-top:10px">Find the Best Time →</a>
+
+            <p>
+              Start here if your travel dates are still flexible. Compare the aurora season
+              month by month, including darkness, weather, winter conditions and the advantages
+              of travelling around the equinoxes. The guide also explains why there is no
+              single "best month" for every destination.
+            </p>
+
+            <a href="guides/best-time-to-see-northern-lights/"
+               class="btn btn-ghost"
+               style="margin-top:10px">
+              Find the Best Time →
+            </a>
+
           </div>
         </article>
+
 
         <!-- GUIDE 2: BEST PLACES -->
         <article class="tour">
+
           <div class="tour-img">
-            <img src="assets/images/guide-best-places.webp" alt="Northern Lights above an Arctic landscape in northern Europe" width="600" height="400" loading="lazy">
+            <img
+              src="assets/images/guide-best-places.webp"
+              alt="Northern Lights above an Arctic landscape in northern Europe"
+              width="600"
+              height="400"
+              loading="lazy">
           </div>
+
           <div class="tour-content">
+
             <span class="guide-label">Step 2 · Choose Your Destination</span>
+
             <h3>Best Places to See the Northern Lights</h3>
-            <p>Compare the major aurora destinations across Norway, Sweden, Iceland and Finland. We look at clear-sky conditions, accessibility, tour choice and the type of experience each destination offers — from Tromsø and Abisko to Svalbard, Lofoten and Finnish Lapland.</p>
-            <a href="guides/best-places-to-see-northern-lights/" class="btn btn-ghost" style="margin-top:10px">Compare the Best Places →</a>
+
+            <p>
+              Compare the major aurora destinations across Norway, Sweden, Iceland and Finland.
+              We look at clear-sky conditions, accessibility, tour choice and the type of
+              experience each destination offers — from Tromsø and Abisko to Svalbard,
+              Lofoten and Finnish Lapland.
+            </p>
+
+            <a href="guides/best-places-to-see-northern-lights/"
+               class="btn btn-ghost"
+               style="margin-top:10px">
+              Compare the Best Places →
+            </a>
+
           </div>
         </article>
+
 
         <!-- GUIDE 3: HOW TO SEE -->
         <article class="tour">
+
           <div class="tour-img">
-            <img src="assets/images/guide-how-to-see.webp" alt="Travellers watching the Northern Lights during an aurora hunt" width="600" height="400" loading="lazy">
+            <img
+              src="assets/images/guide-how-to-see.webp"
+              alt="Travellers watching the Northern Lights during an aurora hunt"
+              width="600"
+              height="400"
+              loading="lazy">
           </div>
+
           <div class="tour-content">
+
             <span class="guide-label">Step 3 · Plan Your Aurora Hunt</span>
+
             <h3>How to See the Northern Lights</h3>
-            <p>Once the flights are booked, this is the practical guide you need. Learn how darkness, cloud cover, aurora forecasts and the Kp index fit together, where to look, what time to head out and when a guided chase can make more sense than hunting independently.</p>
-            <a href="guides/how-to-see-the-northern-lights/" class="btn btn-ghost" style="margin-top:10px">Learn How to Find Them →</a>
+
+            <p>
+              Once the flights are booked, this is the practical guide you need.
+              Learn how darkness, cloud cover, aurora forecasts and the Kp index fit together,
+              where to look, what time to head out and when a guided chase can make more
+              sense than hunting independently.
+            </p>
+
+            <a href="guides/how-to-see-the-northern-lights/"
+               class="btn btn-ghost"
+               style="margin-top:10px">
+              Learn How to Find Them →
+            </a>
+
           </div>
         </article>
+
 
         <!-- GUIDE 4: WHAT ARE THEY -->
         <article class="tour">
+
           <div class="tour-img">
-            <img src="assets/images/guide-what-are-northern-lights.webp" alt="Green aurora borealis showing the colours and structure of the Northern Lights" width="600" height="400" loading="lazy">
+            <img
+              src="assets/images/guide-what-are-northern-lights.webp"
+              alt="Green aurora borealis showing the colours and structure of the Northern Lights"
+              width="600"
+              height="400"
+              loading="lazy">
           </div>
+
           <div class="tour-content">
+
             <span class="guide-label">Step 4 · Understand the Aurora</span>
+
             <h3>What Are the Northern Lights?</h3>
-            <p>Go behind the spectacle and understand what you're actually watching. This guide explains the solar wind, Earth's magnetic field, the auroral oval, why different colours appear and why some displays remain faint while others fill the sky.</p>
-            <a href="guides/what-are-the-northern-lights/" class="btn btn-ghost" style="margin-top:10px">Understand the Aurora →</a>
+
+            <p>
+              Go behind the spectacle and understand what you're actually watching.
+              This guide explains the solar wind, Earth's magnetic field, the auroral oval,
+              why different colours appear and why some displays remain faint while others
+              fill the sky.
+            </p>
+
+            <a href="guides/what-are-the-northern-lights/"
+               class="btn btn-ghost"
+               style="margin-top:10px">
+              Understand the Aurora →
+            </a>
+
           </div>
         </article>
+
       </div>
 
+
       <div class="hub-note">
-        <strong>Already know where you're going?</strong> Skip the general planning and head straight to the destination section below. Each country guide connects to our city-specific Northern Lights tour comparisons.
+        <strong>Already know where you're going?</strong>
+        Skip the general planning and head straight to our
+        <a href="destinations/">Northern Lights destinations</a> or browse
+        <a href="tours/">Northern Lights tours by city and region</a>.
       </div>
+
 
       <!-- Google AdSense -->
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4536547386750955"
           crossorigin="anonymous"></script>
+
       <ins class="adsbygoogle"
           style="display:block; text-align:center;"
           data-ad-layout="in-article"
           data-ad-format="fluid"
           data-ad-client="ca-pub-4536547386750955"
           data-ad-slot="4270568400"></ins>
+
       <script>
           (adsbygoogle = window.adsbygoogle || []).push({});
       </script>
 
+
       <!-- DESTINATION BRIDGE -->
       <h2 class="h2-mt">Choose Your Northern Lights Destination</h2>
-      <p>The auroral oval stretches across several of Europe's northernmost regions, but each destination offers a different kind of trip. Norway has the widest range of city-based aurora experiences, Sweden combines inland Arctic conditions with famous viewing locations such as Abisko, Iceland makes it easy to combine the lights with a wider road trip, and Finnish Lapland pairs aurora hunting with classic winter activities and distinctive accommodation.</p>
+
+      <p>
+        The auroral oval stretches across several of Europe's northernmost regions, but each
+        destination offers a different kind of trip. Norway combines several distinct Arctic
+        bases with a large selection of guided aurora experiences, Sweden pairs inland Arctic
+        conditions with famous viewing locations such as Abisko, Iceland makes it easy to
+        combine the lights with a wider sightseeing trip, and Finnish Lapland combines
+        aurora hunting with classic winter activities and distinctive accommodation.
+      </p>
+
 
       <div class="grid grid-2" style="margin-top:24px;">
 
-        <!-- Norway -->
+
+        <!-- NORWAY -->
         <div class="card card-text">
           <div class="card-body">
+
             <h3 style="display:flex;align-items:center;gap:10px;">
-              <img src="https://flagcdn.com/w40/no.png" width="28" height="20" alt="Norway flag" loading="lazy" style="border-radius:2px;">
+              <img
+                src="https://flagcdn.com/w40/no.png"
+                width="28"
+                height="20"
+                alt="Norway flag"
+                loading="lazy"
+                style="border-radius:2px;">
               <a href="destinations/norway/">Norway</a>
             </h3>
-            <p>Choose Norway for a huge variety of aurora tours and very different Arctic bases — from lively Tromsø and quiet Alta to the mountain-and-fjord scenery of Lofoten and the High Arctic environment of Svalbard.</p>
+
+            <p>
+              Choose Norway for a broad variety of aurora experiences and very different
+              Arctic bases — from lively Tromsø and quiet Alta to the mountain-and-fjord
+              scenery around Svolvær in the Lofoten Islands and the High Arctic environment
+              of Svalbard.
+            </p>
+
             <div class="country-links">
               <a href="tours/tromso-northern-lights-tour/">Tromsø Tours</a>
               <a href="tours/alta-northern-lights-tour/">Alta Tours</a>
               <a href="tours/svolvaer-northern-lights-tour/">Svolvær Tours</a>
               <a href="tours/svalbard-northern-lights-tour/">Svalbard Tours</a>
             </div>
+
           </div>
         </div>
 
-        <!-- Iceland -->
+
+        <!-- ICELAND -->
         <div class="card card-text">
           <div class="card-body">
+
             <h3 style="display:flex;align-items:center;gap:10px;">
-              <img src="https://flagcdn.com/w40/is.png" width="28" height="20" alt="Iceland flag" loading="lazy" style="border-radius:2px;">
+              <img
+                src="https://flagcdn.com/w40/is.png"
+                width="28"
+                height="20"
+                alt="Iceland flag"
+                loading="lazy"
+                style="border-radius:2px;">
               <a href="destinations/iceland/">Iceland</a>
             </h3>
-            <p>Choose Iceland if the Northern Lights are one part of a broader winter trip. Reykjavik is the easiest base for first-time visitors, while Akureyri offers a smaller northern base with quick access to darker surroundings.</p>
+
+            <p>
+              Choose Iceland if the Northern Lights are one part of a broader winter trip.
+              Reykjavik is the country's main base for organised aurora tours, while Akureyri
+              offers a smaller northern base with quick access to darker surroundings.
+            </p>
+
             <div class="country-links">
               <a href="tours/reykjavik-northern-lights-tour/">Reykjavík Tours</a>
               <a href="tours/akureyri-northern-lights-tour/">Akureyri Tours</a>
             </div>
+
           </div>
         </div>
 
-        <!-- Sweden -->
+
+        <!-- SWEDEN -->
         <div class="card card-text">
           <div class="card-body">
+
             <h3 style="display:flex;align-items:center;gap:10px;">
-              <img src="https://flagcdn.com/w40/se.png" width="28" height="20" alt="Sweden flag" loading="lazy" style="border-radius:2px;">
+              <img
+                src="https://flagcdn.com/w40/se.png"
+                width="28"
+                height="20"
+                alt="Sweden flag"
+                loading="lazy"
+                style="border-radius:2px;">
               <a href="destinations/sweden/">Sweden</a>
             </h3>
-            <p>Choose Swedish Lapland for inland Arctic landscapes and two very different bases. Abisko is especially known for its local microclimate, while Kiruna combines aurora viewing with a larger range of Lapland activities and easier transport connections.</p>
+
+            <p>
+              Choose Swedish Lapland for inland Arctic landscapes and two very different
+              bases. Abisko is especially known for its local microclimate, while Kiruna
+              combines aurora viewing with a broader range of Lapland activities and
+              transport connections.
+            </p>
+
             <div class="country-links">
               <a href="tours/abisko-northern-lights-tour/">Abisko Tours</a>
               <a href="tours/kiruna-northern-lights-tour/">Kiruna Tours</a>
             </div>
+
           </div>
         </div>
 
-        <!-- Finland -->
+
+        <!-- FINLAND -->
         <div class="card card-text">
           <div class="card-body">
+
             <h3 style="display:flex;align-items:center;gap:10px;">
-              <img src="https://flagcdn.com/w40/fi.png" width="28" height="20" alt="Finland flag" loading="lazy" style="border-radius:2px;">
+              <img
+                src="https://flagcdn.com/w40/fi.png"
+                width="28"
+                height="20"
+                alt="Finland flag"
+                loading="lazy"
+                style="border-radius:2px;">
               <a href="destinations/finland/">Finland</a>
             </h3>
-            <p>Choose Finnish Lapland if you want to build a complete winter holiday around the aurora. Reindeer rides, husky experiences, snowmobiling, saunas and glass-roof accommodation make it particularly easy to combine Northern Lights viewing with daytime activities.</p>
+
+            <p>
+              Choose Finnish Lapland if you want to build a complete winter holiday around
+              the aurora. Rovaniemi combines Northern Lights tours with Santa Claus Village
+              and a large choice of winter activities, while Levi pairs aurora hunting with
+              skiing, snowmobiling and a quieter resort setting.
+            </p>
+
             <div class="country-links">
               <a href="tours/lapland-northern-lights-tour/">Lapland Tours</a>
+              <a href="tours/rovaniemi-northern-lights-tour/">Rovaniemi Tours</a>
+              <a href="tours/levi-northern-lights-tour/">Levi Tours</a>
             </div>
+
           </div>
         </div>
+
       </div>
+
+
+      <!-- TOUR DIRECTORY BRIDGE -->
+      <div class="hub-note">
+        <strong>Looking for a specific tour?</strong>
+        Our <a href="tours/">Northern Lights tours directory</a> brings together
+        all of our city and region comparisons across Norway, Iceland, Sweden and Finland.
+        Use it once you know where you're travelling and want to compare the available
+        aurora experiences.
+      </div>
+
 
       <!-- LIVE FORECAST BRIDGE -->
       <h2 class="h2-mt">Planning Tonight's Aurora Hunt?</h2>
-      <p>Once you're in the Arctic, long-range planning gives way to short-term conditions. Cloud cover and local weather can matter just as much as geomagnetic activity, so check the latest conditions before deciding when and where to head out.</p>
+
+      <p>
+        Once you're in the Arctic, long-range planning gives way to short-term conditions.
+        Cloud cover and local weather can matter just as much as geomagnetic activity,
+        so check the latest conditions before deciding when and where to head out.
+      </p>
+
       <div class="cta-banner" style="margin-top:24px;">
+
         <h2>Check the Northern Lights Forecast</h2>
-        <p>See the current Kp index and use the forecast alongside local cloud conditions when planning your next viewing attempt.</p>
+
+        <p>
+          See the current Kp index and use the forecast alongside local cloud conditions
+          when planning your next viewing attempt.
+        </p>
+
         <a href="forecast/" class="btn">View the Aurora Forecast</a>
+
       </div>
+
 
       <!-- FAQ -->
       <h2 class="h2-mt">Northern Lights Trip Planning FAQs</h2>
+
       <div class="faq">
+
         <details>
           <summary>🧭 What should I plan first for a Northern Lights trip?</summary>
-          <div class="faq-a">Start with the time of year and destination. You need sufficiently dark nights, a location within or near the auroral oval, and enough time in the destination to give yourself multiple opportunities for clear skies. After choosing when and where to go, compare local Northern Lights tours and plan the rest of your itinerary around them.</div>
+          <div class="faq-a">
+            Start with the time of year and destination. You need sufficiently dark nights,
+            a location within or near the auroral oval, and enough time in the destination
+            to give yourself multiple opportunities for clear skies. After choosing when
+            and where to go, compare local Northern Lights tours and plan the rest of your
+            itinerary around them.
+          </div>
         </details>
+
 
         <details>
           <summary>🚙 Should I book a Northern Lights tour or go hunting on my own?</summary>
-          <div class="faq-a">Both are possible. Independent aurora hunting gives you flexibility, but a guided tour is often easier for first-time visitors because local guides follow cloud forecasts, know suitable dark-sky locations and handle winter driving. Travellers who are comfortable driving in Arctic conditions can also hunt independently with reliable weather and aurora forecasts.</div>
+          <div class="faq-a">
+            Both are possible. Independent aurora hunting gives you flexibility, but a
+            guided tour is often easier for first-time visitors because local guides follow
+            cloud forecasts, know suitable dark-sky locations and handle winter driving.
+            Travellers who are comfortable driving in Arctic conditions can also hunt
+            independently with reliable weather and aurora forecasts.
+          </div>
         </details>
+
 
         <details>
           <summary>🌌 How many nights should I allow for seeing the Northern Lights?</summary>
-          <div class="faq-a">There is no guaranteed number because cloud cover and aurora activity vary from night to night. Staying for several nights gives you more opportunities than relying on a single evening. If seeing the aurora is a major reason for your trip, build multiple possible viewing nights into the itinerary.</div>
+          <div class="faq-a">
+            There is no guaranteed number because cloud cover and aurora activity vary from
+            night to night. Staying for several nights gives you more opportunities than
+            relying on a single evening. If seeing the aurora is a major reason for your trip,
+            build multiple possible viewing nights into the itinerary.
+          </div>
         </details>
+
 
         <details>
           <summary>📍 Which Northern Lights destination should I choose?</summary>
-          <div class="faq-a">The right destination depends on the trip you want. Tromsø offers a very large range of tours, Abisko is known for its local clear-sky microclimate, Iceland combines aurora viewing with a broad sightseeing itinerary, the Lofoten Islands offer dramatic photography locations, and Finnish Lapland is popular for winter activities and glass-roof accommodation.</div>
+          <div class="faq-a">
+            The right destination depends on the trip you want. Tromsø has a large selection
+            of aurora tours, Abisko is known for its local clear-sky microclimate, Iceland
+            combines aurora viewing with a broad sightseeing itinerary, the Lofoten Islands
+            offer dramatic photography locations, and Finnish Lapland is popular for winter
+            activities and glass-roof accommodation.
+          </div>
         </details>
+
       </div>
+
 
       <!-- FINAL CTA -->
       <div class="cta-banner cta-mt">
+
         <h2>Ready to Start Planning?</h2>
-        <p>Compare Northern Lights destinations across Norway, Iceland, Sweden and Finland, then explore our city-by-city tour guides.</p>
+
+        <p>
+          Compare Northern Lights destinations across Norway, Iceland, Sweden and Finland,
+          then explore our city-by-city tour guides.
+        </p>
+
         <a href="destinations/" class="btn">Browse All Destinations</a>
+
       </div>
 
     </div>
   </main>
 
-<footer>
-  <div class="container">
-    <div class="disclosure">⚡ <strong>Affiliate Disclosure:</strong> Northern Borealis is not a tour operator. We independently review and recommend Northern Lights tours from trusted booking platforms. If you book through our links, we may earn a commission at no extra cost to you.</div>
-    <div class="footer-grid">
-      <div class="footer-col">
-        <a href="." class="logo">Northern<span>Borealis</span></a>
-        <p class="footer-about">Helping travellers find and book the best Northern Lights tours across Europe.</p>
-        <div class="kp-social-wrapper">
-          <a href="forecast/" class="kp-index">
-            <span class="kp-pill-dot" id="footerKpDot"></span>
-            Live Kp: <span id="footerKpValue">–</span>
-          </a>
-          <div class="social-icons">
-            <a href="https://www.instagram.com/northernborealisofficial/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                <circle cx="17.5" cy="6.5" r="1.5"></circle>
-              </svg>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+
+      <div class="disclosure">
+        ⚡ <strong>Affiliate Disclosure:</strong>
+        Northern Borealis is not a tour operator. We independently review and recommend
+        Northern Lights tours from trusted booking platforms. If you book through our links,
+        we may earn a commission at no extra cost to you.
+      </div>
+
+      <div class="footer-grid">
+
+        <div class="footer-col">
+
+          <a href="." class="logo">Northern<span>Borealis</span></a>
+
+          <p class="footer-about">
+            Helping travellers find and book the best Northern Lights tours across Europe.
+          </p>
+
+          <div class="kp-social-wrapper">
+
+            <a href="forecast/" class="kp-index">
+              <span class="kp-pill-dot" id="footerKpDot"></span>
+              Live Kp: <span id="footerKpValue">–</span>
             </a>
-            <a href="https://www.facebook.com/NorthernBorealisOfficial/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M18 2h-3a6 6 0 0 0-6 6v3H7v4h2v8h4v-8h3l1-4h-4V8a1 1 0 0 1 1-1h3z"></path>
-              </svg>
-            </a>
-            <a href="https://www.tiktok.com/@northernborealisofficial" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.1 1.82 2.84 2.84 0 0 1 2.6-4.53 2.86 2.86 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-.54-.05z"></path>
-              </svg>
-            </a>
-            <a href="https://www.pinterest.com/Northern_Borealis/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.223-.937 1.58-6.685 1.58-6.685s-.389-.779-.389-1.937c0-1.816.951-3.194 2.138-3.194 1.009 0 1.497.757 1.497 1.664 0 1.013-.645 2.527-.975 3.93-.276 1.335.588 2.415 1.749 2.415 2.096 0 3.71-2.21 3.71-5.402 0-2.828-2.02-4.8-4.9-4.8-3.338 0-5.291 2.502-5.291 5.093 0 1.01.389 2.09.873 2.673.096.119.11.222.083.338-.091.378-.293 1.189-.332 1.355-.047.203-.145.248-.334.149-1.246-.656-2.027-2.708-2.027-4.365 0-3.728 2.713-7.15 7.824-7.15 4.11 0 7.304 2.926 7.304 6.841 0 4.082-2.572 7.361-6.144 7.361-1.201 0-2.33-.623-2.715-1.357-.595 2.279-.875 3.563-1.229 4.882 2.649-1.073 5.089-2.631 6.928-4.816 3.241-3.956 4.242-9.596 2.87-14.48C21.105 2.505 16.876 0 12 0z"/>
-              </svg>
-            </a>
+
+            <div class="social-icons">
+
+              <a href="https://www.instagram.com/northernborealisofficial/"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="Instagram">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <circle cx="17.5" cy="6.5" r="1.5"></circle>
+                </svg>
+              </a>
+
+              <a href="https://www.facebook.com/NorthernBorealisOfficial/"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="Facebook">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 2h-3a6 6 0 0 0-6 6v3H7v4h2v8h4v-8h3l1-4h-4V8a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </a>
+
+              <a href="https://www.tiktok.com/@northernborealisofficial"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="TikTok">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.1 1.82 2.84 2.84 0 0 1 2.6-4.53 2.86 2.86 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-.54-.05z"></path>
+                </svg>
+              </a>
+
+              <a href="https://www.pinterest.com/Northern_Borealis/"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="Pinterest">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.223-.937 1.58-6.685 1.58-6.685s-.389-.779-.389-1.937c0-1.816.951-3.194 2.138-3.194 1.009 0 1.497.757 1.497 1.664 0 1.013-.645 2.527-.975 3.93-.276 1.335.588 2.415 1.749 2.415 2.096 0 3.71-2.21 3.71-5.402 0-2.828-2.02-4.8-4.9-4.8-3.338 0-5.291 2.502-5.291 5.093 0 1.01.389 2.09.873 2.673.096.119.11.222.083.338-.091.378-.293 1.189-.332 1.355-.047.203-.145.248-.334.149-1.246-.656-2.027-2.708-2.027-4.365 0-3.728 2.713-7.15 7.824-7.15 4.11 0 7.304 2.926 7.304 6.841 0 4.082-2.572 7.361-6.144 7.361-1.201 0-2.33-.623-2.715-1.357-.595 2.279-.875 3.563-1.229 4.882 2.649-1.073 5.089-2.631 6.928-4.816 3.241-3.956 4.242-9.596 2.87-14.48C21.105 2.505 16.876 0 12 0z"/>
+                </svg>
+              </a>
+
+            </div>
           </div>
         </div>
+
+
+        <div class="footer-col">
+          <h4>Destinations</h4>
+          <ul>
+            <li><a href="destinations/norway/">Norway</a></li>
+            <li><a href="destinations/iceland/">Iceland</a></li>
+            <li><a href="destinations/finland/">Finland</a></li>
+            <li><a href="destinations/sweden/">Sweden</a></li>
+          </ul>
+        </div>
+
+
+        <div class="footer-col">
+          <h4>Plan</h4>
+          <ul>
+            <li><a href="guides/best-places-to-see-northern-lights/">Best Places</a></li>
+            <li><a href="guides/best-time-to-see-northern-lights/">When to Go</a></li>
+            <li><a href="guides/what-are-the-northern-lights/">What Are They?</a></li>
+            <li><a href="guides/how-to-see-the-northern-lights/">How to See Them</a></li>
+          </ul>
+        </div>
+
+
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="legal/about/">About Us</a></li>
+            <li><a href="contact/">Contact</a></li>
+            <li><a href="legal/affiliate-disclosure/">Affiliate Disclosure</a></li>
+            <li><a href="legal/privacy-policy/">Privacy Policy</a></li>
+          </ul>
+        </div>
+
       </div>
-      <div class="footer-col">
-        <h4>Destinations</h4>
-        <ul>
-          <li><a href="destinations/norway/">Norway</a></li>
-          <li><a href="destinations/iceland/">Iceland</a></li>
-          <li><a href="destinations/finland/">Finland</a></li>
-          <li><a href="destinations/sweden/">Sweden</a></li>
-        </ul>
+
+      <div class="footer-bottom">
+        © 2026 Northern Borealis. All rights reserved.
       </div>
-      <div class="footer-col">
-        <h4>Plan</h4>
-        <ul>
-          <li><a href="guides/best-places-to-see-northern-lights/">Best Places</a></li>
-          <li><a href="guides/best-time-to-see-northern-lights/">When to Go</a></li>
-          <li><a href="guides/what-are-the-northern-lights/">What Are They?</a></li>
-          <li><a href="guides/how-to-see-the-northern-lights/">How to See Them</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>About</h4>
-        <ul>
-          <li><a href="legal/about/">About Us</a></li>
-          <li><a href="contact/">Contact</a></li>
-          <li><a href="legal/affiliate-disclosure/">Affiliate Disclosure</a></li>
-          <li><a href="legal/privacy-policy/">Privacy Policy</a></li>
-        </ul>
-      </div>
+
     </div>
-    <div class="footer-bottom">© 2026 Northern Borealis. All rights reserved.</div>
-  </div>
-</footer>
+  </footer>
 
   <script src="assets/js/main.js"></script>
+
 </body>
 </html>
