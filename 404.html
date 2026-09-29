@@ -35,39 +35,215 @@
 <body class="error-page">
 
   <!-- HEADER -->
-  <header id="header">
-    <div class="container nav">
+  <header id="header" class="site-header">
+  <div class="container nav">
 
-      <div class="nav-left">
+    <!-- BRAND + LIVE KP -->
+    <div class="nav-left">
 
-        <a href="." class="logo">
-          Northern<span>Borealis</span>
-        </a>
+      <a href="." class="logo" aria-label="Northern Borealis home">
+        Northern<span>Borealis</span>
+      </a>
 
-        <a href="forecast/" class="kp-pill" id="kpPill" title="Current live Kp index — click for the full forecast">
-          <span class="kp-pill-dot" id="kpPillDot"></span>
-          <span class="kp-pill-label">Current Kp Index</span>
-          <span class="kp-pill-value" id="kpPillValue">–</span>
-        </a>
+      <a href="forecast/"
+         class="kp-pill"
+         id="kpPill"
+         title="Current live Kp index — view the full Northern Lights forecast">
 
-      </div>
+        <span class="kp-pill-dot" id="kpPillDot"></span>
 
-      <ul class="nav-links" id="navLinks">
-        <li><a href="destinations/">Destinations</a></li>
-        <li><a href="tours/">Tours</a></li>
-        <li><a href="guides/best-time-to-see-northern-lights/">When to Go</a></li>
-        <li><a href="guides/">Guides</a></li>
-        <li><a href="forecast/">Forecast</a></li>
-      </ul>
+        <span class="kp-pill-label">
+          Current Kp Index
+        </span>
 
-      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+        <span class="kp-pill-value" id="kpPillValue">–</span>
+
+      </a>
 
     </div>
-  </header>
+
+
+    <!-- DESKTOP / MOBILE NAVIGATION -->
+    <ul class="nav-links" id="navLinks">
+
+      <!-- DESTINATIONS DROPDOWN -->
+      <li class="nav-dropdown">
+
+        <a href="destinations/" class="nav-dropdown-toggle">
+          Destinations
+          <svg class="nav-chevron"
+               width="12"
+               height="12"
+               viewBox="0 0 24 24"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="2.5"
+               aria-hidden="true">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </a>
+
+        <div class="nav-dropdown-menu">
+
+          <a href="destinations/norway/">
+            <span class="dropdown-flag">🇳🇴</span>
+            <span>
+              <strong>Norway</strong>
+              <small>Tromsø, Alta, Lofoten & Svalbard</small>
+            </span>
+          </a>
+
+          <a href="destinations/iceland/">
+            <span class="dropdown-flag">🇮🇸</span>
+            <span>
+              <strong>Iceland</strong>
+              <small>Reykjavík, Akureyri & beyond</small>
+            </span>
+          </a>
+
+          <a href="destinations/finland/">
+            <span class="dropdown-flag">🇫🇮</span>
+            <span>
+              <strong>Finland</strong>
+              <small>Rovaniemi, Levi & Lapland</small>
+            </span>
+          </a>
+
+          <a href="destinations/sweden/">
+            <span class="dropdown-flag">🇸🇪</span>
+            <span>
+              <strong>Sweden</strong>
+              <small>Abisko, Kiruna & Swedish Lapland</small>
+            </span>
+          </a>
+
+          <div class="dropdown-footer">
+            <a href="destinations/">
+              Explore all destinations →
+            </a>
+          </div>
+
+        </div>
+
+      </li>
+
+
+      <!-- TOURS -->
+      <li>
+        <a href="tours/">Tours</a>
+      </li>
+
+
+      <!-- WHEN TO GO -->
+      <li>
+        <a href="guides/best-time-to-see-northern-lights/">
+          When to Go
+        </a>
+      </li>
+
+
+      <!-- GUIDES DROPDOWN -->
+      <li class="nav-dropdown">
+
+        <a href="guides/" class="nav-dropdown-toggle">
+          Guides
+          <svg class="nav-chevron"
+               width="12"
+               height="12"
+               viewBox="0 0 24 24"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="2.5"
+               aria-hidden="true">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </a>
+
+        <div class="nav-dropdown-menu nav-dropdown-guides">
+
+          <a href="guides/best-time-to-see-northern-lights/">
+            <span class="dropdown-icon">◷</span>
+            <span>
+              <strong>Best Time to See the Northern Lights</strong>
+              <small>Season, months & conditions</small>
+            </span>
+          </a>
+
+          <a href="guides/best-places-to-see-northern-lights/">
+            <span class="dropdown-icon">⌖</span>
+            <span>
+              <strong>Best Places to See the Northern Lights</strong>
+              <small>Compare Europe's top destinations</small>
+            </span>
+          </a>
+
+          <a href="guides/how-to-see-the-northern-lights/">
+            <span class="dropdown-icon">✦</span>
+            <span>
+              <strong>How to See the Northern Lights</strong>
+              <small>Forecasts, clouds & aurora hunting</small>
+            </span>
+          </a>
+
+          <a href="guides/how-to-photograph-northern-lights/">
+            <span class="dropdown-icon">◉</span>
+            <span>
+              <strong>Northern Lights Photography</strong>
+              <small>Camera settings & techniques</small>
+            </span>
+          </a>
+
+          <a href="guides/how-to-photograph-northern-lights-with-iphone/">
+            <span class="dropdown-icon">▣</span>
+            <span>
+              <strong>Photograph the Aurora with iPhone</strong>
+              <small>Night mode, exposure & composition</small>
+            </span>
+          </a>
+
+          <a href="guides/what-are-the-northern-lights/">
+            <span class="dropdown-icon">◎</span>
+            <span>
+              <strong>What Are the Northern Lights?</strong>
+              <small>The science behind the aurora</small>
+            </span>
+          </a>
+
+          <div class="dropdown-footer">
+            <a href="guides/">
+              Browse all Northern Lights guides →
+            </a>
+          </div>
+
+        </div>
+
+      </li>
+
+
+      <!-- FORECAST -->
+      <li>
+        <a href="forecast/" class="nav-forecast">
+          Forecast
+        </a>
+      </li>
+
+    </ul>
+
+
+    <!-- MOBILE MENU -->
+    <button class="menu-btn"
+            id="menuBtn"
+            aria-label="Toggle menu"
+            aria-expanded="false">
+
+      <span></span>
+      <span></span>
+      <span></span>
+
+    </button>
+
+  </div>
+</header>
 
 
   <!-- 404 PAGE -->
