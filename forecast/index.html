@@ -3,26 +3,37 @@
 <head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KVY33WVMDP"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-KVY33WVMDP');</script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KVY33WVMDP');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <base href="/">
-  <title>Northern Lights Forecast Tonight — Live NOAA Aurora & Kp Index | Northern Borealis</title>
-  <meta name="description" content="Check the Northern Lights forecast tonight with live NOAA space-weather data, a 3-hour Kp timeline, 3-day geomagnetic outlook and aurora view-line maps.">
+  <title>Northern Lights Forecast Tonight — Live 3-Day Aurora & Kp Index | Northern Borealis</title>
+  <meta name="description" content="Check the Northern Lights forecast tonight with live NOAA Kp data, 3-hour activity periods, a 3-day geomagnetic forecast and aurora view-line maps.">
   <link rel="canonical" href="https://www.northern-borealis.com/forecast/">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#0d1b1a">
+
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.northern-borealis.com/forecast/">
-  <meta property="og:title" content="Northern Lights Forecast Tonight — Live NOAA Aurora & Kp Index">
-  <meta property="og:description" content="Live NOAA aurora data with tonight's Kp outlook, 3-hour forecast timeline, 3-day outlook and view-line maps.">
+  <meta property="og:title" content="Northern Lights Forecast Tonight — Live Aurora & Kp Index">
+  <meta property="og:description" content="Live NOAA geomagnetic data, 3-hour Kp periods, a 3-day forecast and aurora view-line maps for planning tonight's Northern Lights hunt.">
   <meta property="og:site_name" content="Northern Borealis">
   <meta property="og:image" content="https://www.northern-borealis.com/assets/images/aurora-forecast.webp">
+  <meta property="og:image:secure_url" content="https://www.northern-borealis.com/assets/images/aurora-forecast.webp">
   <meta property="og:image:alt" content="Northern Lights forecast over an Arctic landscape">
+
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Northern Lights Forecast Tonight — Live NOAA Aurora & Kp Index">
-  <meta name="twitter:description" content="Live NOAA aurora data with tonight's Kp outlook, 3-hour forecast timeline and 3-day outlook.">
+  <meta name="twitter:title" content="Northern Lights Forecast Tonight — Live Aurora & Kp Index">
+  <meta name="twitter:description" content="Live NOAA geomagnetic data, 3-hour Kp periods and a 3-day Northern Lights forecast.">
   <meta name="twitter:image" content="https://www.northern-borealis.com/assets/images/aurora-forecast.webp">
+  <meta name="twitter:image:alt" content="Northern Lights forecast over an Arctic landscape">
+
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,72 +41,283 @@
   <link rel="stylesheet" href="assets/css/style.css">
 
   <style>
-    .forecast-shell{padding-top:56px}.forecast-head{text-align:center;max-width:760px;margin:0 auto 30px}.forecast-head .live-source{display:inline-flex;align-items:center;gap:8px;color:var(--green);font:700 .76rem 'Sora',sans-serif;letter-spacing:.1em;text-transform:uppercase}.live-source-dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px rgba(95,214,165,.10),0 0 16px rgba(95,214,165,.55)}.forecast-head h2{margin:12px 0 10px}.forecast-head p{color:var(--muted);margin:0}.forecast-updated{margin-top:10px!important;font-size:.84rem}.forecast-dashboard{max-width:980px;margin:0 auto;display:grid;gap:18px}.tonight-card,.day-card,.forecast-explainer,.forecast-map-card,.cloud-card{background:var(--card);border:1px solid var(--border);border-radius:24px;box-shadow:0 14px 40px rgba(0,0,0,.16)}.tonight-card{padding:28px;position:relative;overflow:hidden}.tonight-card:before{content:"";position:absolute;width:360px;height:360px;border-radius:50%;right:-160px;top:-210px;background:radial-gradient(circle,rgba(95,214,165,.13),transparent 68%);pointer-events:none}.tonight-top{display:flex;align-items:flex-start;justify-content:space-between;gap:22px}.tonight-label,.day-label{font:700 .75rem 'Sora',sans-serif;text-transform:uppercase;letter-spacing:.1em;color:var(--green)}.tonight-date,.day-date{color:var(--muted);font-size:.88rem;margin-top:5px}.tonight-kp{display:flex;align-items:baseline;gap:10px;margin:18px 0 4px}.tonight-kp span{font:600 1rem 'Sora',sans-serif;color:var(--muted)}.tonight-kp strong{font:800 4.2rem/1 'Sora',sans-serif}.activity-label{font:700 .8rem 'Sora',sans-serif;letter-spacing:.08em;text-transform:uppercase}.forecast-note{color:var(--muted);font-size:.9rem;line-height:1.6;margin:12px 0 0;max-width:650px}.timeline-wrap{margin-top:28px;padding-top:24px;border-top:1px solid var(--border)}.timeline-title{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-bottom:14px}.timeline-title strong{font:700 .9rem 'Sora',sans-serif}.timeline-title span{font-size:.8rem;color:var(--muted)}.kp-timeline{display:grid;grid-template-columns:repeat(8,minmax(62px,1fr));gap:8px;overflow-x:auto;padding-bottom:4px}.kp-slot{min-width:62px;text-align:center;border:1px solid var(--border);border-radius:14px;padding:11px 6px;background:rgba(255,255,255,.018)}.kp-slot.best{border-color:rgba(95,214,165,.45);background:rgba(95,214,165,.055)}.kp-slot .time{display:block;color:var(--muted);font-size:.74rem;margin-bottom:7px}.kp-slot .value{display:block;font:800 1.15rem 'Sora',sans-serif}.best-window{margin-top:14px;color:var(--muted);font-size:.86rem}.best-window strong{color:var(--text)}.secondary-days{display:grid;grid-template-columns:1fr 1fr;gap:18px}.day-card{padding:22px 24px;display:flex;align-items:center;justify-content:space-between;gap:18px}.day-kp{text-align:right}.day-kp strong{display:block;font:800 2.35rem/1 'Sora',sans-serif}.day-kp span{display:block;font-size:.75rem;margin-top:7px;font-weight:700;text-transform:uppercase;letter-spacing:.06em}.forecast-explainer{padding:24px 26px;border-left:3px solid var(--green)}.forecast-explainer h3{margin:0 0 10px;font-size:1.05rem}.forecast-explainer p{color:var(--muted);line-height:1.7;margin:0}.forecast-explainer strong{color:var(--text)}.kp-scale{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}.scale-item{background:var(--card);border:1px solid var(--border);border-radius:15px;padding:14px 10px;text-align:center}.scale-dot{width:10px;height:10px;border-radius:50%;margin:0 auto 8px}.scale-item strong{display:block;font:700 .82rem 'Sora',sans-serif}.scale-item span{display:block;color:var(--muted);font-size:.72rem;margin-top:4px}.maps-heading{text-align:center;margin:26px 0 0}.maps-heading h3{margin-bottom:7px}.maps-heading p{color:var(--muted);font-size:.9rem;margin:0}.forecast-maps{display:grid;grid-template-columns:1fr 1fr;gap:18px}.forecast-map-card{overflow:hidden}.forecast-map-title{padding:16px 18px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;gap:12px}.forecast-map-title strong{font:700 .9rem 'Sora',sans-serif}.forecast-map-title span{font-size:.76rem;color:var(--muted)}.forecast-map-card img{width:100%;height:auto;display:block;background:var(--bg)}.forecast-image-loading{padding:55px 18px;text-align:center;color:var(--muted);font-size:.9rem}.map-caption{padding:12px 16px;color:var(--muted);font-size:.76rem;line-height:1.5;border-top:1px solid var(--border)}.cloud-card{padding:22px 24px;display:flex;gap:16px;align-items:flex-start}.cloud-icon{font-size:1.5rem}.cloud-card strong{display:block;margin-bottom:5px}.cloud-card p{margin:0;color:var(--muted);line-height:1.65;font-size:.92rem}.forecast-error{padding:25px;text-align:center;color:var(--muted)}
-    @media(max-width:820px){.kp-scale{grid-template-columns:repeat(3,1fr)}.forecast-maps{grid-template-columns:1fr}}@media(max-width:640px){.forecast-shell{padding-top:42px}.tonight-card{padding:22px 18px}.tonight-top{display:block}.tonight-kp strong{font-size:3.5rem}.secondary-days{grid-template-columns:1fr}.kp-scale{grid-template-columns:repeat(2,1fr)}.day-card{padding:19px}.forecast-explainer{padding:20px}.cloud-card{padding:19px}.timeline-title{display:block}.timeline-title span{display:block;margin-top:4px}}
+    .forecast-shell{padding:64px 0 34px;background:radial-gradient(circle at 50% 0%,rgba(95,214,165,.08),transparent 34%)}
+    .forecast-heading{text-align:center;max-width:780px;margin:0 auto 28px}
+    .forecast-heading .live-source{display:inline-flex;align-items:center;gap:8px;color:var(--green);font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin-bottom:12px}
+    .forecast-heading .live-dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px rgba(95,214,165,.1),0 0 16px rgba(95,214,165,.55)}
+    .forecast-heading h2{margin:0 0 10px;font-family:'Sora',sans-serif;font-size:clamp(1.8rem,4vw,2.65rem);color:var(--text)}
+    .forecast-heading p{margin:0;color:var(--muted);line-height:1.7}
+    .forecast-meta{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:14px;color:var(--muted);font-size:.82rem}
+    .forecast-meta strong{color:var(--text);font-weight:600}
+    .forecast-dashboard{max-width:1000px;margin:34px auto 0;display:grid;gap:18px}
+    .forecast-card{background:linear-gradient(145deg,rgba(255,255,255,.035),rgba(255,255,255,.012));border:1px solid var(--border);border-radius:24px;box-shadow:0 18px 50px rgba(0,0,0,.18)}
+    .tonight-card{padding:30px}
+    .tonight-top{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center}
+    .forecast-kicker{font-size:.76rem;letter-spacing:.13em;text-transform:uppercase;color:var(--green);font-weight:800;margin-bottom:7px}
+    .tonight-card h3{font-family:'Sora',sans-serif;font-size:1.55rem;margin:0 0 7px;color:var(--text)}
+    .tonight-card .forecast-date{color:var(--muted);font-size:.92rem}
+    .kp-hero{text-align:right;min-width:150px}
+    .kp-hero .kp-number{font-family:'Sora',sans-serif;font-size:3.9rem;line-height:.9;font-weight:800;color:var(--green)}
+    .kp-hero .kp-label{display:block;margin-top:9px;font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);font-weight:700}
+    .activity-label{display:inline-flex;margin-top:9px;padding:6px 10px;border-radius:999px;background:rgba(95,214,165,.08);border:1px solid rgba(95,214,165,.2);font-size:.72rem;font-weight:700;color:var(--text)}
+    .timeline-title{margin:26px 0 11px;font-size:.78rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+    .kp-timeline{display:grid;grid-template-columns:repeat(8,1fr);gap:8px}
+    .kp-slot{padding:12px 7px;border-radius:13px;background:rgba(255,255,255,.025);border:1px solid var(--border);text-align:center}
+    .kp-slot .slot-time{display:block;color:var(--muted);font-size:.7rem;margin-bottom:7px}
+    .kp-slot .slot-kp{font-family:'Sora',sans-serif;font-weight:800;font-size:1.05rem}
+    .best-window{margin-top:15px;padding:12px 15px;border-radius:13px;background:rgba(95,214,165,.055);border:1px solid rgba(95,214,165,.16);color:var(--muted);font-size:.88rem;line-height:1.55}
+    .best-window strong{color:var(--text)}
+    .secondary-days{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .day-card{padding:22px 24px;display:flex;justify-content:space-between;align-items:center;gap:20px}
+    .day-card h3{font-family:'Sora',sans-serif;margin:2px 0 4px;color:var(--text);font-size:1.08rem}
+    .day-card p{margin:0;color:var(--muted);font-size:.82rem}
+    .day-kp{text-align:right}
+    .day-kp strong{display:block;font-family:'Sora',sans-serif;font-size:2.25rem;line-height:1;color:var(--green)}
+    .day-kp span{font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+    .meaning-card{padding:24px 26px;display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:flex-start}
+    .meaning-icon{width:42px;height:42px;border-radius:13px;display:flex;align-items:center;justify-content:center;background:rgba(95,214,165,.08);border:1px solid rgba(95,214,165,.18);font-size:1.1rem}
+    .meaning-card h3{margin:0 0 8px;font-family:'Sora',sans-serif;color:var(--text);font-size:1rem}
+    .meaning-card p{margin:0;color:var(--muted);line-height:1.65;font-size:.92rem}
+    .kp-scale{padding:24px 26px}
+    .kp-scale h3{font-family:'Sora',sans-serif;color:var(--text);font-size:1rem;text-align:center;margin:0 0 18px}
+    .kp-scale-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:9px}
+    .scale-item{text-align:center;padding:12px 7px;border-radius:12px;border:1px solid var(--border);background:rgba(255,255,255,.02)}
+    .scale-dot{width:10px;height:10px;border-radius:50%;margin:0 auto 7px}
+    .scale-item strong{display:block;color:var(--text);font-size:.82rem;margin-bottom:3px}
+    .scale-item span{color:var(--muted);font-size:.69rem;line-height:1.3;display:block}
+    .forecast-explainer{max-width:1000px;margin:18px auto 0;padding:19px 22px;border-radius:17px;background:var(--card);border:1px solid var(--border);border-left:3px solid var(--green);color:var(--muted);line-height:1.65;font-size:.92rem}
+    .forecast-explainer strong{color:var(--text)}
+    .viewline-wrap{max-width:1000px;margin:48px auto 0}
+    .viewline-head{text-align:center;margin-bottom:20px}
+    .viewline-head h3{font-family:'Sora',sans-serif;color:var(--text);font-size:1.45rem;margin:0 0 8px}
+    .viewline-head p{color:var(--muted);max-width:760px;margin:0 auto;line-height:1.65;font-size:.92rem}
+    .forecast-images{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .forecast-image-card{background:var(--card);border:1px solid var(--border);border-radius:20px;overflow:hidden;box-shadow:0 12px 34px rgba(0,0,0,.16)}
+    .forecast-image-card h4{padding:15px 18px;margin:0;font-family:'Sora',sans-serif;font-size:.92rem;color:var(--text);background:var(--bg2);border-bottom:1px solid var(--border)}
+    .forecast-image-card img{width:100%;height:auto;display:block;background:var(--bg)}
+    .forecast-image-loading{padding:42px 18px;text-align:center;color:var(--muted);font-size:.9rem}
+    .source-line{text-align:center;color:var(--muted);font-size:.78rem;margin-top:13px}
+    .source-line a{color:var(--green)}
+    .cloud-alert{max-width:1000px;margin:20px auto 0;padding:21px 24px;border-radius:18px;background:rgba(240,198,116,.055);border:1px solid rgba(240,198,116,.2);display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:flex-start}
+    .cloud-alert .cloud-icon{font-size:1.35rem;line-height:1}
+    .cloud-alert strong{display:block;color:var(--text);font-family:'Sora',sans-serif;margin-bottom:5px}
+    .cloud-alert p{margin:0;color:var(--muted);line-height:1.6;font-size:.9rem}
+    .forecast-error{padding:28px;text-align:center;color:var(--muted)}
+    @media(max-width:820px){.kp-timeline{grid-template-columns:repeat(4,1fr)}.kp-scale-grid{grid-template-columns:repeat(3,1fr)}.forecast-images{grid-template-columns:1fr}}
+    @media(max-width:620px){.forecast-shell{padding-top:48px}.tonight-card{padding:22px 18px}.tonight-top{grid-template-columns:1fr}.kp-hero{text-align:left}.kp-hero .kp-number{font-size:3.25rem}.secondary-days{grid-template-columns:1fr}.kp-timeline{grid-template-columns:repeat(2,1fr)}.kp-scale-grid{grid-template-columns:repeat(2,1fr)}.meaning-card,.cloud-alert{grid-template-columns:1fr}.day-card{padding:20px}.forecast-meta{font-size:.76rem}}
   </style>
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.northern-borealis.com/"},{"@type":"ListItem","position":2,"name":"Northern Lights Forecast","item":"https://www.northern-borealis.com/forecast/"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the northern lights forecast tonight?","acceptedAnswer":{"@type":"Answer","text":"The live forecast on this page uses NOAA Space Weather Prediction Center data to show predicted Kp activity in three-hour periods and the broader three-day geomagnetic outlook. Kp is only one part of aurora viewing: local cloud cover, darkness and location also matter."}},{"@type":"Question","name":"What is a good Kp index to see the aurora borealis?","acceptedAnswer":{"@type":"Answer","text":"The Kp required depends strongly on location. Destinations beneath or close to the auroral oval, including northern Norway, Sweden and Finland, can see aurora during relatively low Kp activity. Locations farther south generally require stronger geomagnetic activity."}},{"@type":"Question","name":"How accurate is the northern lights forecast?","acceptedAnswer":{"@type":"Answer","text":"A three-day geomagnetic forecast is useful for planning broad aurora activity, but it cannot guarantee a local sighting. Conditions can change, and local cloud cover, darkness and the position of the auroral oval are critical."}},{"@type":"Question","name":"Does a high Kp guarantee Northern Lights?","acceptedAnswer":{"@type":"Answer","text":"No. Kp measures global geomagnetic activity and does not measure local cloud cover or guarantee that aurora will be visible from a particular location. A clear sky in a well-positioned Arctic destination can be more useful than waiting for a geomagnetic storm."}}]}</script>
-  <script>(function(s,t,a,y,twenty,two){s.Stay22=s.Stay22||{};s.Stay22.params={lmaID:'6a4f98a11b2dc574185dfc26'};twenty=t.createElement(a);two=t.getElementsByTagName(a)[0];twenty.async=1;twenty.src=y;two.parentNode.insertBefore(twenty,two)})(window,document,'script','https://scripts.stay22.com/letmeallez.js');</script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://www.northern-borealis.com/"},
+    {"@type":"ListItem","position":2,"name":"Northern Lights Forecast","item":"https://www.northern-borealis.com/forecast/"}
+  ]}
+  </script>
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"What is the Northern Lights forecast tonight?","acceptedAnswer":{"@type":"Answer","text":"The live dashboard at the top of this page shows NOAA's predicted planetary Kp activity for the next three days, including 3-hour forecast periods. Kp describes global geomagnetic activity; local cloud cover, darkness and location still determine whether the aurora is visible from where you are."}},
+    {"@type":"Question","name":"What is a good Kp index to see the aurora borealis?","acceptedAnswer":{"@type":"Answer","text":"It depends strongly on location. Destinations beneath or close to the auroral oval, including northern Norway, Sweden and Finland, can see aurora at relatively low Kp values. Higher Kp values generally allow aurora to extend farther from the polar regions. Kp 5 corresponds to NOAA G1 geomagnetic storm level."}},
+    {"@type":"Question","name":"How accurate is the Northern Lights forecast?","acceptedAnswer":{"@type":"Answer","text":"A 3-day Kp forecast is useful for judging expected geomagnetic activity, but it is not a guarantee of local aurora visibility. Forecasts can change, and local cloud cover, darkness and the observer's location are essential factors."}},
+    {"@type":"Question","name":"Does a low Kp mean I cannot see the Northern Lights?","acceptedAnswer":{"@type":"Answer","text":"No. In high-latitude destinations beneath the auroral oval, Northern Lights can be visible during relatively low Kp activity. Kp is a global planetary index and should not be treated as a local yes-or-no aurora forecast."}}
+  ]}
+  </script>
+
+  <script>
+    (function (s, t, a, y, twenty, two) {
+      s.Stay22 = s.Stay22 || {};
+      s.Stay22.params = { lmaID: '6a4f98a11b2dc574185dfc26' };
+      twenty = t.createElement(a); two = t.getElementsByTagName(a)[0];
+      twenty.async = 1; twenty.src = y; two.parentNode.insertBefore(twenty, two);
+    })(window, document, 'script', 'https://scripts.stay22.com/letmeallez.js');
+  </script>
 </head>
 <body>
-<header id="header" class="site-header"><div class="container nav"><div class="nav-left"><a href="." class="logo" aria-label="Northern Borealis home">Northern<span>Borealis</span></a><a href="forecast/" class="kp-pill" id="kpPill" title="Current live Kp index — view the full Northern Lights forecast"><span class="kp-pill-dot" id="kpPillDot"></span><span class="kp-pill-label">Current Kp Index</span><span class="kp-pill-value" id="kpPillValue">–</span></a></div><ul class="nav-links" id="navLinks"><li class="nav-dropdown"><a href="destinations/" class="nav-dropdown-toggle">Destinations <svg class="nav-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></a><div class="nav-dropdown-menu"><a href="destinations/norway/"><span class="dropdown-flag">🇳🇴</span><span><strong>Norway</strong><small>Tromsø, Alta, Lofoten & Svalbard</small></span></a><a href="destinations/iceland/"><span class="dropdown-flag">🇮🇸</span><span><strong>Iceland</strong><small>Reykjavík, Akureyri & beyond</small></span></a><a href="destinations/finland/"><span class="dropdown-flag">🇫🇮</span><span><strong>Finland</strong><small>Rovaniemi, Levi & Lapland</small></span></a><a href="destinations/sweden/"><span class="dropdown-flag">🇸🇪</span><span><strong>Sweden</strong><small>Abisko, Kiruna & Swedish Lapland</small></span></a><div class="dropdown-footer"><a href="destinations/">Explore all destinations →</a></div></div></li><li><a href="tours/">Tours</a></li><li><a href="guides/best-time-to-see-northern-lights/">When to Go</a></li><li class="nav-dropdown"><a href="guides/" class="nav-dropdown-toggle">Guides <svg class="nav-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></a><div class="nav-dropdown-menu nav-dropdown-guides"><a href="guides/best-time-to-see-northern-lights/"><span class="dropdown-icon">◷</span><span><strong>Best Time to See the Northern Lights</strong><small>Season, months & conditions</small></span></a><a href="guides/best-places-to-see-northern-lights/"><span class="dropdown-icon">⌖</span><span><strong>Best Places to See the Northern Lights</strong><small>Compare Europe's top destinations</small></span></a><a href="guides/how-to-see-the-northern-lights/"><span class="dropdown-icon">✦</span><span><strong>How to See the Northern Lights</strong><small>Forecasts, clouds & aurora hunting</small></span></a><a href="guides/how-to-photograph-northern-lights/"><span class="dropdown-icon">◉</span><span><strong>Northern Lights Photography</strong><small>Camera settings & techniques</small></span></a><a href="guides/how-to-photograph-northern-lights-with-iphone/"><span class="dropdown-icon">▣</span><span><strong>Photograph the Aurora with iPhone</strong><small>Night mode, exposure & composition</small></span></a><a href="guides/what-are-the-northern-lights/"><span class="dropdown-icon">◎</span><span><strong>What Are the Northern Lights?</strong><small>The science behind the aurora</small></span></a><div class="dropdown-footer"><a href="guides/">Browse all Northern Lights guides →</a></div></div></li><li><a href="forecast/" class="nav-forecast">Forecast</a></li></ul><button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></div></header>
+<header id="header" class="site-header">
+  <div class="container nav">
+    <div class="nav-left">
+      <a href="." class="logo" aria-label="Northern Borealis home">Northern<span>Borealis</span></a>
+      <a href="forecast/" class="kp-pill" id="kpPill" title="Current live Kp index — view the full Northern Lights forecast">
+        <span class="kp-pill-dot" id="kpPillDot"></span><span class="kp-pill-label">Current Kp Index</span><span class="kp-pill-value" id="kpPillValue">–</span>
+      </a>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li class="nav-dropdown"><a href="destinations/" class="nav-dropdown-toggle">Destinations <svg class="nav-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+        <div class="nav-dropdown-menu">
+          <a href="destinations/norway/"><span class="dropdown-flag">🇳🇴</span><span><strong>Norway</strong><small>Tromsø, Alta, Lofoten & Svalbard</small></span></a>
+          <a href="destinations/iceland/"><span class="dropdown-flag">🇮🇸</span><span><strong>Iceland</strong><small>Reykjavík, Akureyri & beyond</small></span></a>
+          <a href="destinations/finland/"><span class="dropdown-flag">🇫🇮</span><span><strong>Finland</strong><small>Rovaniemi, Levi & Lapland</small></span></a>
+          <a href="destinations/sweden/"><span class="dropdown-flag">🇸🇪</span><span><strong>Sweden</strong><small>Abisko, Kiruna & Swedish Lapland</small></span></a>
+          <div class="dropdown-footer"><a href="destinations/">Explore all destinations →</a></div>
+        </div>
+      </li>
+      <li><a href="tours/">Tours</a></li>
+      <li><a href="guides/best-time-to-see-northern-lights/">When to Go</a></li>
+      <li class="nav-dropdown"><a href="guides/" class="nav-dropdown-toggle">Guides <svg class="nav-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+        <div class="nav-dropdown-menu nav-dropdown-guides">
+          <a href="guides/best-time-to-see-northern-lights/"><span class="dropdown-icon">◷</span><span><strong>Best Time to See the Northern Lights</strong><small>Season, months & conditions</small></span></a>
+          <a href="guides/best-places-to-see-northern-lights/"><span class="dropdown-icon">⌖</span><span><strong>Best Places to See the Northern Lights</strong><small>Compare Europe's top destinations</small></span></a>
+          <a href="guides/how-to-see-the-northern-lights/"><span class="dropdown-icon">✦</span><span><strong>How to See the Northern Lights</strong><small>Forecasts, clouds & aurora hunting</small></span></a>
+          <a href="guides/how-to-photograph-northern-lights/"><span class="dropdown-icon">◉</span><span><strong>Northern Lights Photography</strong><small>Camera settings & techniques</small></span></a>
+          <a href="guides/how-to-photograph-northern-lights-with-iphone/"><span class="dropdown-icon">▣</span><span><strong>Photograph the Aurora with iPhone</strong><small>Night mode, exposure & composition</small></span></a>
+          <a href="guides/what-are-the-northern-lights/"><span class="dropdown-icon">◎</span><span><strong>What Are the Northern Lights?</strong><small>The science behind the aurora</small></span></a>
+          <div class="dropdown-footer"><a href="guides/">Browse all Northern Lights guides →</a></div>
+        </div>
+      </li>
+      <li><a href="forecast/" class="nav-forecast">Forecast</a></li>
+    </ul>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
 
-<section class="page-hero" style="background:url('assets/images/aurora-forecast.webp') center/cover no-repeat;"><div class="hero-overlay"></div><div class="hero-content"><nav class="breadcrumb"><a href=".">Home</a> › <span>Northern Lights Forecast</span></nav><span class="eyebrow">Live NOAA Space Weather Data</span><h1>Northern Lights <span>Forecast Tonight</span></h1><p>Check tonight's predicted Kp activity, the next three days of geomagnetic conditions and NOAA aurora view-line maps — then combine them with your local cloud forecast.</p></div></section>
+<section class="page-hero" style="background:url('assets/images/aurora-forecast.webp') center/cover no-repeat;">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <nav class="breadcrumb"><a href=".">Home</a> › <span>Northern Lights Forecast</span></nav>
+    <span class="eyebrow">Live NOAA Space Weather Data</span>
+    <h1>Northern Lights <span>Forecast Tonight</span></h1>
+    <p>Check live NOAA geomagnetic data, the next three days of predicted Kp activity and aurora view-line maps before heading out to chase the Northern Lights.</p>
+  </div>
+</section>
 
-<section class="section forecast-shell" id="aurora-forecast"><div class="container"><div class="forecast-head"><div class="live-source"><span class="live-source-dot"></span> Live NOAA data</div><h2 class="section-title">Tonight's Aurora Forecast</h2><p>Three-hour Kp predictions and a 3-day geomagnetic outlook from NOAA's Space Weather Prediction Center.</p><p class="forecast-updated" id="forecastUpdated">Connecting to NOAA…</p></div><div id="forecastDashboard" class="forecast-dashboard"><div class="tonight-card forecast-error">Fetching live space-weather data…</div></div></div></section>
+<section class="forecast-shell" id="aurora-forecast">
+  <div class="container">
+    <div class="forecast-heading">
+      <div class="live-source"><span class="live-dot"></span> Live NOAA data</div>
+      <h2>Live Aurora Forecast</h2>
+      <p>Three-day planetary Kp forecast from NOAA's Space Weather Prediction Center, including the individual 3-hour periods behind each day's maximum.</p>
+      <div class="forecast-meta"><span>Source: <strong>NOAA / SWPC</strong></span><span>·</span><span id="forecastUpdated">Fetching latest forecast…</span></div>
+    </div>
 
-<main class="article" style="padding-top:20px;"><div class="container-narrow">
-<p class="lead">The live dashboard above shows NOAA's predicted planetary Kp activity, including the three-hour forecast periods that sit behind the daily outlook. It is useful for understanding broad geomagnetic activity, but <strong>Kp is not a local visibility forecast</strong>. To actually see the aurora you also need darkness, a suitable location and — most importantly — enough clear sky.</p>
+    <div id="forecast-dashboard" class="forecast-dashboard">
+      <div class="forecast-card forecast-error">Fetching live space weather data…</div>
+    </div>
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4536547386750955" crossorigin="anonymous"></script><ins class="adsbygoogle" style="display:block;text-align:center" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-4536547386750955" data-ad-slot="4270568400"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+    <div class="forecast-explainer"><strong>Kp is not a local yes-or-no aurora forecast.</strong> It describes planetary geomagnetic activity. If you are already beneath the auroral oval in places such as Tromsø, Abisko or Finnish Lapland, Northern Lights can appear at relatively low Kp. Your actual view still depends on darkness, cloud cover and local conditions.</div>
 
-<h2 class="h2-mt">How to Read the Northern Lights Forecast</h2><p>The <strong>Kp index</strong> is a planetary measure of geomagnetic activity. It runs from 0 to 9. Higher values generally indicate stronger geomagnetic activity and the potential for the auroral oval to expand farther from the polar regions.</p><p>For trip planning, the three-hour forecast is more useful than looking only at a single daily maximum. A day that reaches Kp 4 for one forecast period is not the same as a night that remains near Kp 4 for many hours. That is why the dashboard now shows the individual NOAA forecast periods as well as the daily peak.</p><p>The NOAA view-line maps estimate how far equatorward aurora may potentially be visible under favourable conditions. Treat them as guidance rather than a hard boundary: visibility still depends on darkness, cloud, local light pollution, aurora brightness and your view toward the relevant horizon.</p>
+    <div class="viewline-wrap">
+      <div class="viewline-head">
+        <h3>NOAA Aurora View-Line Forecast</h3>
+        <p>These NOAA maps estimate the equatorward extent from which aurora may potentially be visible under favourable conditions. They are a planning aid, not a guarantee that aurora will be visible at a particular location.</p>
+      </div>
+      <div class="forecast-images">
+        <div class="forecast-image-card"><h4>Tonight's View-Line Forecast</h4><div id="tonight-forecast" class="forecast-image-loading">Loading NOAA map…</div></div>
+        <div class="forecast-image-card"><h4>Tomorrow Night's View-Line Forecast</h4><div id="tomorrow-forecast" class="forecast-image-loading">Loading NOAA map…</div></div>
+      </div>
+      <p class="source-line">Maps supplied by <a href="https://www.spaceweather.gov/communities/aurora-dashboard-experimental" target="_blank" rel="noopener noreferrer">NOAA Space Weather Prediction Center</a>.</p>
+    </div>
 
-<h2 class="h2-mt">What Is a Good Kp Index for the Aurora?</h2><p>There is no single Kp number that guarantees a sighting. <strong>Your latitude matters enormously.</strong> In destinations beneath or close to the auroral oval — including <a href="tours/tromso-northern-lights-tour/">Tromsø</a>, <a href="tours/abisko-northern-lights-tour/">Abisko</a> and <a href="tours/lapland-northern-lights-tour/">Finnish Lapland</a> — aurora can appear during relatively low Kp activity.</p><p>Farther south, stronger geomagnetic activity is usually required before the auroral oval expands far enough for potential visibility. Kp 5 marks the beginning of NOAA's G1 geomagnetic-storm scale; Kp 6 corresponds to G2, Kp 7 to G3, Kp 8 to G4 and Kp 9 to G5.</p>
-<div class="callout"><strong>⚡ The Golden Rule of Aurora Hunting:</strong> Kp tells you about geomagnetic activity — not whether the sky above you is clear. A lower-Kp night with clear skies in a strong Arctic location can be far more useful than a major geomagnetic event hidden behind cloud. Always check a reliable local cloud forecast alongside this page. See our full guide on <a href="guides/how-to-see-the-northern-lights/">how to see the Northern Lights</a>.</div>
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4536547386750955" crossorigin="anonymous"></script><ins class="adsbygoogle" style="display:block;text-align:center" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-4536547386750955" data-ad-slot="4270568400"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
-
-<h2 class="h2-mt">What Causes the Aurora Borealis Forecast to Change?</h2><p>The Northern Lights are produced when energetic particles associated with the solar wind interact with Earth's magnetic environment and upper atmosphere. Changes in solar-wind conditions and events such as coronal mass ejections can increase geomagnetic activity when their effects reach Earth.</p><p>NOAA's Space Weather Prediction Center monitors the Sun and near-Earth space environment and continually updates its forecasts as new observations become available. That is why short-range forecasts can change. If you want the science in more detail, read our guide to <a href="guides/what-are-the-northern-lights/">what the Northern Lights are</a>.</p>
-
-<h2 class="h2-mt">Combining the Forecast with the Best Time to Travel</h2><p>Even strong aurora activity cannot help if the sky is too bright to see it. Across much of the Arctic, the practical Northern Lights travel season runs from late summer or early autumn into early spring, when sufficiently dark nights return.</p><p>For a full month-by-month breakdown, see our guide to the <a href="guides/best-time-to-see-northern-lights/">best time to see the Northern Lights</a>. If you are still choosing where to travel, compare the <a href="guides/best-places-to-see-northern-lights/">best places to see the Northern Lights</a>.</p>
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4536547386750955" crossorigin="anonymous"></script><ins class="adsbygoogle" style="display:block;text-align:center" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-4536547386750955" data-ad-slot="4270568400"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
-
-<h2 class="h2-mt">Northern Lights Forecast FAQ</h2><div class="faq"><details><summary>🌌 What is the Northern Lights forecast tonight?</summary><div class="faq-a">The live dashboard at the top of this page uses NOAA Space Weather Prediction Center data to show predicted Kp activity in three-hour periods and the broader three-day outlook. Remember that Kp is only one part of aurora viewing: local cloud cover, darkness and location also matter.</div></details><details><summary>📊 What is a good Kp index to see the aurora borealis?</summary><div class="faq-a">It depends strongly on location. Destinations beneath or close to the auroral oval can see aurora during relatively low Kp activity, while locations farther south generally need stronger geomagnetic activity.</div></details><details><summary>🎯 How accurate is a 3-day aurora forecast?</summary><div class="faq-a">It is useful for understanding the broad geomagnetic outlook, but it cannot guarantee a local sighting. Space-weather conditions can change and local cloud, darkness and the position of the auroral oval remain critical.</div></details><details><summary>☁️ Does a high Kp guarantee Northern Lights?</summary><div class="faq-a">No. Kp measures global geomagnetic activity and does not account for local cloud cover. Even during strong activity you may see nothing beneath overcast skies, while Arctic destinations can sometimes see excellent aurora at comparatively low Kp values.</div></details></div>
-
-<div class="cta-banner cta-mt"><h2>The Forecast Is Only Half the Battle</h2><p>Local guides combine space-weather data with cloud forecasts and local knowledge, then move to clearer viewing areas when conditions demand it.</p><a href="tours/" class="btn">Browse Northern Lights Tours</a></div>
-<h2 class="h2-mt">Plan Your Aurora Trip</h2><div class="grid grid-3"><a href="guides/best-places-to-see-northern-lights/" class="card card-text"><div class="card-body"><h3>Best Places</h3><p>Compare Europe's leading aurora destinations.</p><span class="card-link">Read the guide</span></div></a><a href="guides/best-time-to-see-northern-lights/" class="card card-text"><div class="card-body"><h3>When to Go</h3><p>Choose the right season and month for your trip.</p><span class="card-link">See the best times</span></div></a><a href="guides/how-to-see-the-northern-lights/" class="card card-text"><div class="card-body"><h3>How to See Them</h3><p>Learn how to combine forecasts, clouds and location.</p><span class="card-link">Read the guide</span></div></a></div>
-</div></main>
-
-<footer class="site-footer"><div class="container"><div class="footer-brand-row"><div class="footer-brand-main"><a href="." class="logo">Northern<span>Borealis</span></a><p>Independent Northern Lights travel guides, destinations, tours and aurora planning across Europe.</p></div><a href="forecast/" class="footer-aurora-status" aria-label="View the current Northern Lights forecast"><div class="footer-aurora-live"><span class="footer-live-dot"></span>LIVE AURORA DATA</div><div class="footer-kp-line"><span>Current Kp</span><strong id="footerKpValue">–</strong><span class="kp-pill-dot" id="footerKpDot"></span></div><small>View tonight's forecast →</small></a></div><div class="footer-grid footer-grid-polished"><div class="footer-col"><h4>Destinations</h4><ul><li><a href="destinations/norway/">Norway</a></li><li><a href="destinations/iceland/">Iceland</a></li><li><a href="destinations/finland/">Finland</a></li><li><a href="destinations/sweden/">Sweden</a></li></ul><a href="destinations/" class="footer-more">All destinations →</a></div><div class="footer-col"><h4>Explore</h4><ul><li><a href="tours/">Northern Lights Tours</a></li><li><a href="guides/">Travel Guides</a></li><li><a href="forecast/">Aurora Forecast</a></li><li><a href="guides/how-to-see-the-northern-lights/">How to See the Aurora</a></li></ul></div><div class="footer-col"><h4>Popular Guides</h4><ul><li><a href="guides/best-time-to-see-northern-lights/">Best Time to Go</a></li><li><a href="guides/best-places-to-see-northern-lights/">Best Places</a></li><li><a href="guides/how-to-photograph-northern-lights/">Aurora Photography</a></li><li><a href="guides/how-to-photograph-northern-lights-with-iphone/">iPhone Photography</a></li><li><a href="guides/what-are-the-northern-lights/">What Are the Northern Lights?</a></li></ul></div><div class="footer-col"><h4>About</h4><ul><li><a href="legal/about/">About Northern Borealis</a></li><li><a href="contact/">Contact</a></li><li><a href="legal/affiliate-disclosure/">Affiliate Disclosure</a></li><li><a href="legal/privacy-policy/">Privacy Policy</a></li></ul><div class="footer-social"><a href="https://www.instagram.com/northernborealisofficial/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a><a href="https://www.facebook.com/NorthernBorealisOfficial/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a><a href="https://www.tiktok.com/@northernborealisofficial" target="_blank" rel="noopener noreferrer" aria-label="TikTok">TikTok</a><a href="https://www.pinterest.com/Northern_Borealis/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">Pinterest</a></div></div></div><div class="footer-disclosure"><span>⚡</span><p><strong>Affiliate disclosure:</strong> We may earn a commission when you book or purchase through links on Northern Borealis, at no extra cost to you. <a href="legal/affiliate-disclosure/">Learn more</a>.</p></div><div class="footer-bottom footer-bottom-polished"><span>© 2026 Northern Borealis. All rights reserved.</span><span class="footer-bottom-tagline">Chasing clear skies across the Arctic.</span></div></div></footer>
+    <div class="cloud-alert"><div class="cloud-icon">☁️</div><div><strong>Cloud cover can override everything above.</strong><p>A strong geomagnetic forecast cannot be seen through thick cloud. Always combine the Kp forecast with a reliable local cloud forecast, and be prepared to move to clearer skies when possible.</p></div></div>
+  </div>
+</section>
 
 <script>
 (function(){
- const DATA_URL='https://services.swpc.noaa.gov/products/noaa-planetary-k-index-forecast.json';
- const TONIGHT_IMG='https://services.swpc.noaa.gov/experimental/images/aurora_dashboard/tonights_static_viewline_forecast.png';
- const TOMORROW_IMG='https://services.swpc.noaa.gov/experimental/images/aurora_dashboard/tomorrow_nights_static_viewline_forecast.png';
- const dash=document.getElementById('forecastDashboard'), updated=document.getElementById('forecastUpdated');
- const esc=s=>String(s).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
- function kpColor(k){if(k>=9)return'#B71212';if(k>=8)return'#E52418';if(k>=7)return'#F68D2E';if(k>=6)return'#FFB300';if(k>=5)return'#FCE300';if(k>=3)return'#8DD36F';return'#A4D65E'}
- function activity(k){if(k>=9)return'G5 · Extreme storm';if(k>=8)return'G4 · Severe storm';if(k>=7)return'G3 · Strong storm';if(k>=6)return'G2 · Moderate storm';if(k>=5)return'G1 · Minor storm';if(k>=3)return'Active';return'Low activity'}
- function fmtKp(k){return Number(k).toFixed(1).replace(/\.0$/,'')}
- function utcDateKey(d){return d.toISOString().slice(0,10)}
- function parseTime(s){let v=String(s).trim().replace(' ','T');if(!/[zZ]|[+-]\d\d:?\d\d$/.test(v))v+='Z';return new Date(v)}
- function dayTitle(key,offset){const d=new Date(key+'T00:00:00Z');return offset===0?'Tonight':offset===1?'Tomorrow night':d.toLocaleDateString('en-GB',{weekday:'long',timeZone:'UTC'})}
- function prettyDate(key){return new Date(key+'T00:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'long',timeZone:'UTC'})}
- function normalize(raw){if(!Array.isArray(raw))return[];if(Array.isArray(raw[0])){const h=raw[0].map(x=>String(x).toLowerCase());const ti=h.findIndex(x=>x.includes('time'));const ki=h.findIndex(x=>x==='kp'||x.includes('kp'));return raw.slice(1).map(r=>({time:parseTime(r[ti>=0?ti:0]),kp:parseFloat(r[ki>=0?ki:1])})).filter(x=>!isNaN(x.time)&&Number.isFinite(x.kp));}return raw.map(r=>({time:parseTime(r.time_tag||r.time||r.timestamp),kp:parseFloat(r.kp||r.Kp)})).filter(x=>!isNaN(x.time)&&Number.isFinite(x.kp));}
- function dayRows(rows,key){return rows.filter(r=>utcDateKey(r.time)===key)}
- function maxKp(rows){return rows.length?Math.max(...rows.map(r=>r.kp)):null}
- function bestWindow(rows){if(!rows.length)return'No forecast periods available';const m=maxKp(rows);const best=rows.filter(r=>r.kp===m);const first=best[0].time;const last=new Date(best[best.length-1].time.getTime()+3*3600000);const f=d=>d.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit',hour12:false,timeZone:'UTC'});return `${f(first)}–${f(last)} UTC`}
- function timeline(rows){const m=maxKp(rows);return rows.slice(0,8).map(r=>`<div class="kp-slot ${r.kp===m?'best':''}"><span class="time">${r.time.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit',hour12:false,timeZone:'UTC'})}</span><span class="value" style="color:${kpColor(r.kp)}">${fmtKp(r.kp)}</span></div>`).join('')}
- function dayCard(rows,key,offset){const m=maxKp(rows);if(m===null)return'';return `<div class="day-card"><div><div class="day-label">${dayTitle(key,offset)}</div><div class="day-date">${prettyDate(key)} · daily peak</div></div><div class="day-kp"><strong style="color:${kpColor(m)}">Kp ${fmtKp(m)}</strong><span style="color:${kpColor(m)}">${activity(m)}</span></div></div>`}
- function mapCard(title,id,src){return `<div class="forecast-map-card"><div class="forecast-map-title"><strong>${title}</strong><span>NOAA view-line forecast</span></div><div id="${id}" class="forecast-image-loading">Loading NOAA map…</div><div class="map-caption">The view line is guidance for potential aurora visibility under favourable conditions, not a guaranteed visibility boundary.</div></div>`}
- function loadMap(id,url,alt){const c=document.getElementById(id);const img=new Image();img.alt=alt;img.onload=()=>{c.innerHTML='';c.appendChild(img)};img.onerror=()=>c.innerHTML='<div class="forecast-image-loading">Unable to load NOAA forecast map.</div>';img.src=url+(url.includes('?')?'&':'?')+'t='+Date.now()}
- async function init(){try{const res=await fetch(DATA_URL,{cache:'no-store'});if(!res.ok)throw new Error('NOAA request failed');const rows=normalize(await res.json()).sort((a,b)=>a.time-b.time);if(!rows.length)throw new Error('No forecast data');const now=new Date();let keys=[...new Set(rows.filter(r=>r.time>=new Date(now.getTime()-3*3600000)).map(r=>utcDateKey(r.time)))].sort().slice(0,3);if(!keys.length)keys=[...new Set(rows.map(r=>utcDateKey(r.time)))].sort().slice(-3);const groups=keys.map(k=>dayRows(rows,k));const today=groups[0], peak=maxKp(today);const scale=[['0–2','Low activity','#A4D65E'],['3–4','Active','#8DD36F'],['5','G1 storm','#FCE300'],['6','G2 storm','#FFB300'],['7','G3 storm','#F68D2E'],['8–9','G4–G5','#E52418']].map(x=>`<div class="scale-item"><div class="scale-dot" style="background:${x[2]}"></div><strong>Kp ${x[0]}</strong><span>${x[1]}</span></div>`).join('');dash.innerHTML=`<div class="tonight-card"><div class="tonight-top"><div><div class="tonight-label">Tonight · ${prettyDate(keys[0])}</div><div class="tonight-kp"><span>Peak</span><strong style="color:${kpColor(peak)}">Kp ${fmtKp(peak)}</strong></div><div class="activity-label" style="color:${kpColor(peak)}">${activity(peak)}</div><p class="forecast-note">This is the highest predicted planetary Kp value in the displayed UTC forecast periods. It does not account for local cloud cover.</p></div></div><div class="timeline-wrap"><div class="timeline-title"><strong>3-hour Kp forecast</strong><span>Times shown in UTC</span></div><div class="kp-timeline">${timeline(today)}</div><div class="best-window">Highest forecast period: <strong>${bestWindow(today)}</strong></div></div></div><div class="secondary-days">${groups.slice(1).map((g,i)=>dayCard(g,keys[i+1],i+1)).join('')}</div><div class="forecast-explainer"><h3>What does this mean for me?</h3><p><strong>In the Arctic, don't wait for a geomagnetic storm.</strong> Places beneath or near the auroral oval can see Northern Lights during relatively low Kp activity. Farther south, stronger activity is generally needed. In every location, cloud cover can block the aurora completely.</p></div><div class="kp-scale">${scale}</div><div class="maps-heading"><h3>NOAA Aurora View-Line Maps</h3><p>Use these maps for geographic context, then check your local cloud forecast before heading out.</p></div><div class="forecast-maps">${mapCard("Tonight's Forecast",'tonightMap',TONIGHT_IMG)}${mapCard("Tomorrow Night's Forecast",'tomorrowMap',TOMORROW_IMG)}</div><div class="cloud-card"><div class="cloud-icon">☁️</div><div><strong>Kp is not a cloud forecast</strong><p>A clear sky is essential. Combine this dashboard with a reliable local cloud forecast and move away from bright artificial light where practical.</p></div></div>`;updated.textContent='NOAA data fetched '+new Date().toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit',timeZone:'UTC'})+' UTC';loadMap('tonightMap',TONIGHT_IMG,"NOAA tonight aurora view-line forecast");loadMap('tomorrowMap',TOMORROW_IMG,"NOAA tomorrow night aurora view-line forecast");}catch(e){console.error(e);updated.textContent='Live NOAA data temporarily unavailable';dash.innerHTML='<div class="tonight-card forecast-error">Unable to load the live NOAA forecast right now. Please try again shortly.</div>'}}
- init();
+  const DATA_URL='https://services.swpc.noaa.gov/products/noaa-planetary-k-index-forecast.json';
+  const TONIGHT_MAP='https://services.swpc.noaa.gov/experimental/images/aurora_dashboard/tonights_static_viewline_forecast.png';
+  const TOMORROW_MAP='https://services.swpc.noaa.gov/experimental/images/aurora_dashboard/tomorrow_nights_static_viewline_forecast.png';
+
+  function kpColor(kp){if(kp>=9)return'#B71212';if(kp>=8)return'#E52418';if(kp>=7)return'#F68D2E';if(kp>=6)return'#FFB300';if(kp>=5)return'#FCE300';if(kp>=4)return'#9DDB68';return'#5FD6A5'}
+  function activity(kp){if(kp>=9)return'G5 · Extreme storm';if(kp>=8)return'G4 · Severe storm';if(kp>=7)return'G3 · Strong storm';if(kp>=6)return'G2 · Moderate storm';if(kp>=5)return'G1 · Minor storm';if(kp>=4)return'Active';if(kp>=3)return'Unsettled to active';return'Low geomagnetic activity'}
+  function fmtKp(kp){return Number(kp).toFixed(1).replace('.0','')}
+  function parseUTC(value){if(!value)return null;let s=String(value).trim().replace(' ','T');if(!/[zZ]|[+-]\d\d:?\d\d$/.test(s))s+='Z';const d=new Date(s);return isNaN(d)?null:d}
+  function dateKey(d){return d.toISOString().slice(0,10)}
+  function displayDate(key){const d=new Date(key+'T00:00:00Z');return d.toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long',timeZone:'UTC'})}
+  function timeLabel(d){return d.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit',hour12:false,timeZone:'UTC'})}
+  function bestWindow(rows){if(!rows.length)return'No 3-hour periods available';const max=Math.max(...rows.map(r=>r.kp));const best=rows.filter(r=>r.kp===max);if(!best.length)return'';const first=best[0].time;const end=new Date(first.getTime()+3*60*60*1000);return timeLabel(first)+'–'+timeLabel(end)+' UTC (forecast Kp '+fmtKp(max)+')'}
+  function scaleHtml(){const items=[['#5FD6A5','Kp 0–2','Low activity'],['#9DDB68','Kp 3–4','Unsettled / active'],['#FCE300','Kp 5','G1 · Minor'],['#FFB300','Kp 6','G2 · Moderate'],['#F68D2E','Kp 7','G3 · Strong'],['#E52418','Kp 8–9','G4–G5 · Severe / extreme']];return '<div class="forecast-card kp-scale"><h3>Planetary Kp & NOAA Geomagnetic Storm Scale</h3><div class="kp-scale-grid">'+items.map(i=>'<div class="scale-item"><div class="scale-dot" style="background:'+i[0]+'"></div><strong>'+i[1]+'</strong><span>'+i[2]+'</span></div>').join('')+'</div></div>'}
+  function normalize(raw){const out=[];if(!Array.isArray(raw))return out;if(Array.isArray(raw[0])){const header=raw[0].map(x=>String(x).toLowerCase());const ti=Math.max(0,header.findIndex(x=>x.includes('time')));let ki=header.findIndex(x=>x==='kp'||x.includes('kp'));if(ki<0)ki=1;raw.slice(1).forEach(row=>{const time=parseUTC(row[ti]);const kp=parseFloat(row[ki]);if(time&&Number.isFinite(kp))out.push({time,kp})})}else{raw.forEach(row=>{const time=parseUTC(row.time_tag||row.time||row.timestamp);const kp=parseFloat(row.kp??row.Kp??row.k_index);if(time&&Number.isFinite(kp))out.push({time,kp})})}return out.sort((a,b)=>a.time-b.time)}
+  async function loadForecast(){const dash=document.getElementById('forecast-dashboard');try{const res=await fetch(DATA_URL,{cache:'no-store'});if(!res.ok)throw new Error('NOAA request failed');const raw=await res.json();const rows=normalize(raw);if(!rows.length)throw new Error('No Kp rows');const grouped={};rows.forEach(r=>(grouped[dateKey(r.time)]??=[]).push(r));const today=dateKey(new Date());let keys=Object.keys(grouped).filter(k=>k>=today).sort().slice(0,3);if(!keys.length)keys=Object.keys(grouped).sort().slice(-3);const fetchedAt=new Date();document.getElementById('forecastUpdated').textContent='Data fetched '+fetchedAt.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit',hour12:false,timeZone:'UTC'})+' UTC';
+    const first=keys[0], firstRows=grouped[first], firstMax=Math.max(...firstRows.map(r=>r.kp));
+    let html='<div class="forecast-card tonight-card"><div class="tonight-top"><div><div class="forecast-kicker">Tonight / next forecast day</div><h3>'+displayDate(first)+'</h3><div class="forecast-date">Maximum predicted planetary Kp for this UTC day</div><span class="activity-label">'+activity(firstMax)+'</span></div><div class="kp-hero"><div class="kp-number" style="color:'+kpColor(firstMax)+'">'+fmtKp(firstMax)+'</div><span class="kp-label">Maximum Kp</span></div></div><div class="timeline-title">3-hour Kp forecast · UTC</div><div class="kp-timeline">'+firstRows.slice(0,8).map(r=>'<div class="kp-slot"><span class="slot-time">'+timeLabel(r.time)+'</span><span class="slot-kp" style="color:'+kpColor(r.kp)+'">'+fmtKp(r.kp)+'</span></div>').join('')+'</div><div class="best-window"><strong>Highest forecast period:</strong> '+bestWindow(firstRows)+'</div></div>';
+    if(keys.length>1){html+='<div class="secondary-days">'+keys.slice(1).map((k,i)=>{const max=Math.max(...grouped[k].map(r=>r.kp));return '<div class="forecast-card day-card"><div><div class="forecast-kicker">'+(i===0?'Tomorrow / Day 2':'Day 3')+'</div><h3>'+displayDate(k)+'</h3><p>Highest period: '+bestWindow(grouped[k])+'</p></div><div class="day-kp"><strong style="color:'+kpColor(max)+'">'+fmtKp(max)+'</strong><span>Maximum Kp</span></div></div>'}).join('')+'</div>'}
+    html+='<div class="forecast-card meaning-card"><div class="meaning-icon">✦</div><div><h3>What does today\'s Kp mean?</h3><p>'+ (firstMax>=5?'NOAA is forecasting geomagnetic storm-level activity during at least one 3-hour period. Higher Kp can expand auroral visibility farther from the polar regions, but local cloud cover and darkness remain essential.':'The forecast remains below NOAA geomagnetic storm level. That does <strong>not</strong> mean there will be no Northern Lights in Arctic destinations: locations beneath the auroral oval can see aurora during relatively low planetary Kp.') +'</p></div></div>'+scaleHtml();dash.innerHTML=html;
+  }catch(e){console.error(e);dash.innerHTML='<div class="forecast-card forecast-error">Unable to load the live NOAA forecast right now. Please try again shortly.</div>';document.getElementById('forecastUpdated').textContent='Live data temporarily unavailable'}}
+  function loadImage(id,url,alt){const box=document.getElementById(id);const img=new Image();img.src=url;img.alt=alt;img.loading='lazy';img.onload=()=>{box.innerHTML='';box.appendChild(img)};img.onerror=()=>{box.textContent='Unable to load this NOAA forecast map right now.'}}
+  document.addEventListener('DOMContentLoaded',()=>{loadForecast();loadImage('tonight-forecast',TONIGHT_MAP,"Tonight's NOAA aurora view-line forecast");loadImage('tomorrow-forecast',TOMORROW_MAP,"Tomorrow night's NOAA aurora view-line forecast")});
 })();
 </script>
+
+<main class="article" style="padding-top:28px;">
+  <div class="container-narrow">
+    <p class="lead">A Northern Lights forecast is most useful when you understand what it can — and cannot — tell you. The live dashboard above uses NOAA space-weather data to show predicted planetary geomagnetic activity, including the 3-hour Kp periods that make up the next three forecast days. Use it to judge the broader level and timing of geomagnetic activity, then combine it with local cloud cover and darkness before deciding where and when to head out.</p>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4536547386750955" crossorigin="anonymous"></script>
+    <ins class="adsbygoogle" style="display:block;text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-4536547386750955" data-ad-slot="4270568400"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+
+    <h2 class="h2-mt">How to Read the Northern Lights Forecast</h2>
+    <p>The <strong>Kp index</strong> is a planetary measure of geomagnetic activity on a scale that runs from 0 to 9. NOAA forecasts Kp in 3-hour periods. Higher values indicate stronger global geomagnetic disturbance and can allow auroral activity to extend farther away from the polar regions.</p>
+    <p>That is why the dashboard now shows both the <strong>daily maximum</strong> and the individual <strong>3-hour forecast periods</strong>. A daily maximum alone can hide useful timing information: if the strongest forecast period is expected around 21:00–00:00 UTC, that is more useful to an aurora hunter than simply knowing that the day's maximum is Kp 4.</p>
+    <p>The NOAA view-line maps provide another planning aid by showing the approximate equatorward extent from which aurora may potentially be visible under favourable viewing conditions. They should not be interpreted as a guaranteed visibility boundary.</p>
+
+    <h2 class="h2-mt">What Is a Good Kp Index for the Aurora?</h2>
+    <p>There is no single Kp number that guarantees a Northern Lights sighting because <strong>location matters enormously</strong>. Kp is a global planetary index rather than a local visibility score.</p>
+    <p><strong>In high-latitude Arctic destinations:</strong> places such as <a href="tours/tromso-northern-lights-tour/">Tromsø</a>, <a href="tours/abisko-northern-lights-tour/">Abisko</a> and <a href="tours/lapland-northern-lights-tour/">Finnish Lapland</a> sit beneath or close to the auroral oval. Aurora can therefore be visible even when the planetary Kp value is relatively low. This is one reason these destinations feature prominently in our guide to the <a href="guides/best-places-to-see-northern-lights/">best places to see the Northern Lights</a>.</p>
+    <p><strong>Farther from the polar regions:</strong> stronger geomagnetic activity generally becomes more important because the auroral oval needs to expand farther equatorward. NOAA's geomagnetic storm scale begins at <strong>Kp 5 (G1)</strong>, followed by Kp 6 (G2), Kp 7 (G3), Kp 8 (G4) and Kp 9 (G5).</p>
+
+    <div class="callout"><strong>⚡ The Golden Rule of Aurora Hunting:</strong> Kp cannot see your clouds. A strong geomagnetic event behind thick cloud is invisible from the ground, while a clear Arctic sky can produce a memorable display at a much lower Kp. Always check local cloud conditions alongside space-weather data. Our <a href="guides/how-to-see-the-northern-lights/">how to see the Northern Lights guide</a> explains the full process.</div>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4536547386750955" crossorigin="anonymous"></script>
+    <ins class="adsbygoogle" style="display:block;text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-4536547386750955" data-ad-slot="4270568400"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+
+    <h2 class="h2-mt">Why Does the Aurora Forecast Change?</h2>
+    <p>The Northern Lights are produced when charged particles associated with the solar wind interact with Earth's magnetic environment and upper atmosphere. Solar activity can disturb that environment and increase geomagnetic activity, but the timing and strength of an event can evolve as new observations become available.</p>
+    <p>That is why a three-day forecast should be treated as a <strong>forecast rather than a promise</strong>. Recheck it as your viewing night approaches. If you want the science behind the phenomenon itself, read our guide to <a href="guides/what-are-the-northern-lights/">what the Northern Lights are</a>.</p>
+
+    <h2 class="h2-mt">Kp Forecast vs Local Aurora Conditions</h2>
+    <p>For practical aurora hunting, think of Kp as one layer of the decision rather than the whole forecast. You also need a dark enough sky, sufficiently clear local weather and a location with an unobstructed view. Light pollution can make faint displays harder to see, while moving away from cloud can sometimes matter more than chasing a higher Kp number.</p>
+    <p>This distinction is especially important in the Arctic. Do not abandon a clear night in Tromsø or Abisko simply because the Kp number looks modest. Conversely, do not assume a high Kp guarantees a sighting if the weather is poor.</p>
+
+    <h2 class="h2-mt">Combining the Forecast with the Best Time to Travel</h2>
+    <p>The live forecast only covers the immediate future. Planning a trip months ahead requires a different question: will the destination actually have enough darkness for aurora viewing?</p>
+    <p>The main Northern Lights travel season across the European Arctic generally stretches from late August into early April, with local daylight conditions varying by destination and date. For a complete month-by-month breakdown, see our guide to the <a href="guides/best-time-to-see-northern-lights/">best time to see the Northern Lights</a>.</p>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4536547386750955" crossorigin="anonymous"></script>
+    <ins class="adsbygoogle" style="display:block;text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-4536547386750955" data-ad-slot="4270568400"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+
+    <h2 class="h2-mt">Northern Lights Forecast FAQ</h2>
+    <div class="faq">
+      <details><summary>🌌 What is the Northern Lights forecast tonight?</summary><div class="faq-a">The live dashboard at the top of this page shows NOAA's predicted planetary Kp activity for the next three forecast days, including the individual 3-hour periods. Use it together with local cloud cover, darkness and your location rather than treating Kp as a guaranteed local visibility score.</div></details>
+      <details><summary>📊 What is a good Kp index to see the aurora borealis?</summary><div class="faq-a">It depends strongly on where you are. High-latitude destinations beneath or near the auroral oval can see Northern Lights at relatively low Kp values. Higher Kp values generally allow auroral activity to extend farther away from the polar regions. NOAA's geomagnetic storm scale begins at Kp 5 (G1).</div></details>
+      <details><summary>🎯 How accurate is a 3-day Northern Lights forecast?</summary><div class="faq-a">It is useful for understanding expected geomagnetic activity, but it is not a guarantee of what you will see from a particular location. Forecasts can change as new observations become available, while cloud cover and darkness remain essential local factors.</div></details>
+      <details><summary>🌌 Does a low Kp mean there will be no Northern Lights?</summary><div class="faq-a">No. Kp is a planetary index. In Arctic destinations beneath the auroral oval, aurora can be visible during relatively low Kp activity. A clear sky at the right latitude can matter more than waiting for a geomagnetic storm.</div></details>
+      <details><summary>☁️ Can I see the Northern Lights if it is cloudy?</summary><div class="faq-a">Thick cloud can completely block your view of the aurora. Broken or moving cloud may still leave viewing opportunities, which is why local cloud forecasts and the ability to move to clearer areas are important parts of aurora hunting.</div></details>
+    </div>
+
+    <div class="cta-banner cta-mt"><h2>The Forecast Is Only Half the Battle</h2><p>Local guides combine space-weather data with cloud forecasts and local knowledge to search for the clearest available skies.</p><a href="tours/" class="btn">Browse Northern Lights Tours</a></div>
+
+    <h2 class="h2-mt">Plan Your Aurora Trip</h2>
+    <div class="grid grid-3">
+      <a href="guides/best-places-to-see-northern-lights/" class="card card-text"><div class="card-body"><h3>Best Places</h3><p>Compare Europe's leading aurora destinations and find the right base for your trip.</p><span class="card-link">Read the guide</span></div></a>
+      <a href="guides/best-time-to-see-northern-lights/" class="card card-text"><div class="card-body"><h3>When to Go</h3><p>Compare the aurora season month by month and choose when to travel.</p><span class="card-link">See the best times</span></div></a>
+      <a href="guides/how-to-see-the-northern-lights/" class="card card-text"><div class="card-body"><h3>How to See Them</h3><p>Learn how forecasts, cloud cover, darkness and location work together.</p><span class="card-link">Read the guide</span></div></a>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-brand-row">
+      <div class="footer-brand-main"><a href="." class="logo">Northern<span>Borealis</span></a><p>Independent Northern Lights travel guides, destinations, tours and aurora planning across Europe.</p></div>
+      <a href="forecast/" class="footer-aurora-status" aria-label="View the current Northern Lights forecast"><div class="footer-aurora-live"><span class="footer-live-dot"></span>LIVE AURORA DATA</div><div class="footer-kp-line"><span>Current Kp</span><strong id="footerKpValue">–</strong><span class="kp-pill-dot" id="footerKpDot"></span></div><small>View tonight's forecast →</small></a>
+    </div>
+    <div class="footer-grid footer-grid-polished">
+      <div class="footer-col"><h4>Destinations</h4><ul><li><a href="destinations/norway/">Norway</a></li><li><a href="destinations/iceland/">Iceland</a></li><li><a href="destinations/finland/">Finland</a></li><li><a href="destinations/sweden/">Sweden</a></li></ul><a href="destinations/" class="footer-more">All destinations →</a></div>
+      <div class="footer-col"><h4>Explore</h4><ul><li><a href="tours/">Northern Lights Tours</a></li><li><a href="guides/">Travel Guides</a></li><li><a href="forecast/">Aurora Forecast</a></li><li><a href="guides/how-to-see-the-northern-lights/">How to See the Aurora</a></li></ul></div>
+      <div class="footer-col"><h4>Popular Guides</h4><ul><li><a href="guides/best-time-to-see-northern-lights/">Best Time to Go</a></li><li><a href="guides/best-places-to-see-northern-lights/">Best Places</a></li><li><a href="guides/how-to-photograph-northern-lights/">Aurora Photography</a></li><li><a href="guides/how-to-photograph-northern-lights-with-iphone/">iPhone Photography</a></li><li><a href="guides/what-are-the-northern-lights/">What Are the Northern Lights?</a></li></ul></div>
+      <div class="footer-col"><h4>About</h4><ul><li><a href="legal/about/">About Northern Borealis</a></li><li><a href="contact/">Contact</a></li><li><a href="legal/affiliate-disclosure/">Affiliate Disclosure</a></li><li><a href="legal/privacy-policy/">Privacy Policy</a></li></ul>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/northernborealisofficial/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><circle cx="17.5" cy="6.5" r="1.5"></circle></svg></a>
+          <a href="https://www.facebook.com/NorthernBorealisOfficial/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a6 6 0 0 0-6 6v3H7v4h2v8h4v-8h3l1-4h-4V8a1 1 0 0 1 1-1h3z"></path></svg></a>
+          <a href="https://www.tiktok.com/@northernborealisofficial" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.1 1.82 2.84 2.84 0 0 1 2.6-4.53 2.86 2.86 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-.54-.05z"></path></svg></a>
+          <a href="https://www.pinterest.com/Northern_Borealis/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.223-.937 1.58-6.685 1.58-6.685s-.389-.779-.389-1.937c0-1.816.951-3.194 2.138-3.194 1.009 0 1.497.757 1.497 1.664 0 1.013-.645 2.527-.975 3.93-.276 1.335.588 2.415 1.749 2.415 2.096 0 3.71-2.21 3.71-5.402 0-2.828-2.02-4.8-4.9-4.8-3.338 0-5.291 2.502-5.291 5.093 0 1.01.389 2.09.873 2.673.096.119.11.222.083.338-.091.378-.293 1.189-.332 1.355-.047.203-.145.248-.334.149-1.246-.656-2.027-2.708-2.027-4.365 0-3.728 2.713-7.15 7.824-7.15 4.11 0 7.304 2.926 7.304 6.841 0 4.082-2.572 7.361-6.144 7.361-1.201 0-2.33-.623-2.715-1.357-.595 2.279-.875 3.563-1.229 4.882 2.649-1.073 5.089-2.631 6.928-4.816 3.241-3.956 4.242-9.596 2.87-14.48C21.105 2.505 16.876 0 12 0z"></path></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-disclosure"><span>⚡</span><p><strong>Affiliate disclosure:</strong> We may earn a commission when you book or purchase through links on Northern Borealis, at no extra cost to you. <a href="legal/affiliate-disclosure/">Learn more</a>.</p></div>
+    <div class="footer-bottom footer-bottom-polished"><span>© 2026 Northern Borealis. All rights reserved.</span><span class="footer-bottom-tagline">Chasing clear skies across the Arctic.</span></div>
+  </div>
+</footer>
 <script src="assets/js/main.js"></script>
-</body></html>
+</body>
+</html>
