@@ -51,6 +51,117 @@
 
   <link rel="stylesheet" href="assets/css/style.css">
 
+  <style>
+    /* Destinations page: contextual links */
+    .destination-link-box{
+      display:flex;
+      align-items:flex-start;
+      gap:14px;
+      max-width:900px;
+      margin:30px auto 0;
+      padding:18px 22px;
+      background:rgba(95,214,165,.055);
+      border:1px solid rgba(95,214,165,.18);
+      border-left:3px solid var(--green);
+      border-radius:14px;
+    }
+    .destination-link-box-icon{
+      flex:0 0 auto;
+      font-size:1.2rem;
+      line-height:1.7;
+    }
+    .destination-link-box p{
+      margin:0;
+      color:var(--muted);
+      font-size:.95rem;
+      line-height:1.75;
+    }
+    .destination-link-box p>strong{color:var(--text)}
+    .destination-link-box a,
+    .destination-choice-card a{
+      color:var(--green)!important;
+      text-decoration:underline!important;
+      text-decoration-color:rgba(95,214,165,.55)!important;
+      text-decoration-thickness:1px;
+      text-underline-offset:3px;
+      font-weight:600;
+      transition:color .2s ease,text-decoration-color .2s ease;
+    }
+    .destination-link-box a:hover,
+    .destination-choice-card a:hover{
+      color:#8be7c1!important;
+      text-decoration-color:#8be7c1!important;
+    }
+
+    /* Destinations page: How to Choose */
+    .destination-choice-section{
+      background:linear-gradient(180deg,rgba(95,214,165,.025),transparent);
+    }
+    .destination-choice-heading{
+      max-width:760px;
+      margin:0 auto 30px;
+      text-align:center;
+    }
+    .destination-choice-heading .section-title{margin-bottom:14px}
+    .destination-choice-intro{
+      max-width:680px;
+      margin:0 auto!important;
+      color:var(--muted)!important;
+      font-size:1rem!important;
+      line-height:1.75!important;
+    }
+    .destination-choice-card{
+      overflow:hidden;
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:20px;
+    }
+    .destination-choice-item{
+      display:grid;
+      grid-template-columns:48px 1fr;
+      gap:18px;
+      padding:25px 27px;
+    }
+    .destination-choice-item+.destination-choice-item{
+      border-top:1px solid var(--border);
+    }
+    .destination-choice-icon{
+      width:44px;
+      height:44px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:13px;
+      background:rgba(95,214,165,.08);
+      border:1px solid rgba(95,214,165,.18);
+      color:var(--green);
+      font-size:1.1rem;
+    }
+    .destination-choice-item h3{
+      margin:1px 0 8px;
+      color:var(--text);
+      font-family:'Sora',sans-serif;
+      font-size:1rem;
+      line-height:1.4;
+    }
+    .destination-choice-item p{
+      margin:0;
+      color:var(--muted);
+      font-size:.96rem;
+      line-height:1.75;
+    }
+    @media(max-width:600px){
+      .destination-link-box{padding:17px 18px}
+      .destination-choice-heading{text-align:left}
+      .destination-choice-item{
+        grid-template-columns:1fr;
+        gap:12px;
+        padding:22px 20px;
+      }
+    }
+  </style>
+
+
   <!-- Breadcrumb Schema -->
   <script type="application/ld+json">
   {
@@ -536,16 +647,19 @@
 
 
       <!-- FINLAND INTERNAL LINK CLUSTER -->
-      <p style="margin-top:28px;text-align:center;">
-        Planning a Finland trip? Start with our
-        <a href="destinations/finland/"><strong>Northern Lights in Finland</strong></a> guide,
-        compare the region in our
-        <a href="tours/lapland-northern-lights-tour/"><strong>Lapland Northern Lights tours</strong></a> guide,
-        or go directly to
-        <a href="tours/rovaniemi-northern-lights-tour/"><strong>Rovaniemi</strong></a>
-        and
-        <a href="tours/levi-northern-lights-tour/"><strong>Levi</strong></a>.
-      </p>
+      <div class="destination-link-box">
+        <span class="destination-link-box-icon" aria-hidden="true">🇫🇮</span>
+        <p>
+          <strong>Planning a Finland trip?</strong> Start with our
+          <a href="destinations/finland/">Northern Lights in Finland</a> guide,
+          compare the region in our
+          <a href="tours/lapland-northern-lights-tour/">Lapland Northern Lights tours</a> guide,
+          or go directly to
+          <a href="tours/rovaniemi-northern-lights-tour/">Rovaniemi</a>
+          and
+          <a href="tours/levi-northern-lights-tour/">Levi</a>.
+        </p>
+      </div>
 
     </div>
 
@@ -553,27 +667,53 @@
 
 
   <!-- HOW TO CHOOSE -->
-  <section class="section">
+  <section class="section destination-choice-section">
 
     <div class="container-narrow">
 
-      <h2 class="section-title">How to Choose a Northern Lights Destination</h2>
+      <div class="destination-choice-heading">
+        <span class="section-kicker">Plan Your Aurora Trip</span>
+        <h2 class="section-title">How to Choose a Northern Lights Destination</h2>
+        <p class="destination-choice-intro">The right destination depends on the kind of Arctic experience you want, the landscapes you want to explore and when you plan to travel.</p>
+      </div>
 
-      <p>
-        The best destination depends on the kind of Arctic trip you want. Norway is a strong choice for travellers who want to combine aurora chasing with fjords and Arctic coastal scenery. Iceland makes it easy to combine the Northern Lights with waterfalls, glaciers, geothermal landscapes and road trips. Swedish Lapland offers remote Arctic wilderness around Abisko and Kiruna, while Finnish Lapland combines aurora viewing with classic winter experiences such as reindeer, huskies, snowmobiling and Santa Claus Village.
-      </p>
+      <div class="destination-choice-card">
 
-      <p>
-        Your travel dates matter too. Aurora visibility requires sufficiently dark skies, suitable weather and solar activity, so there is no destination where a sighting can be guaranteed simply by travelling there. If your dates are flexible, use our
-        <a href="guides/best-time-to-see-northern-lights/">best time to see the Northern Lights</a>
-        guide to compare the season month by month.
-      </p>
+        <div class="destination-choice-item">
+          <span class="destination-choice-icon" aria-hidden="true">🧭</span>
+          <div>
+            <h3>Choose the experience you want</h3>
+            <p>
+              The best destination depends on the kind of Arctic trip you want. Norway is a strong choice for travellers who want to combine aurora chasing with fjords and Arctic coastal scenery. Iceland makes it easy to combine the Northern Lights with waterfalls, glaciers, geothermal landscapes and road trips. Swedish Lapland offers remote Arctic wilderness around Abisko and Kiruna, while Finnish Lapland combines aurora viewing with classic winter experiences such as reindeer, huskies, snowmobiling and Santa Claus Village.
+            </p>
+          </div>
+        </div>
 
-      <p>
-        Once you've chosen where you want to go, head to our
-        <a href="tours/">Northern Lights tours</a>
-        hub to compare tours from individual Arctic cities and regions.
-      </p>
+        <div class="destination-choice-item">
+          <span class="destination-choice-icon" aria-hidden="true">◷</span>
+          <div>
+            <h3>Match the destination to your travel dates</h3>
+            <p>
+              Your travel dates matter too. Aurora visibility requires sufficiently dark skies, suitable weather and solar activity, so there is no destination where a sighting can be guaranteed simply by travelling there. If your dates are flexible, use our
+              <a href="guides/best-time-to-see-northern-lights/">best time to see the Northern Lights</a>
+              guide to compare the season month by month.
+            </p>
+          </div>
+        </div>
+
+        <div class="destination-choice-item">
+          <span class="destination-choice-icon" aria-hidden="true">✦</span>
+          <div>
+            <h3>Compare tours once you've chosen your base</h3>
+            <p>
+              Once you've chosen where you want to go, head to our
+              <a href="tours/">Northern Lights tours</a>
+              hub to compare tours from individual Arctic cities and regions.
+            </p>
+          </div>
+        </div>
+
+      </div>
 
     </div>
 
