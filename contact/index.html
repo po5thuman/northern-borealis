@@ -1,47 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KVY33WVMDP"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-  
     gtag('config', 'G-KVY33WVMDP');
   </script>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <base href="/">
-  <title>Contact Us | Northern Borealis</title>
-  <meta name="description" content="Get in touch with Northern Borealis. Questions, corrections or a Northern Lights tour you think we should feature — we'd love to hear from you.">
-  <link rel="canonical" href="contact/">
+  <title>Contact Northern Borealis | Questions, Corrections & Partnerships</title>
+  <meta name="description" content="Contact Northern Borealis with Northern Lights trip-planning questions, corrections, tour suggestions, partnership enquiries or media requests.">
+  <link rel="canonical" href="https://www.northern-borealis.com/contact/">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#0d1b1a">
+
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Contact Us | Northern Borealis">
-  <meta property="og:description" content="Get in touch with the Northern Borealis team — we'd love to hear from you.">
+  <meta property="og:url" content="https://www.northern-borealis.com/contact/">
+  <meta property="og:title" content="Contact Northern Borealis">
+  <meta property="og:description" content="Questions about planning an aurora trip, spotted something we should update, or interested in working with us? Get in touch with Northern Borealis.">
   <meta property="og:site_name" content="Northern Borealis">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="https://www.northern-borealis.com/assets/images/aurora-forecast.webp">
+  <meta property="og:image:secure_url" content="https://www.northern-borealis.com/assets/images/aurora-forecast.webp">
+  <meta property="og:image:alt" content="Northern Lights over an Arctic landscape">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact Northern Borealis">
+  <meta name="twitter:description" content="Questions, corrections, tour suggestions, partnerships or media enquiries? Get in touch with Northern Borealis.">
+  <meta name="twitter:image" content="https://www.northern-borealis.com/assets/images/aurora-forecast.webp">
+  <meta name="twitter:image:alt" content="Northern Lights over an Arctic landscape">
+
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <style>
+    .contact-section{
+      padding:68px 0 30px;
+      background:radial-gradient(circle at 50% 0%,rgba(95,214,165,.08),transparent 34%);
+    }
+    .contact-heading{
+      max-width:720px;
+      margin:0 auto 30px;
+      text-align:center;
+    }
+    .contact-heading .section-kicker{
+      display:inline-block;
+      margin-bottom:10px;
+      color:var(--green);
+      font-size:.76rem;
+      font-weight:800;
+      letter-spacing:.13em;
+      text-transform:uppercase;
+    }
+    .contact-heading h2{
+      margin:0 0 10px;
+      color:var(--text);
+      font-family:'Sora',sans-serif;
+      font-size:clamp(1.8rem,4vw,2.55rem);
+    }
+    .contact-heading p{
+      max-width:650px;
+      margin:0 auto;
+      color:var(--muted);
+      line-height:1.7;
+    }
+    .contact-email-card{
+      max-width:820px;
+      margin:0 auto;
+      padding:38px 34px;
+      text-align:center;
+      background:linear-gradient(145deg,rgba(255,255,255,.04),rgba(255,255,255,.012));
+      border:1px solid var(--border);
+      border-radius:26px;
+      box-shadow:0 18px 50px rgba(0,0,0,.18);
+    }
+    .contact-email-icon{
+      width:54px;
+      height:54px;
+      margin:0 auto 17px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:16px;
+      background:rgba(95,214,165,.08);
+      border:1px solid rgba(95,214,165,.2);
+      font-size:1.35rem;
+    }
+    .contact-email-label{
+      display:block;
+      margin-bottom:9px;
+      color:var(--green);
+      font-size:.74rem;
+      font-weight:800;
+      letter-spacing:.13em;
+      text-transform:uppercase;
+    }
+    .contact-email-card h3{
+      margin:0 0 13px;
+      font-family:'Sora',sans-serif;
+      font-size:clamp(1.35rem,4vw,2rem);
+    }
+    .contact-email-card h3 a{
+      color:var(--text);
+      text-decoration:none;
+      overflow-wrap:anywhere;
+    }
+    .contact-email-card h3 a:hover{color:var(--green)}
+    .contact-email-card p{
+      max-width:610px;
+      margin:0 auto 22px;
+      color:var(--muted);
+      line-height:1.65;
+    }
+    .contact-email-card .btn{margin-bottom:18px}
+    .response-chip{
+      width:max-content;
+      max-width:100%;
+      margin:0 auto;
+      padding:8px 12px;
+      border-radius:999px;
+      color:var(--muted);
+      background:rgba(255,255,255,.025);
+      border:1px solid var(--border);
+      font-size:.78rem;
+    }
+    .response-chip strong{color:var(--text)}
+
+    .help-section{padding:52px 0 20px}
+    .help-grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:18px;
+      max-width:900px;
+      margin:28px auto 0;
+    }
+    .help-card{
+      padding:25px;
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:20px;
+      box-shadow:0 10px 30px rgba(0,0,0,.12);
+    }
+    .help-icon{
+      width:42px;
+      height:42px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      margin-bottom:15px;
+      border-radius:13px;
+      background:rgba(95,214,165,.08);
+      border:1px solid rgba(95,214,165,.18);
+      font-size:1.05rem;
+    }
+    .help-card h3{
+      margin:0 0 8px;
+      color:var(--text);
+      font-family:'Sora',sans-serif;
+      font-size:1rem;
+    }
+    .help-card p{
+      margin:0;
+      color:var(--muted);
+      line-height:1.62;
+      font-size:.9rem;
+    }
+
+    .contact-info-grid{
+      display:grid;
+      grid-template-columns:1.25fr .75fr;
+      gap:18px;
+      max-width:900px;
+      margin:28px auto 0;
+    }
+    .contact-info-card{
+      padding:24px 25px;
+      background:linear-gradient(145deg,rgba(255,255,255,.035),rgba(255,255,255,.012));
+      border:1px solid var(--border);
+      border-radius:19px;
+    }
+    .contact-info-top{
+      display:flex;
+      gap:13px;
+      align-items:flex-start;
+    }
+    .contact-info-icon{
+      width:38px;
+      height:38px;
+      flex:0 0 38px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:12px;
+      background:rgba(95,214,165,.08);
+      border:1px solid rgba(95,214,165,.18);
+    }
+    .contact-info-card h3{
+      margin:1px 0 7px;
+      color:var(--text);
+      font-family:'Sora',sans-serif;
+      font-size:.96rem;
+    }
+    .contact-info-card p{
+      margin:0;
+      color:var(--muted);
+      line-height:1.62;
+      font-size:.88rem;
+    }
+    .contact-info-card a{color:var(--green)}
+
+    .contact-planning{
+      max-width:900px;
+      margin:48px auto 0;
+      padding:32px 28px;
+      text-align:center;
+      background:linear-gradient(145deg,rgba(95,214,165,.07),rgba(255,255,255,.015));
+      border:1px solid rgba(95,214,165,.18);
+      border-radius:23px;
+    }
+    .contact-planning h2{
+      margin:0 0 9px;
+      color:var(--text);
+      font-family:'Sora',sans-serif;
+      font-size:1.4rem;
+    }
+    .contact-planning p{
+      max-width:620px;
+      margin:0 auto 20px;
+      color:var(--muted);
+      line-height:1.65;
+    }
+    .contact-actions{
+      display:flex;
+      justify-content:center;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+    .contact-actions .btn-secondary{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:12px 20px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      color:var(--text);
+      text-decoration:none;
+      font-weight:700;
+      font-size:.88rem;
+      background:rgba(255,255,255,.025);
+      transition:.2s ease;
+    }
+    .contact-actions .btn-secondary:hover{
+      border-color:rgba(95,214,165,.4);
+      color:var(--green);
+      transform:translateY(-1px);
+    }
+
+    .contact-related{
+      padding:28px 0 72px;
+    }
+
+    @media(max-width:720px){
+      .contact-section{padding-top:52px}
+      .contact-email-card{padding:29px 20px}
+      .help-grid,.contact-info-grid{grid-template-columns:1fr}
+      .help-section{padding-top:42px}
+      .contact-planning{padding:27px 19px}
+    }
+  </style>
+
+  <!-- Breadcrumb Schema -->
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
-    {"@type":"ListItem","position":1,"name":"Home","item":"https://www.northern-borealis.com/"},
-    {"@type":"ListItem","position":2,"name":"Contact","item":"https://www.northern-borealis.com/contact/"}
-  ]}
-  </script>
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"ContactPage","name":"Contact Northern Borealis","url":"https://www.northern-borealis.com/contact/","publisher":{"@type":"Organization","name":"Northern Borealis","url":"/"}}
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.northern-borealis.com/"},
+      {"@type":"ListItem","position":2,"name":"Contact","item":"https://www.northern-borealis.com/contact/"}
+    ]
+  }
   </script>
 
-    <!-- Stay22 Script -->
-   <script>
+  <!-- Contact Page Schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ContactPage",
+    "name":"Contact Northern Borealis",
+    "description":"Contact Northern Borealis with trip-planning questions, corrections, tour suggestions, partnership enquiries or media requests.",
+    "url":"https://www.northern-borealis.com/contact/",
+    "publisher":{
+      "@type":"Organization",
+      "name":"Northern Borealis",
+      "url":"https://www.northern-borealis.com/"
+    }
+  }
+  </script>
+
+  <!-- Stay22 Script -->
+  <script>
     (function (s, t, a, y, twenty, two) {
       s.Stay22 = s.Stay22 || {};
       s.Stay22.params = { lmaID: '6a4f98a11b2dc574185dfc26' };
@@ -52,115 +316,302 @@
       two.parentNode.insertBefore(twenty, two);
     })(window, document, 'script', 'https://scripts.stay22.com/letmeallez.js');
   </script>
-
 </head>
+
 <body>
-  <header id="header">
-    <div class="container nav">
-      <div class="nav-left">
-        <a href="." class="logo">Northern<span>Borealis</span></a>
-        <a href="forecast/" class="kp-pill" id="kpPill" title="Current live Kp index — click for the full forecast">
-          <span class="kp-pill-dot" id="kpPillDot"></span>
-          <span class="kp-pill-label">Current Kp Index</span>
-          <span class="kp-pill-value" id="kpPillValue">–</span>
-        </a>
-      </div>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="destinations/">Destinations</a></li>
-        <li><a href="tours/">Tours</a></li>
-        <li><a href="guides/best-time-to-see-northern-lights/">When to Go</a></li>
-        <li><a href="guides/">Guides</a></li>
-        <li><a href="forecast/">Forecast</a></li>
-      </ul>
-      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+
+<!-- HEADER -->
+<header id="header" class="site-header">
+  <div class="container nav">
+
+    <div class="nav-left">
+      <a href="." class="logo" aria-label="Northern Borealis home">
+        Northern<span>Borealis</span>
+      </a>
+
+      <a href="forecast/"
+         class="kp-pill"
+         id="kpPill"
+         title="Current live Kp index — view the full Northern Lights forecast">
+        <span class="kp-pill-dot" id="kpPillDot"></span>
+        <span class="kp-pill-label">Current Kp Index</span>
+        <span class="kp-pill-value" id="kpPillValue">–</span>
+      </a>
     </div>
-  </header>
-  <!-- HERO -->
-  <section class="page-hero" style="min-height:40vh;background:linear-gradient(135deg,#0d1b1a 0%,#12302c 100%)">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <nav class="breadcrumb"><a href=".">Home</a> › <span>Contact</span></nav>
-      <span class="eyebrow">Get in Touch</span>
-      <h1>Contact <span>Us</span></h1>
-      <p>Questions, corrections or a tour you think we should feature — we'd genuinely love to hear from you.</p>
+
+    <ul class="nav-links" id="navLinks">
+
+      <li class="nav-dropdown">
+        <a href="destinations/" class="nav-dropdown-toggle">
+          Destinations
+          <svg class="nav-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </a>
+
+        <div class="nav-dropdown-menu">
+          <a href="destinations/norway/">
+            <span class="dropdown-flag">🇳🇴</span>
+            <span><strong>Norway</strong><small>Tromsø, Alta, Lofoten & Svalbard</small></span>
+          </a>
+          <a href="destinations/iceland/">
+            <span class="dropdown-flag">🇮🇸</span>
+            <span><strong>Iceland</strong><small>Reykjavík, Akureyri & beyond</small></span>
+          </a>
+          <a href="destinations/finland/">
+            <span class="dropdown-flag">🇫🇮</span>
+            <span><strong>Finland</strong><small>Rovaniemi, Levi & Lapland</small></span>
+          </a>
+          <a href="destinations/sweden/">
+            <span class="dropdown-flag">🇸🇪</span>
+            <span><strong>Sweden</strong><small>Abisko, Kiruna & Swedish Lapland</small></span>
+          </a>
+          <div class="dropdown-footer">
+            <a href="destinations/">Explore all destinations →</a>
+          </div>
+        </div>
+      </li>
+
+      <li><a href="tours/">Tours</a></li>
+
+      <li>
+        <a href="guides/best-time-to-see-northern-lights/">When to Go</a>
+      </li>
+
+      <li class="nav-dropdown">
+        <a href="guides/" class="nav-dropdown-toggle">
+          Guides
+          <svg class="nav-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </a>
+
+        <div class="nav-dropdown-menu nav-dropdown-guides">
+          <a href="guides/best-time-to-see-northern-lights/">
+            <span class="dropdown-icon">◷</span>
+            <span><strong>Best Time to See the Northern Lights</strong><small>Season, months & conditions</small></span>
+          </a>
+
+          <a href="guides/best-places-to-see-northern-lights/">
+            <span class="dropdown-icon">⌖</span>
+            <span><strong>Best Places to See the Northern Lights</strong><small>Compare Europe's top destinations</small></span>
+          </a>
+
+          <a href="guides/how-to-see-the-northern-lights/">
+            <span class="dropdown-icon">✦</span>
+            <span><strong>How to See the Northern Lights</strong><small>Forecasts, clouds & aurora hunting</small></span>
+          </a>
+
+          <a href="guides/how-to-photograph-northern-lights/">
+            <span class="dropdown-icon">◉</span>
+            <span><strong>Northern Lights Photography</strong><small>Camera settings & techniques</small></span>
+          </a>
+
+          <a href="guides/how-to-photograph-northern-lights-with-iphone/">
+            <span class="dropdown-icon">▣</span>
+            <span><strong>Photograph the Aurora with iPhone</strong><small>Night mode, exposure & composition</small></span>
+          </a>
+
+          <a href="guides/what-are-the-northern-lights/">
+            <span class="dropdown-icon">◎</span>
+            <span><strong>What Are the Northern Lights?</strong><small>The science behind the aurora</small></span>
+          </a>
+
+          <div class="dropdown-footer">
+            <a href="guides/">Browse all Northern Lights guides →</a>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <a href="forecast/" class="nav-forecast">Forecast</a>
+      </li>
+    </ul>
+
+    <button class="menu-btn"
+            id="menuBtn"
+            aria-label="Toggle menu"
+            aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="page-hero" style="min-height:48vh;background:url('assets/images/aurora-forecast.webp') center/cover no-repeat;">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <nav class="breadcrumb">
+      <a href=".">Home</a> › <span>Contact</span>
+    </nav>
+    <span class="eyebrow">Get in Touch</span>
+    <h1>Contact <span>Northern Borealis</span></h1>
+    <p>Questions about planning an aurora trip, spotted something we should update, or interested in working with us? We'd love to hear from you.</p>
+  </div>
+</section>
+
+<main>
+
+  <!-- PRIMARY CONTACT -->
+  <section class="contact-section">
+    <div class="container">
+
+      <div class="contact-heading">
+        <span class="section-kicker">Contact Us</span>
+        <h2>How Can We Help?</h2>
+        <p>Whether you're planning a Northern Lights trip, have feedback about one of our guides or want to discuss working together, email is the best way to reach us.</p>
+      </div>
+
+      <div class="contact-email-card">
+        <div class="contact-email-icon" aria-hidden="true">✉️</div>
+        <span class="contact-email-label">Get in Touch</span>
+        <h3>
+          <a href="mailto:hello@northernborealis.com">hello@northernborealis.com</a>
+        </h3>
+        <p>For trip-planning questions, corrections, tour suggestions, partnerships and media enquiries.</p>
+        <a href="mailto:hello@northernborealis.com" class="btn">Send Us an Email</a>
+        <div class="response-chip">Typical response time: <strong>2–3 business days</strong></div>
+      </div>
+
     </div>
   </section>
-  <main class="article">
+
+  <!-- HELP CARDS -->
+  <section class="help-section">
     <div class="container-narrow">
 
-      <!-- INTRO -->
-      <p class="lead">Whether you've got a question about planning your Northern Lights trip, spotted something we should update, or want to suggest a tour for us to review, we're all ears. We read every message and reply as quickly as we can.</p>
-
-      <!-- EMAIL -->
-      <h2 class="h2-mt">Email Us</h2>
-      <p>The best way to reach us is by email. Drop us a line and we'll get back to you, usually within 2–3 business days:</p>
-      <div class="toppick">
-        <span class="toppick-label">✉️ Email</span>
-        <h2><a href="mailto:hello@northernborealis.com">hello@northernborealis.com</a></h2>
-        <p>For general questions, feedback, corrections, partnership enquiries or tour suggestions.</p>
-        <a href="mailto:hello@northernborealis.com" class="btn">Send Us an Email</a>
+      <div class="contact-heading">
+        <span class="section-kicker">What to Contact Us About</span>
+        <h2>What We Can Help With</h2>
+        <p>We read every message. These are some of the most common reasons travellers, tour operators and partners get in touch.</p>
       </div>
 
-      <!-- WHAT WE CAN HELP WITH -->
-      <h2 class="h2-mt">What We Can Help With</h2>
-      <ul class="tour-features">
-        <li>✅ <strong>Trip-planning questions</strong> — where to go, when to visit, which tour suits you.</li>
-        <li>✅ <strong>Corrections &amp; updates</strong> — spotted an out-of-date price or detail? Let us know.</li>
-        <li>✅ <strong>Tour suggestions</strong> — think we've missed a great Northern Lights tour? Tell us about it.</li>
-        <li>✅ <strong>Partnerships &amp; media</strong> — operators and platforms are welcome to get in touch.</li>
-      </ul>
+      <div class="help-grid">
 
-      <!-- WHAT WE CANT HELP WITH -->
-      <h2 class="h2-mt">One Quick Note</h2>
-      <div class="callout">
-        <strong>⚡ We're not a tour operator.</strong> Northern Borealis is an independent guide — we don't sell or manage tours directly. If your question is about an <em>existing booking</em> (availability, changes, refunds or cancellations), please contact the booking platform or tour operator you booked with, as they hold all your reservation details. You can read more on our <a href="legal/affiliate-disclosure/">Affiliate Disclosure</a> page.
+        <div class="help-card">
+          <div class="help-icon" aria-hidden="true">🧭</div>
+          <h3>Trip Planning</h3>
+          <p>Questions about destinations, when to travel, Northern Lights conditions or which type of tour might suit your trip.</p>
+        </div>
+
+        <div class="help-card">
+          <div class="help-icon" aria-hidden="true">✎</div>
+          <h3>Corrections & Updates</h3>
+          <p>Spotted an outdated detail, broken link or something in one of our guides that needs correcting? Please let us know.</p>
+        </div>
+
+        <div class="help-card">
+          <div class="help-icon" aria-hidden="true">✦</div>
+          <h3>Tour Suggestions</h3>
+          <p>Know a Northern Lights tour or Arctic experience you think deserves to be considered for Northern Borealis? Send it our way.</p>
+        </div>
+
+        <div class="help-card">
+          <div class="help-icon" aria-hidden="true">🤝</div>
+          <h3>Partnerships & Media</h3>
+          <p>Tour operators, tourism organisations, travel platforms, brands and media are welcome to contact us about relevant opportunities.</p>
+        </div>
+
       </div>
 
-      <!-- RESPONSE TIME -->
-      <h2 class="h2-mt">Response Times</h2>
-      <p>We're a small team of aurora enthusiasts, so please bear with us — we aim to reply to every message within <strong>2–3 business days</strong>. During peak Northern Lights season (winter) it can occasionally take a little longer, but we promise we'll get back to you.</p>
+      <!-- IMPORTANT INFORMATION -->
+      <div class="contact-info-grid">
 
-      <!-- CTA -->
-      <div class="cta-banner cta-mt">
-        <h2>Ready to Chase the Aurora?</h2>
-        <p>While you wait for our reply, explore the best Northern Lights tours across Europe.</p>
-        <a href="destinations/" class="btn">Explore Destinations</a>
+        <div class="contact-info-card">
+          <div class="contact-info-top">
+            <div class="contact-info-icon" aria-hidden="true">⚡</div>
+            <div>
+              <h3>About Existing Bookings</h3>
+              <p><strong>Northern Borealis is an independent Northern Lights travel guide.</strong> We don't operate tours or hold your booking information. For availability, booking changes, refunds or cancellations, please contact the tour operator or booking platform you booked with directly. Learn more in our <a href="legal/affiliate-disclosure/">Affiliate Disclosure</a>.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="contact-info-top">
+            <div class="contact-info-icon" aria-hidden="true">◷</div>
+            <div>
+              <h3>Response Times</h3>
+              <p>We usually reply within <strong>2–3 business days</strong>. During the busiest part of the Northern Lights season, responses may occasionally take a little longer.</p>
+            </div>
+          </div>
+        </div>
+
       </div>
 
-      <!-- RELATED -->
-      <h2 class="h2-mt">Learn More</h2>
-      <div class="grid grid-3">
-        <a href="legal/about/" class="card card-text"><div class="card-body"><h3>About Us</h3><p>Who we are and how we choose the tours we recommend.</p><span class="card-link">Read more</span></div></a>
-        <a href="legal/affiliate-disclosure/" class="card card-text"><div class="card-body"><h3>Affiliate Disclosure</h3><p>How we're funded, and our promise of independent recommendations.</p><span class="card-link">Read more</span></div></a>
-        <a href="legal/privacy-policy/" class="card card-text"><div class="card-body"><h3>Privacy Policy</h3><p>How we handle your data when you visit our site.</p><span class="card-link">Read more</span></div></a>
+      <!-- PLANNING CTA -->
+      <div class="contact-planning">
+        <h2>Planning a Northern Lights Trip?</h2>
+        <p>You may find the answer you're looking for in our destination guides, live aurora forecast or Northern Lights tour pages.</p>
+        <div class="contact-actions">
+          <a href="destinations/" class="btn">Explore Destinations</a>
+          <a href="forecast/" class="btn-secondary">Check the Live Forecast</a>
+        </div>
       </div>
 
     </div>
-  </main>
+  </section>
 
+  <!-- RELATED -->
+  <section class="contact-related">
+    <div class="container-narrow">
+
+      <div class="contact-heading">
+        <span class="section-kicker">Northern Borealis</span>
+        <h2>Learn More</h2>
+        <p>Find out more about Northern Borealis, how the site is funded and our practical guides for planning an aurora trip.</p>
+      </div>
+
+      <div class="grid grid-3">
+
+        <a href="legal/about/" class="card card-text">
+          <div class="card-body">
+            <h3>About Northern Borealis</h3>
+            <p>Learn more about the site and how we approach our Northern Lights travel content.</p>
+            <span class="card-link">About us</span>
+          </div>
+        </a>
+
+        <a href="legal/affiliate-disclosure/" class="card card-text">
+          <div class="card-body">
+            <h3>Affiliate Disclosure</h3>
+            <p>See how Northern Borealis is funded and how affiliate links work on the site.</p>
+            <span class="card-link">Read the disclosure</span>
+          </div>
+        </a>
+
+        <a href="guides/" class="card card-text">
+          <div class="card-body">
+            <h3>Northern Lights Guides</h3>
+            <p>Explore practical guides covering when, where and how to see and photograph the aurora.</p>
+            <span class="card-link">Browse the guides</span>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
 <footer class="site-footer">
-
   <div class="container">
 
-
-    <!-- TOP BRAND ROW -->
     <div class="footer-brand-row">
 
       <div class="footer-brand-main">
-
         <a href="." class="logo">
           Northern<span>Borealis</span>
         </a>
-
         <p>
           Independent Northern Lights travel guides, destinations,
           tours and aurora planning across Europe.
         </p>
-
       </div>
 
-
-      <!-- LIVE AURORA STATUS -->
       <a href="forecast/"
          class="footer-aurora-status"
          aria-label="View the current Northern Lights forecast">
@@ -172,294 +623,121 @@
 
         <div class="footer-kp-line">
           <span>Current Kp</span>
-
           <strong id="footerKpValue">–</strong>
-
           <span class="kp-pill-dot" id="footerKpDot"></span>
         </div>
 
         <small>View tonight's forecast →</small>
-
       </a>
 
     </div>
 
-
-    <!-- MAIN FOOTER NAVIGATION -->
     <div class="footer-grid footer-grid-polished">
 
-
-      <!-- DESTINATIONS -->
       <div class="footer-col">
-
         <h4>Destinations</h4>
-
         <ul>
-          <li>
-            <a href="destinations/norway/">
-              Norway
-            </a>
-          </li>
-
-          <li>
-            <a href="destinations/iceland/">
-              Iceland
-            </a>
-          </li>
-
-          <li>
-            <a href="destinations/finland/">
-              Finland
-            </a>
-          </li>
-
-          <li>
-            <a href="destinations/sweden/">
-              Sweden
-            </a>
-          </li>
+          <li><a href="destinations/norway/">Norway</a></li>
+          <li><a href="destinations/iceland/">Iceland</a></li>
+          <li><a href="destinations/finland/">Finland</a></li>
+          <li><a href="destinations/sweden/">Sweden</a></li>
         </ul>
-
-        <a href="destinations/" class="footer-more">
-          All destinations →
-        </a>
-
+        <a href="destinations/" class="footer-more">All destinations →</a>
       </div>
 
-
-      <!-- EXPLORE -->
       <div class="footer-col">
-
         <h4>Explore</h4>
-
         <ul>
-
-          <li>
-            <a href="tours/">
-              Northern Lights Tours
-            </a>
-          </li>
-
-          <li>
-            <a href="guides/">
-              Travel Guides
-            </a>
-          </li>
-
-          <li>
-            <a href="forecast/">
-              Aurora Forecast
-            </a>
-          </li>
-
-          <li>
-            <a href="guides/how-to-see-the-northern-lights/">
-              How to See the Aurora
-            </a>
-          </li>
-
+          <li><a href="tours/">Northern Lights Tours</a></li>
+          <li><a href="guides/">Travel Guides</a></li>
+          <li><a href="forecast/">Aurora Forecast</a></li>
+          <li><a href="guides/how-to-see-the-northern-lights/">How to See the Aurora</a></li>
         </ul>
-
       </div>
 
-
-      <!-- GUIDES -->
       <div class="footer-col">
-
         <h4>Popular Guides</h4>
-
         <ul>
-
-          <li>
-            <a href="guides/best-time-to-see-northern-lights/">
-              Best Time to Go
-            </a>
-          </li>
-
-          <li>
-            <a href="guides/best-places-to-see-northern-lights/">
-              Best Places
-            </a>
-          </li>
-
-          <li>
-            <a href="guides/how-to-photograph-northern-lights/">
-              Aurora Photography
-            </a>
-          </li>
-
-          <li>
-            <a href="guides/how-to-photograph-northern-lights-with-iphone/">
-              iPhone Photography
-            </a>
-          </li>
-
-          <li>
-            <a href="guides/what-are-the-northern-lights/">
-              What Are the Northern Lights?
-            </a>
-          </li>
-
+          <li><a href="guides/best-time-to-see-northern-lights/">Best Time to Go</a></li>
+          <li><a href="guides/best-places-to-see-northern-lights/">Best Places</a></li>
+          <li><a href="guides/how-to-photograph-northern-lights/">Aurora Photography</a></li>
+          <li><a href="guides/how-to-photograph-northern-lights-with-iphone/">iPhone Photography</a></li>
+          <li><a href="guides/what-are-the-northern-lights/">What Are the Northern Lights?</a></li>
         </ul>
-
       </div>
 
-
-      <!-- ABOUT -->
       <div class="footer-col">
-
         <h4>About</h4>
-
         <ul>
-
-          <li>
-            <a href="legal/about/">
-              About Northern Borealis
-            </a>
-          </li>
-
-          <li>
-            <a href="contact/">
-              Contact
-            </a>
-          </li>
-
-          <li>
-            <a href="legal/affiliate-disclosure/">
-              Affiliate Disclosure
-            </a>
-          </li>
-
-          <li>
-            <a href="legal/privacy-policy/">
-              Privacy Policy
-            </a>
-          </li>
-
+          <li><a href="legal/about/">About Northern Borealis</a></li>
+          <li><a href="contact/">Contact</a></li>
+          <li><a href="legal/affiliate-disclosure/">Affiliate Disclosure</a></li>
+          <li><a href="legal/privacy-policy/">Privacy Policy</a></li>
         </ul>
 
-
-        <!-- SOCIALS -->
         <div class="footer-social">
 
           <a href="https://www.instagram.com/northernborealisofficial/"
              target="_blank"
              rel="noopener noreferrer"
              aria-label="Instagram">
-
-            <svg width="18" height="18"
-                 viewBox="0 0 24 24"
-                 fill="none"
-                 stroke="currentColor"
-                 stroke-width="2">
-
-              <rect x="2" y="2"
-                    width="20"
-                    height="20"
-                    rx="5"
-                    ry="5"></rect>
-
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
               <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-
-              <circle cx="17.5"
-                      cy="6.5"
-                      r="1.5"></circle>
-
+              <circle cx="17.5" cy="6.5" r="1.5"></circle>
             </svg>
-
           </a>
-
 
           <a href="https://www.facebook.com/NorthernBorealisOfficial/"
              target="_blank"
              rel="noopener noreferrer"
              aria-label="Facebook">
-
-            <svg width="18" height="18"
-                 viewBox="0 0 24 24"
-                 fill="none"
-                 stroke="currentColor"
-                 stroke-width="2">
-
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M18 2h-3a6 6 0 0 0-6 6v3H7v4h2v8h4v-8h3l1-4h-4V8a1 1 0 0 1 1-1h3z"></path>
-
             </svg>
-
           </a>
-
 
           <a href="https://www.tiktok.com/@northernborealisofficial"
              target="_blank"
              rel="noopener noreferrer"
              aria-label="TikTok">
-
-            <svg width="18"
-                 height="18"
-                 viewBox="0 0 24 24"
-                 fill="currentColor">
-
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
               <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.1 1.82 2.84 2.84 0 0 1 2.6-4.53 2.86 2.86 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-.54-.05z"></path>
-
             </svg>
-
           </a>
-
 
           <a href="https://www.pinterest.com/Northern_Borealis/"
              target="_blank"
              rel="noopener noreferrer"
              aria-label="Pinterest">
-
-            <svg width="18"
-                 height="18"
-                 viewBox="0 0 24 24"
-                 fill="currentColor">
-
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
               <path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.223-.937 1.58-6.685 1.58-6.685s-.389-.779-.389-1.937c0-1.816.951-3.194 2.138-3.194 1.009 0 1.497.757 1.497 1.664 0 1.013-.645 2.527-.975 3.93-.276 1.335.588 2.415 1.749 2.415 2.096 0 3.71-2.21 3.71-5.402 0-2.828-2.02-4.8-4.9-4.8-3.338 0-5.291 2.502-5.291 5.093 0 1.01.389 2.09.873 2.673.096.119.11.222.083.338-.091.378-.293 1.189-.332 1.355-.047.203-.145.248-.334.149-1.246-.656-2.027-2.708-2.027-4.365 0-3.728 2.713-7.15 7.824-7.15 4.11 0 7.304 2.926 7.304 6.841 0 4.082-2.572 7.361-6.144 7.361-1.201 0-2.33-.623-2.715-1.357-.595 2.279-.875 3.563-1.229 4.882 2.649-1.073 5.089-2.631 6.928-4.816 3.241-3.956 4.242-9.596 2.87-14.48C21.105 2.505 16.876 0 12 0z"/>
-
             </svg>
-
           </a>
 
         </div>
-
       </div>
 
     </div>
 
-
-    <!-- COMPACT AFFILIATE DISCLOSURE -->
     <div class="footer-disclosure">
-
       <span>⚡</span>
-
       <p>
         <strong>Affiliate disclosure:</strong>
         We may earn a commission when you book or purchase through
         links on Northern Borealis, at no extra cost to you.
         <a href="legal/affiliate-disclosure/">Learn more</a>.
       </p>
-
     </div>
 
-
-    <!-- BOTTOM -->
     <div class="footer-bottom footer-bottom-polished">
-
-      <span>
-        © 2026 Northern Borealis. All rights reserved.
-      </span>
-
-      <span class="footer-bottom-tagline">
-        Chasing clear skies across the Arctic.
-      </span>
-
+      <span>© 2026 Northern Borealis. All rights reserved.</span>
+      <span class="footer-bottom-tagline">Chasing clear skies across the Arctic.</span>
     </div>
 
   </div>
-
 </footer>
-  
-  <script src="assets/js/main.js"></script>
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>
