@@ -332,3 +332,4 @@ footer{background:#0a1615;border-top:1px solid var(--border);padding:64px 0 30px
 .tour-choice-tip p{margin:0;color:var(--muted);font-size:.86rem;line-height:1.6}
 @media(max-width:900px){.tour-choice-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.tour-choice-grid{grid-template-columns:1fr}.tour-choice-tip{grid-template-columns:1fr}.tour-choice-heading{text-align:left}}
+.article a.pick-card,.article a.pick-card strong,.article a.pick-card span{text-decoration:none!important}
