@@ -332,3 +332,6 @@ footer{background:#0a1615;border-top:1px solid var(--border);padding:64px 0 30px
 .tour-choice-tip p{margin:0;color:var(--muted);font-size:.86rem;line-height:1.6}
 @media(max-width:900px){.tour-choice-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.tour-choice-grid{grid-template-columns:1fr}.tour-choice-tip{grid-template-columns:1fr}.tour-choice-heading{text-align:left}}
+.article a:not(.btn):not(.card){color:var(--green);text-decoration:underline;text-decoration-color:rgba(95,214,165,.55);text-underline-offset:3px;transition:color .2s ease,text-decoration-color .2s ease}
+.article a:not(.btn):not(.card):hover{color:#8be7c1;text-decoration-color:#8be7c1}
+.article a:not(.btn):not(.card) strong{color:inherit}
