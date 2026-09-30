@@ -335,8 +335,3 @@ footer{background:#0a1615;border-top:1px solid var(--border);padding:64px 0 30px
 .article a:not(.btn):not(.card):not(.pick-card){color:var(--green)!important;text-decoration:underline;text-decoration-color:rgba(95,214,165,.55);text-underline-offset:3px;transition:color .2s ease,text-decoration-color .2s ease}
 .article a:not(.btn):not(.card):not(.pick-card) strong{color:var(--green)!important}
 .article a:not(.btn):not(.card):not(.pick-card):hover,.article a:not(.btn):not(.card):not(.pick-card):hover strong{color:#8be7c1!important;text-decoration-color:#8be7c1}
-.article .pick-card,
-.article .pick-card strong,
-.article .pick-card span{
-  text-decoration:none!important;
-}
